@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 14 Website Demo</title>
+    <!--import bootstrap library by link to use pre-defined bootstrap CSS classes for layout and styling-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <!--import custom CSS stylesheet additional styling-->
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <div class="row">
+            <h1>Infoviz Project Website Demo: Putting Everything Together</h1>
+        </div>
+    </div>
+
+    <div id="bootstrap-basics" class="container">
+        <div class="row">
+            <h3>Bootstrap Layout Basics</h2>
+        </div>
+        <div class="row">
+            <div class="col">Bootstrap uses a grid layout system. Each container (`.container`) consists of rows (`.row`) and each row consists of up to 12 columns (`.col`).</div>
+        </div>
+        <div class="row">
+            <div class="col">Columns (`.col`) inside a row evenly divide up the row by default</div>
+        </div>
+        <div class="row text-center">
+            <div class="col showBackground">.col</div>
+            <div class="col showBackground">.col</div>
+            <div class="col showBackground">.col</div>
+        </div>
+        <div class="row">
+            <div class="col">Columns can also take up varying proportions of a row (`.col-X` where X is a number between 1 and 12)</div>
+        </div>
+        <div class="row text-center">
+            <div class="col-2 showBackground">.col-2</div>
+            <div class="col-4 showBackground">.col-4</div>
+            <div class="col-6 showBackground">.col-6</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <h3>Part 1: Embedding Observable Cells</h3>
+                <p>We can embed one to multiple cells from any notebook using Observable's "Embed" feature.</p>
+                <p>Some things to keep in mind:</p>
+                <ol style="font-size: 0.9em;">
+                    <li>The notebook needs to be public ("unlisted" should suffice)</li>
+                    <li>Only named cells can be embedded</li>
+                    <li>If you've made changes to cells after you last embedded them to your website, you'd need to re-embed the changed cells to see updates</li>
+                    <li>Cells can be embedded as "Iframe" or "Runtime with JavaScript". The "Runtime with JavaScript" version gives you some control over the looks of the embedded elements and can be loaded locally. The "Iframe" version is good for embedding cells into website builders like Wix.</li>
+                </ol>
+            </div>
+            <div class="col-4">
+                <img src="https://observablehq.com/documentation/assets/embed_and_embed_cells_v2.CUJg2YVs.png"
+                    width=100%>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <h4>Example 1: Single Plot Cell with Tooltip</h4>
+                <p>This is the symbol map of U.S. powerplants taken from Lab 10 (with some edits to make it a named cell and add tooltips). The tooltip works in the embedded viz.</p>
+            </div>
+            
+            <div class="col-8">
+                <!--iframe version of the same embedded cell, won't load properly if html file is opened locally-->
+                <!-- <iframe width="100%" height="614" frameborder="0" src="https://observablehq.com/embed/@i247-2025/lab-14-making-website-for-final-project?cells=mapSymbols"></iframe> -->
+                <div id="observablehq-mapSymbols-270917df"></div>
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+                <script type="module">
+                    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+                    import define from "https://api.observablehq.com/@i247-2025/lab-14-making-website-for-final-project.js?v=4";
+                    new Runtime().module(define, name => {
+                    if (name === "mapSymbols") return new Inspector(document.querySelector("#observablehq-mapSymbols-270917df"));
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <h4>Example 2: Multiple Plot Cells with Interactive UI</h4>
+                <p>This is the density map of U.S. powerplants with interactive checkboxes taken from Lab 10 Solutions.</p>
+                <p>Two cells are embedded together here: 1) the checkbox UI cell and 2) the Plot.geo cell.</p>
+                <p>The text in the checkbox UI can be further styled using CSS.</p>
+            </div>
+            
+            <div class="col-8">
+                <div id="observablehq-viewof-selectSource-6eab1371"></div>
+                <div id="observablehq-mapDensityInteractive-6eab1371"></div>
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+                <script type="module">
+                    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+                    import define from "https://api.observablehq.com/@i247-2025/lab-14-making-website-for-final-project.js?v=4";
+                    new Runtime().module(define, name => {
+                    if (name === "viewof selectSource") return new Inspector(document.querySelector("#observablehq-viewof-selectSource-6eab1371"));
+                    if (name === "mapDensityInteractive") return new Inspector(document.querySelector("#observablehq-mapDensityInteractive-6eab1371"));
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <h4>Example 3: Adding Interactivity to the Website</h4>
+                <p>We can also implement interactive features directly in the website's HTML file. For example, we can add a button for toggling between two views of the same data.</p>
+
+                <p>Click the button below to toggle between showing power plant locations and density.</p>
+                <button type="button" class="btn btn-primary" onclick=changeChart()>Toggle View</button>
+            </div>
+            
+            <div class="col-8">
+                <div id="dot-map" class="powerplantViz">
+                    <div id="observablehq-mapDots-fdb863b4"></div>
+                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+                    <script type="module">
+                        import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+                        import define from "https://api.observablehq.com/@i247-2025/lab-14-making-website-for-final-project.js?v=4";
+                        new Runtime().module(define, name => {
+                        if (name === "mapDots") return new Inspector(document.querySelector("#observablehq-mapDots-fdb863b4"));
+                        });
+                    </script>
+                </div>
+
+                <div id="density-map" class="powerplantViz invisible">
+                    <div id="observablehq-mapDensity-5e24e1f0"></div>
+                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+                    <script type="module">
+                        import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+                        import define from "https://api.observablehq.com/@i247-2025/lab-14-making-website-for-final-project.js?v=4";
+                        new Runtime().module(define, name => {
+                        if (name === "mapDensity") return new Inspector(document.querySelector("#observablehq-mapDensity-5e24e1f0"));
+                        });
+                    </script>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h4>Example 4: D3 Cell with Interactivity and Animation</h4>
+                <p>D3 cells can be embedded in the same way. Any interactivity and animation the cell supports will work in the embedded version as well. Here we let the svg take up the whole row and center it by applying the Bootstrap pre-defined `.text-center` class to the column div.</p>
+            </div>
+        </div>
+
+        <div class="row chart">
+            <div class="col text-center">
+                <div id="observablehq-nodesInteractive-bdf390a3"></div>
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+                <script type="module">
+                    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+                    import define from "https://api.observablehq.com/@i247-2025/lab-14-making-website-for-final-project@575.js?v=4";
+                    new Runtime().module(define, name => {
+                    if (name === "nodesInteractive") return new Inspector(document.querySelector("#observablehq-nodesInteractive-bdf390a3"));
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3>Part 2: Embedding Tableau Dashboards</h3>
+                <ol>
+                    <li>To embed a dashboard in your webpage, the workbook needs to be uploaded to and hosted on Tableau Public</li>
+                    <li>All the interactivity that the original dashboard supports will work in the embedded view as well</li>
+                </ol>
+                <p>Here we embed a modified version of our Lab 6 workbook as an example.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <tableau-viz id="tableauViz"       
+                    src='https://public.tableau.com/views/Lab14DemoDashboard/Lab6?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link'>
+                </tableau-viz>
+            </div>
+        </div>
+    </div>
+    <!--Import Tableau Embedding API-->
+    <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-5">
+                <h4 class="text-center">Conclusion</h4>
+                <p>We can center a block of text of a certain width by setting the column's width with `.col-X` and then applying the `.justify-content-center` class to its parent row div. Here the width is 5/12 of the row width (`.col-5`). The "Conclusion" header is further centered using the `.text-center` class.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // script for on button click for switching classes on all .powerplantViz divs
+        function changeChart() {
+            const vis = document.querySelectorAll('.powerplantViz');    // returns an array of DOM elements with class `powerplantViz`
+            // loop through array to toggle classes on or off to hide or show elements
+            for (var i = 0; i < vis.length; i++) {
+                vis[i].classList.toggle('invisible');   // the `invisible` class sets the display property to "none" to hide the element
+            }
+        }
+    </script>
+</body>
+</html>

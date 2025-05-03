@@ -1,0 +1,44 @@
+body {
+  background-color: aliceblue;
+  font-size: 100%;
+  font-family: Roboto;
+}
+
+.header {
+  padding: 5em 3em;
+  margin-bottom: 3em;
+  text-align: left;
+  font-family: Roboto Slab;
+  background: #add9ff;
+}
+
+/* add on to existing bootstrap CSS styling */
+.container {
+  margin-top: 2em;
+  margin-bottom: 4em;
+}
+
+/* override an existing class' styling only inside a specific div specified with div id */
+#bootstrap-basics .row {
+  margin-bottom: 0.5em;
+}
+
+#bootstrap-basics .showBackground {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  background-color: rgba(198, 180, 255, 0.3);
+  border: 2px solid rgba(198, 180, 255, 0.5);
+  font-family: monospace;
+}
+
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #203f6d;
+  --bs-btn-border-color: #13233a;
+  --bs-btn-hover-color: rgb(255, 255, 255);
+  --bs-btn-hover-bg: #135fd1;
+}
+
+.invisible {
+  display: none;
+}
