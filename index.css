@@ -76,21 +76,28 @@ body {
 
 /* Crop Card */
 
-#crop-card {
-    background: white;
-    padding: 1ch;
-    width: 50vh;
-}
-
-.prices {
+#crops-encyclopedia {
+    width: 100%;
     display: flex;
 }
-.prices > * {
-    max-width: 25%;
+
+
+#seasons {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
 }
 
 .season {
     display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: calc(50% - 12px); 
+    margin: 6px
+}
+
+.season h3 {
+    width: 100%;
 }
 
 .season .item {
@@ -137,6 +144,20 @@ body {
 }
 .season .item:not(.active):hover p {
     opacity: 1;
+}
+
+
+#crop-card {
+    background: white;
+    padding: 1ch;
+    width: 50%;
+}
+
+.prices {
+    display: flex;
+}
+.prices > * {
+    max-width: 25%;
 }
 
 
