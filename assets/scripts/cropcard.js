@@ -49,8 +49,10 @@ $(function(){
                 $('#crop-card .name').text(crop.item);
                 $('#crop-card .type').text(crop.type);
 
-                $('#crop-card .yield').text(crop.yield_per_harvest);
-                $('#crop-card .growth').text(crop.growth_time);
+                $('#crop-card .yield').text((crop.yield_per_harvest) 
+                                            ? (crop.yield_per_harvest) : ("This crop cannot be harvested.") );
+                $('#crop-card .growth').text((crop.growth_time) 
+                                            ? (crop.growth_time) : ("This crop does not grow.") );
 
                 $('#crop-card .base-price').text(crop.base_price);
                 $('#crop-card .silver-price').text(crop.base_price_silver);
