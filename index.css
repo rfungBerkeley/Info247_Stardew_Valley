@@ -1,9 +1,147 @@
+/************************************************************/
+/*  BASIC LAYOUT                                            */
+/************************************************************/
+
+/*      RESET      */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+/*      FONTS          */
+
+@font-face {
+    font-family: "Spectral";
+    src: url("fonts/spectral.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+}
+
+/*      VARIABLES      */
+
+:root {
+    
+    /* Color */
+    
+    
+    /* Size */
+
+    
+    /* Transition */
+
+}
+
+
+/************************************************************/
+/*  BASIC LAYOUT END                                        */
+/************************************************************/
+
 body {
   background-color: #BCCCB0;
   font-size: 100%;
   font-family: Roboto;
     height: 100vh;
 }
+
+/* Crop Card */
+
+#crop-card {
+    background: white;
+    padding: 1ch;
+    width: 50vh;
+}
+
+.prices {
+    display: flex;
+}
+.prices > * {
+    max-width: 25%;
+}
+
+.season {
+    display: flex;
+}
+
+.season .item {
+    width: 48px;
+    height: 48px;
+    flex: 0 0 48px;
+    background: white;
+    border: 1px lightgray solid;
+    padding: 6px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.season p {
+    white-space: nowrap;
+    text-align: center;
+    margin: 0 auto;
+    background: white;
+    padding: 1ch;
+    position: absolute;
+    z-index: 1;
+    top: 36px;
+    opacity: 0;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    filter: drop-shadow(2px 2px 8px gray);
+}
+.season p::before {
+    content: '';
+    width: 0;
+    height: 0;
+    display: block;
+    border-style: solid;
+    border-width: 15px;
+    border-color: transparent transparent white transparent;
+    top: -24px;
+    position: absolute;
+}
+
+.season .item:hover, .season .item.active {
+    background: lightgray;
+}
+.season .item:not(.active):hover p {
+    opacity: 1;
+}
+
+
+
+
 /*
 
 .header {
