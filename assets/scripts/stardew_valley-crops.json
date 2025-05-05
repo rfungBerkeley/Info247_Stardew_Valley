@@ -2255,7 +2255,7 @@
     "artisan_dehydrator_base_price_iridium": ""
   },
   {
-    "item": "pomegrate",
+    "item": "pomegranate",
     "type": "tree",
     "season": "fall",
     "seed_price": 6000,
@@ -2761,7 +2761,7 @@
     "artisan_dehydrator_base_price_iridium": 322
   },
   {
-    "item": "cranberry",
+    "item": "cranberries",
     "type": "fruit",
     "season": "fall",
     "seed_price": 240,

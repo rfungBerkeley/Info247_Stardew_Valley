@@ -80,7 +80,53 @@
         </div>
 
     </div>
-    
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h4>Season Crop Comparison </h4>
+                <p>Compares price differences between crop qualities and other crops from the same season.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <tableau-viz id="tableauViz"       
+                    src='https://public.tableau.com/views/Sv/Dashboard2?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link'>
+                </tableau-viz>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h4>Fertilizer Comparison </h4>
+                <p>How many harvests can be done per crop per season.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <tableau-viz id="tableauViz"       
+                    src='https://public.tableau.com/shared/DCX3QKMSP?:display_count=n&:origin=viz_share_link'>
+                </tableau-viz>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h4>Processed Crops Comparison </h4>
+                <p>Compares the profits earned through different processing methods of a crop.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <tableau-viz id="tableauViz"       
+                src='https://public.tableau.com/views/process_17462533520210/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link'>
+            </tableau-viz>
+            </div>
+        </div>
+    </div>
+    Import Tableau Embedding API
+    <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
     
 <!--
     <div class="header">
