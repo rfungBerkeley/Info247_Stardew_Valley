@@ -120,14 +120,8 @@ $(function(){
                         });
                     } 
                 }
-<<<<<<< HEAD
                 //update plots
                 const observableSelect = document.querySelector('#observablehq-viewof-selectCrop-3f8b5a92 select');
-=======
-
-                // ✅ UPDATE OBSERVABLE PLOTS
-                const observableSelect = document.querySelector('#observablehq-viewof-selectCrop-3a23b098 select');
->>>>>>> 652119e577bc49e73a75adc2bacc728942d80155
                 if (observableSelect) {
                     for (let option of observableSelect.options) {
                         if (option.text === crop.item) {
