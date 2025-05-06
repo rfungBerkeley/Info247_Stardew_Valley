@@ -100,6 +100,31 @@
               if (name === "cropComparison") return new Inspector(document.querySelector("#observablehq-cropComparison-d60e86d0"));
             });
             </script>
+            
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <h4>Crop Quality Comparison</h4>
+                <p>Compares price differences between crop qualities.</p>
+            </div>
+            
+            <div id="observablehq-viewof-selectCrop-2dc96d30"></div>
+            <div id="observablehq-qualityPrices-2dc96d30"></div>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+            <script type="module">
+            import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+            import define from "https://api.observablehq.com/d/2f30515de031b245@134.js?v=4";
+            new Runtime().module(define, name => {
+                if (name === "viewof selectCrop") return new Inspector(document.querySelector("#observablehq-viewof-selectCrop-2dc96d30"));
+                if (name === "qualityPrices") return new Inspector(document.querySelector("#observablehq-qualityPrices-2dc96d30"));
+            return ["qualityData","maxY"].includes(name);
+            });
+            </script>
+
             </div>
         </div>
     </div>
@@ -113,9 +138,7 @@
             
             <div id="observablehq-viewof-selectCrop-6d292ab1"></div>
             <div id="observablehq-ProcessedGoods-6d292ab1"></div>
-            <div id="observablehq-fertilizer-6d292ab1"></div>
-            <p>Credit: <a href="https://observablehq.com/d/b8efc8c9fece4d31@242">Untitled by rachel-fung-personal</a></p>
-            
+            <div id="observablehq-fertilizer-6d292ab1"></div>            
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
             <script type="module">
             import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
