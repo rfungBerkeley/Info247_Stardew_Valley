@@ -99,9 +99,8 @@ $(function(){
                 }
             
             
-                // Select item on Processed Crops Comparision
+                // Select item for charts
                 const cropChartOptions = $('#inputs-3a86ea-1').children();
-                let selectedCrop = "parsnip";
             
                 let dropdown = $('#inputs-3a86ea-1');
                
@@ -111,11 +110,8 @@ $(function(){
                     
                     if(cropChartOptions[i].innerHTML == crop.item){
                         
-                        selectCrop = $(dropdown).children(':nth-child(' + (i + 1) + ')').attr("value");
-                        
-                        // Change the selected value of the dropdown
-//                        $(dropdown).val(selectCrop).trigger('change');
-                        
+//                        selectCrop = $(dropdown).children(':nth-child(' + (i + 1) + ')').attr("value");
+                
                         new Runtime().module(define, name => {
                             switch (name){
                                 case "viewof selectSource": return new Inspector(container);
@@ -124,7 +120,8 @@ $(function(){
                         });
                     } 
                 }
-                //update plots
+
+                // ✅ UPDATE OBSERVABLE PLOTS
                 const observableSelect = document.querySelector('#observablehq-viewof-selectCrop-3a23b098 select');
                 if (observableSelect) {
                     for (let option of observableSelect.options) {
@@ -134,10 +131,9 @@ $(function(){
                             break;
                         }
                  }
-            }
-                
+            }   
 
-            })
+        })
     });
     
 // End
