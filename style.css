@@ -102,7 +102,8 @@ html {
 /************************************************************/
 
 body {
-  background-color: #BCCCB0;
+/*  background-color: #BCCCB0;*/
+    background: white;
   font-size: 100%;
   font-family: Roboto;
     height: 100vh;

@@ -1,4 +1,5 @@
-$(function(){ 
+$(function(){
+// Start    
     
     function loadItems(){
         // Load JSON
@@ -24,6 +25,11 @@ $(function(){
         }))
     }
 
+    // Test
+    $('#observablehq-viewof-selectCrop-3a23b098').on('change', 'select', function() {
+            alert("changed"); 
+    });
+    // End of test
 
     loadItems();
 
@@ -94,26 +100,33 @@ $(function(){
             
             
                 // Select item on Processed Crops Comparision
+                const cropChartOptions = $('#inputs-3a86ea-1').children();
+                let selectedCrop = "parsnip";
             
-                let processedOptions = $('#inputs-3a86ea-2').children();
+                let dropdown = $('#inputs-3a86ea-1');
+               
             
-                processedOptions.forEach({
+                // Iterate through all dropdown items to match the inner HTML to the selected crop and grab the value attribute
+                for( let i=0; i < cropChartOptions.length; i++){
                     
-                });
-                
-                let selectedProcessedCrop = processedOptions.find(option => option.text() == crop.item);
-            
-                let processedOptions = $('#inputs-3a86ea-2 option');
-//                
-//                console.log(processedOptions);
-                let selectedProcessedCrop = $('#inputs-3a86ea-2').children().text();
-            
-                console.log(selectedProcessedCrop);
-                    
-                $('#observablehq-viewof-selectCrop-1314d9f9').val(selectedProcessedCrop);
+                    if(cropChartOptions[i].innerHTML == crop.item){
+                        
+                        selectCrop = $(dropdown).children(':nth-child(' + (i + 1) + ')').attr("value");
+                        
+                        // Change the selected value of the dropdown
+//                        $(dropdown).val(selectCrop).trigger('change');
+                        
+                        new Runtime().module(define, name => {
+                            switch (name){
+                                case "viewof selectSource": return new Inspector(container);
+                                case "selection": return {fulfilled(value) { setSelection(value); }};
+                            }
+                        });
+                    } 
+                }
 
             })
     });
     
+// End
 });
-
