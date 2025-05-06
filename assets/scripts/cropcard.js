@@ -124,7 +124,7 @@ $(function(){
                         });
                     } 
                 }
-                    // ✅ UPDATE OBSERVABLE SELECT DROPDOWN
+                //update plots
                 const observableSelect = document.querySelector('#observablehq-viewof-selectCrop-3a23b098 select');
                 if (observableSelect) {
                     for (let option of observableSelect.options) {
