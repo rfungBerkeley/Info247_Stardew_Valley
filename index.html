@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Landing Page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <title>Landing Page</title>
 </head>
-<body class = "load-back">
-    <div class="vertical-center">
-        <a href="crops.html" class="btn">Crops</a>
-        <a href="crops.html" class="btn">Crops</a>
-        <a href="crops.html" class="btn">Crops</a>
-    </div>
+<body class="load-back">
+  <div id="container" class="icon-container"></div>
+
+  <div class="vertical-center">
+    <a href="crops.html" class="btn" id="explodeBtn">Crops</a>
+  </div>
+
+  <script src="assets/scripts/explosion.js"></script>
 </body>
 </html>
