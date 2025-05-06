@@ -124,6 +124,18 @@ $(function(){
                         });
                     } 
                 }
+                    // ✅ UPDATE OBSERVABLE SELECT DROPDOWN
+                const observableSelect = document.querySelector('#observablehq-viewof-selectCrop-3a23b098 select');
+                if (observableSelect) {
+                    for (let option of observableSelect.options) {
+                        if (option.text === crop.item) {
+                            observableSelect.value = option.value;
+                            observableSelect.dispatchEvent(new Event('input', { bubbles: true }));
+                            break;
+                        }
+                 }
+            }
+                
 
             })
     });
