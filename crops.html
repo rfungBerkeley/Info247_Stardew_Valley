@@ -88,16 +88,16 @@
                 <h4>Season Crop Comparison</h4>
                 <p>Compares price differences between crop qualities and other crops from the same season.</p>
             </div>
+            <div id="observablehq-viewof-selectSource-9280886a"></div>
+            <div id="observablehq-cropComparison-9280886a"></div>
             
-            <div id="observablehq-viewof-selectSource-d60e86d0"></div>
-            <div id="observablehq-cropComparison-d60e86d0"></div>            
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
             <script type="module">
             import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-            import define from "https://api.observablehq.com/d/b8efc8c9fece4d31@88.js?v=4";
+            import define from "https://api.observablehq.com/d/b8efc8c9fece4d31@337.js?v=4";
             new Runtime().module(define, name => {
-              if (name === "viewof selectSource") return new Inspector(document.querySelector("#observablehq-viewof-selectSource-d60e86d0"));
-              if (name === "cropComparison") return new Inspector(document.querySelector("#observablehq-cropComparison-d60e86d0"));
+              if (name === "viewof selectSource") return new Inspector(document.querySelector("#observablehq-viewof-selectSource-9280886a"));
+              if (name === "cropComparison") return new Inspector(document.querySelector("#observablehq-cropComparison-9280886a"));
             });
             </script>
             
@@ -120,21 +120,23 @@
 
             <h4>Fertilizer Impact on Profit</h4>
             <p>How many harvests can be done per crop per season.</p>
-            <div id="observablehq-fertilizer-3a23b098"></div>
-
+            <div id="observablehq-viewof-selectCrop-3f8b5a92"></div>
+            <div id="observablehq-qualityPrices-3f8b5a92"></div>
+            <div id="observablehq-fertilizer-3f8b5a92"></div>
+            <div id="observablehq-ProcessedGoods-3f8b5a92"></div>
+            
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
             <script type="module">
             import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-            import define from "https://api.observablehq.com/d/b8efc8c9fece4d31@252.js?v=4";
+            import define from "https://api.observablehq.com/d/b8efc8c9fece4d31@356.js?v=4";
             new Runtime().module(define, name => {
-                if (name === "viewof selectCrop") return new Inspector(document.querySelector("#observablehq-viewof-selectCrop-3a23b098"));
-                if (name === "qualityPrices") return new Inspector(document.querySelector("#observablehq-qualityPrices-3a23b098"));
-                if (name === "ProcessedGoods") return new Inspector(document.querySelector("#observablehq-ProcessedGoods-3a23b098"));
-                if (name === "fertilizer") return new Inspector(document.querySelector("#observablehq-fertilizer-3a23b098"));
-            return ["processData","maxY1","maxY","qualityData","fertadata"].includes(name);
+              if (name === "viewof selectCrop") return new Inspector(document.querySelector("#observablehq-viewof-selectCrop-3f8b5a92"));
+              if (name === "qualityPrices") return new Inspector(document.querySelector("#observablehq-qualityPrices-3f8b5a92"));
+              if (name === "fertilizer") return new Inspector(document.querySelector("#observablehq-fertilizer-3f8b5a92"));
+              if (name === "ProcessedGoods") return new Inspector(document.querySelector("#observablehq-ProcessedGoods-3f8b5a92"));
+              return ["processData","fertadata","maxY1","maxY","qualityData"].includes(name);
             });
             </script>
-            </div>
         </div>
     </div>
 
