@@ -99,9 +99,8 @@ $(function(){
                 }
             
             
-                // Select item on Processed Crops Comparision
+                // Select item for charts
                 const cropChartOptions = $('#inputs-3a86ea-1').children();
-                let selectedCrop = "parsnip";
             
                 let dropdown = $('#inputs-3a86ea-1');
                
@@ -111,11 +110,8 @@ $(function(){
                     
                     if(cropChartOptions[i].innerHTML == crop.item){
                         
-                        selectCrop = $(dropdown).children(':nth-child(' + (i + 1) + ')').attr("value");
-                        
-                        // Change the selected value of the dropdown
-//                        $(dropdown).val(selectCrop).trigger('change');
-                        
+//                        selectCrop = $(dropdown).children(':nth-child(' + (i + 1) + ')').attr("value");
+                
                         new Runtime().module(define, name => {
                             switch (name){
                                 case "viewof selectSource": return new Inspector(container);
@@ -124,8 +120,14 @@ $(function(){
                         });
                     } 
                 }
+<<<<<<< HEAD
                 //update plots
                 const observableSelect = document.querySelector('#observablehq-viewof-selectCrop-3f8b5a92 select');
+=======
+
+                // ✅ UPDATE OBSERVABLE PLOTS
+                const observableSelect = document.querySelector('#observablehq-viewof-selectCrop-3a23b098 select');
+>>>>>>> 652119e577bc49e73a75adc2bacc728942d80155
                 if (observableSelect) {
                     for (let option of observableSelect.options) {
                         if (option.text === crop.item) {
@@ -134,10 +136,9 @@ $(function(){
                             break;
                         }
                  }
-            }
-                
+            }   
 
-            })
+        })
     });
     
 // End
