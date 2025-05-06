@@ -79,19 +79,20 @@ html {
 }
 
 .vertical-center {
-    margin: 0;
-    position: absolute;
-    top: 50vh;
-    left: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
   }
 .btn {
     padding: 15px 15px;
     background-color: #DDA059;
     color: #6B3710;
-    text-decoration: none;
     border-radius: 8px;
     font-size: 1.2rem;
     font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
 }
 .btn:hover {
     background-color: #3f2008;
