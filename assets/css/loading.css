@@ -24,6 +24,7 @@
   }
 .btn {
     padding: 15px 15px;
+    margin: 20px 20px;
     background-color: #DDA059;
     color: #6B3710;
     border-radius: 8px;
@@ -31,6 +32,8 @@
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s;
+    text-decoration:none;
+
 }
 .btn:hover {
     background-color: #3f2008;
@@ -39,8 +42,8 @@
 
 .icon-container {
     position: absolute;
-    top: 50%;
+   top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%);
     pointer-events: none;
   }

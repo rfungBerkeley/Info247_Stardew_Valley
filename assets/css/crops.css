@@ -19,6 +19,8 @@
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s;
+    text-decoration:none;
+
 }
 .btn:hover {
     background-color: #3f2008;

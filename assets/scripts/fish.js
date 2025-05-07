@@ -61,11 +61,12 @@ $(function(){
                 // Load text for preserves jar products (roe)
                 if (fish.roe) {
                     $('#quick-look #preserves .product').text("Roe");
-                    $('#quick-look #preserves .roe-price').text(fish.roe || '');
-                    $('#quick-look #preserves .aged-roe').text(fish.aged_roe || '');
+                    $('#quick-look #preserves .roe-price').text(fish.roe);
+                    $('#quick-look #preserves .aged-roe').text(fish.aged_roe);
                 } else {
-                    $('#quick-look #preserves .product').text("Does not make roe.");
-                    $('#quick-look #preserves .base-price').text('');
+                    $('#quick-look #preserves .product').text("Does not make roe");
+                    $('#quick-look #preserves .roe-price').text('');
+                    $('#quick-look #preserves .aged-roe').text('');
                 }
          
                 const observableSelect = document.querySelector('#observablehq-viewof-selectFish-7514c282 select');

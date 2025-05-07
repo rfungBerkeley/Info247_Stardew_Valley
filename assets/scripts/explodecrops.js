@@ -53,9 +53,10 @@ document.addEventListener('DOMContentLoaded', () => {
       icons.transition()
         .duration(1000)
         .ease(d3.easeBounceInOut)
-        .attr('x', d => centerX + 700 * Math.cos(d.angle) - iconDimension / 2)
-        .attr('y', d => centerY + 700 * Math.sin(d.angle) - iconDimension / 2)
-        .style('opacity', 0);
+        .attr('x', () => centerX + (Math.random() - 0.5) * chartWidth - iconDimension / 2)
+        .attr('y', () => centerY + (Math.random() - 0.5) * chartHeight - iconDimension / 2)
+        .style('opacity', 0)
+        .attr('transform', () => `rotate(${Math.random() * 720}) scale(${0.5 + Math.random()})`);
   
       // animation time
       setTimeout(() => {
