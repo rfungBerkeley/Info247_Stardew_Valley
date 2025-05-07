@@ -1,0 +1,38 @@
+/************************************************************/
+/*  Loadding Page                                           */
+/************************************************************/
+.load-back {
+    background-image: url('../layout/loadscreen.png');
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-position: center top;
+    height: 100vh;
+    margin: 0;
+    animation: panDown 10s linear ; 
+}
+
+@keyframes panDown {
+    0% {background-position: center bottom;}
+    100% {background-position: center top;}
+}
+
+.vertical-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+.btn {
+    padding: 15px 15px;
+    background-color: #DDA059;
+    color: #6B3710;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn:hover {
+    background-color: #3f2008;
+    transform: scale(1.05);
+}

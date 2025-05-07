@@ -1,8 +1,6 @@
 /************************************************************/
-/*  BASIC LAYOUT                                            */
+/*  Reset                                                   */
 /************************************************************/
-
-/*      RESET      */
 *,
 *::before,
 *::after {
@@ -60,19 +58,8 @@ html {
     /* Transition */
 
 }
-/************************************************************/
-/*  Loadding Page                                           */
-/************************************************************/
-.load-back {
-    background-image: url('loadscreen.png');
-    background-repeat: no-repeat;
-    background-size: 120%;
-    background-position: center top;
-    height: 100vh;
-    margin: 0;
-    animation: panDown 10s linear ; 
-}
 
+<<<<<<< Updated upstream:style.css
 @keyframes panDown {
     0% {background-position: center bottom;}
     100% {background-position: center top;}
@@ -109,8 +96,10 @@ html {
     transform: translate(-50%, -50%);
     pointer-events: none;
   }
+=======
+>>>>>>> Stashed changes:assets/css/style.css
 /************************************************************/
-/*  BASIC LAYOUT END                                        */
+/*  Basic Layout                                            */
 /************************************************************/
 
 body {
@@ -124,7 +113,7 @@ body {
 
 /* Crop Card */
 
-#crops-encyclopedia {
+#quick-look {
     width: 100%;
     display: flex;
 }

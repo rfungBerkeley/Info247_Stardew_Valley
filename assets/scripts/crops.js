@@ -1,6 +1,7 @@
 $(function(){
 // Start    
     
+    // Load JSON database and create DOM element for each
     function loadItems(){
         // Load JSON
         fetch('./assets/scripts/stardew_valley-crops.json')
@@ -20,27 +21,23 @@ $(function(){
                     "item-name": item.item
                 })
 
-            $('#crops-encyclopedia #' + item.season)
+            $('#seasons #' + item.season)
                 .append(newItem);
+            
+            // Display default crop
+            if( item.item == "parsnip"){
+                $(newItem).trigger("click");
+            } 
         }))
     }
-
-    // Test
-    $('#observablehq-viewof-selectCrop-3a23b098').on('change', 'select', function() {
-            alert("changed"); 
-    });
-    // End of test
-
-    loadItems();
-
-    // Change page contents and graph display when crop item clicked
-    $('#crops-encyclopedia').on('click','.item', function () {
-
-        const name = $(this).attr("item-name");
+    
+    // Change page according to selected crop item clicked
+    function setCrop(clicked){
+        const name = $(clicked).attr("item-name");
 
         // Toggle 'active' item
-        $('#crops-encyclopedia .item').removeClass('active');
-        $(this).addClass('active');
+        $('#all-crops .item').removeClass('active');
+        $(clicked).addClass('active');
 
         fetch('./assets/scripts/stardew_valley-crops.json')
             .then(response => response.json())
@@ -105,13 +102,12 @@ $(function(){
                 let dropdown = $('#inputs-3a86ea-1');
                
             
-                // Iterate through all dropdown items to match the inner HTML to the selected crop and grab the value attribute
+                // Iterate through all dropdown items to match the inner HTML to the selected crop
                 for( let i=0; i < cropChartOptions.length; i++){
                     
                     if(cropChartOptions[i].innerHTML == crop.item){
-                        
-//                        selectCrop = $(dropdown).children(':nth-child(' + (i + 1) + ')').attr("value");
                 
+                        // Refresh select container
                         new Runtime().module(define, name => {
                             switch (name){
                                 case "viewof selectSource": return new Inspector(container);
@@ -120,7 +116,8 @@ $(function(){
                         });
                     } 
                 }
-                //update plots
+            
+                // Update plots
                 const observableSelect = document.querySelector('#observablehq-viewof-selectCrop-3f8b5a92 select');
                 if (observableSelect) {
                     for (let option of observableSelect.options) {
@@ -133,6 +130,14 @@ $(function(){
             }   
 
         })
+    };
+    
+    // On initial page load
+    loadItems();
+    
+    // Change page contents and graph display when crop item clicked
+    $('#all-crops').on('click','.item', function () {
+        setCrop(this);
     });
     
 // End
