@@ -50,11 +50,11 @@ $(function(){
                 $('#fish-card .gold-price').text(fish.base_price_gold);
                 $('#fish-card .iridium-price').text(fish.base_price_iridium);
 
-                // Smoked (keg)
-                $('#fish-card #keg .base-price').text(fish.smoked_base_price);
-                $('#fish-card #keg .silver-price').text(fish.smoked_base_price_silver);
-                $('#fish-card #keg .gold-price').text(fish.smoked_base_price_gold);
-                $('#fish-card #keg .iridium-price').text(fish.smoked_base_price_iridium);
+                // Smoked 
+                $('#fish-card #Smoked .base-price').text(fish.smoked_base_price);
+                $('#fish-card #Smoked .silver-price').text(fish.smoked_base_price_silver);
+                $('#fish-card #Smoked .gold-price').text(fish.smoked_base_price_gold);
+                $('#fish-card #Smoked .iridium-price').text(fish.smoked_base_price_iridium);
 
                 // Roe (preserves)
                 if (fish.perserves_jar_product) {
