@@ -17,23 +17,17 @@
     <!-- ObservablePlot Scripts Start -->
     <script type="module">
         import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-        import define from "https://api.observablehq.com/d/b8efc8c9fece4d31@337.js?v=4";
+        import define from "https://api.observablehq.com/d/b8efc8c9fece4d31@586.js?v=4";
         new Runtime().module(define, name => {
-          if (name === "viewof selectSource") return new Inspector(document.querySelector("#observablehq-viewof-selectSource-9280886a"));
-          if (name === "cropComparison") return new Inspector(document.querySelector("#observablehq-cropComparison-9280886a"));
+          if (name === "viewof selectSource") return new Inspector(document.querySelector("#observablehq-viewof-selectSource-4538c7e3"));
+          if (name === "cropComparison") return new Inspector(document.querySelector("#observablehq-cropComparison-4538c7e3"));
+          if (name === "viewof selectCrop") return new Inspector(document.querySelector("#observablehq-viewof-selectCrop-4538c7e3"));
+          if (name === "fertilizerGraph") return new Inspector(document.querySelector("#observablehq-fertilizerGraph-4538c7e3"));
+          if (name === "qualityCropGraph") return new Inspector(document.querySelector("#observablehq-qualityCropGraph-4538c7e3"));
+          if (name === "ProcessedGoods") return new Inspector(document.querySelector("#observablehq-ProcessedGoods-4538c7e3"));
+          return ["processData","fertadata","maxY1","maxY","qualityData","fertdata","qualityCropData","processCrops"].includes(name);
         });
-    </script>
-    <script type="module">
-        import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-        import define from "https://api.observablehq.com/d/b8efc8c9fece4d31@356.js?v=4";
-        new Runtime().module(define, name => {
-          if (name === "viewof selectCrop") return new Inspector(document.querySelector("#observablehq-viewof-selectCrop-3f8b5a92"));
-          if (name === "qualityPrices") return new Inspector(document.querySelector("#observablehq-qualityPrices-3f8b5a92"));
-          if (name === "fertilizer") return new Inspector(document.querySelector("#observablehq-fertilizer-3f8b5a92"));
-          if (name === "ProcessedGoods") return new Inspector(document.querySelector("#observablehq-ProcessedGoods-3f8b5a92"));
-          return ["processData","fertadata","maxY1","maxY","qualityData"].includes(name);
-        });
-    </script>
+        </script>
     <!-- ObservablePlot Scripts End -->    
     
 </head>
@@ -120,29 +114,29 @@
                     <h4>Seasonal Crop Comparisos</h4>
                     <p>Not all crops sell for the same price. What crop do you think is better to grow if you want to make as much money as possible in one season?</p>
                 </div>
-                <div id="observablehq-viewof-selectSource-9280886a"></div>
-                <div id="observablehq-cropComparison-9280886a"></div>
+                <div id="observablehq-viewof-selectSource-4538c7e3"></div>
+                <div id="observablehq-cropComparison-4538c7e3"></div>
             </div>
         
             <div class="container">
                 <!-- <div id="observablehq-viewof-selectCrop-3a23b098"></div> -->
-                <div id="observablehq-viewof-selectCrop-3f8b5a92"></div>
+                <div id="observablehq-viewof-selectCrop-4538c7e3"></div>
 
                 <h4> Crop Quality Comparison</h4>
                 <p>The quality of a crop increases its sell price. While its hard to grow iridium crops, you can still hope for the gold. </p>
                 <!-- <div id="observablehq-qualityPrices-3a23b098"></div> -->
-                <div id="observablehq-qualityPrices-3f8b5a92"></div>
+                <div id="observablehq-qualityCropGraph-4538c7e3"></div>
 
                 <h4>Fertilizer Impact on Maximum Number of Harvest per Season</h4>
                 <p>Not all fertilizers is worth the price to make or buy if the harvesting results are the same. A faster fertilizer </p>
                 <p>A faster fertilizer, does not necessarily mean a crop can be harvest more times per season </p>
-                <div id="observablehq-fertilizer-3f8b5a92"></div>
+                <div id="observablehq-fertilizerGraph-4538c7e3"></div>
 
                 <h4>Processed Crops Comparison</h4>
                 <p>Artisan goods will always sell more than just growing, but not all crops result in the same product when processing.</p>
                 <p>Additonally, each good take different amounts of time for them to be fully processed.</p>
                 <!-- <div id="observablehq-ProcessedGoods-3a23b098"></div> -->
-                <div id="observablehq-ProcessedGoods-3f8b5a92"></div>
+                <div id="observablehq-ProcessedGoods-4538c7e3"></div>
             </div>
         </main>
 
