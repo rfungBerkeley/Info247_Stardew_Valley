@@ -36,7 +36,7 @@ $(function(){
         const name = $(clicked).attr("item-name");
 
         // Toggle 'active' item
-        $('#all-crops .item').removeClass('active');
+        $('#all-items .item').removeClass('active');
         $(clicked).addClass('active');
 
         fetch('./assets/scripts/stardew_valley-crops.json')
@@ -45,54 +45,54 @@ $(function(){
                 let crop = data.find(item => item.item == name);
 
                 // Load text for basic facts
-                $('#crop-card img').attr({
+                $('#quick-look img').attr({
                     "src" : './assets/icons/crops/' + crop.item + '.png',
                     "alt": crop.item
                 });
-                $('#crop-card .name').text(crop.item);
-                $('#crop-card .type').text(crop.type);
+                $('#quick-look .name').text(crop.item);
+                $('#quick-look .type').text(crop.type);
 
-                $('#crop-card .yield').text((crop.yield_per_harvest) 
+                $('#quick-look .yield').text((crop.yield_per_harvest) 
                                             ? (crop.yield_per_harvest) : ("This crop cannot be harvested.") );
-                $('#crop-card .growth').text((crop.growth_time) 
+                $('#quick-look .growth').text((crop.growth_time) 
                                             ? (crop.growth_time) : ("This crop does not grow.") );
 
-                $('#crop-card #basic .base-price').text(crop.base_price);
-                $('#crop-card #basic .silver-price').text(crop.base_price_silver);
-                $('#crop-card #basic .gold-price').text(crop.base_price_gold);
-                $('#crop-card #basic .iridium-price').text(crop.base_price_iridium);
+                $('#quick-look #details .base-price').text(crop.base_price);
+                $('#quick-look #details .silver-price').text(crop.base_price_silver);
+                $('#quick-look #details .gold-price').text(crop.base_price_gold);
+                $('#quick-look #details .iridium-price').text(crop.base_price_iridium);
 
                 // Load text for keg products
                 if(crop.keg_product){
-                    $('#crop-card #keg .product').text(crop.keg_product);
-                    $('#crop-card #keg .base-price').text(crop.keg_base_price);
-                    $('#crop-card #keg .silver-price').text(crop.keg_base_price_silver);
-                    $('#crop-card #keg .gold-price').text(crop.keg_base_price_gold);
-                    $('#crop-card #keg .iridium-price').text(crop.keg_base_price_iridium);
+                    $('#quick-look #keg .product').text(crop.keg_product);
+                    $('#quick-look #keg .base-price').text(crop.keg_base_price);
+                    $('#quick-look #keg .silver-price').text(crop.keg_base_price_silver);
+                    $('#quick-look #keg .gold-price').text(crop.keg_base_price_gold);
+                    $('#quick-look #keg .iridium-price').text(crop.keg_base_price_iridium);
                 } else {
-                    $('#crop-card #keg span').text('');
-                    $('#crop-card #keg .product').text("Cannot be processed by keg.");
+                    $('#quick-look #keg span').text('');
+                    $('#quick-look #keg .product').text("Cannot be processed by keg.");
                 }
 
                 // Load text for preserves jar products
                 if(crop.perserves_jar_product){
-                    $('#crop-card #preserves .product').text(crop.perserves_jar_product);
-                    $('#crop-card #preserves .base-price').text(crop.perserves_base_jar_price);
+                    $('#quick-look #preserves .product').text(crop.perserves_jar_product);
+                    $('#quick-look #preserves .base-price').text(crop.perserves_base_jar_price);
                 } else {
-                    $('#crop-card #preserves span').text('');
-                    $('#crop-card #preserves .product').text("Cannot be processed by preserves jar.");
+                    $('#quick-look #preserves span').text('');
+                    $('#quick-look #preserves .product').text("Cannot be processed by preserves jar.");
                 }
 
                 // Load text for dehydrator
                 if(crop.dehydrator_product){
-                    $('#crop-card #dehydrator .product').text(crop.dehydrator_product);
-                    $('#crop-card #dehydrator .base-price').text(crop.dehydrator_base_price);
-                    $('#crop-card #dehydrator .silver-price').text(crop.dehydrator_base_price_silver);
-                    $('#crop-card #dehydrator .gold-price').text(crop.dehydrator_base_price_gold);
-                    $('#crop-card #dehydrator .iridium-price').text(crop.dehydrator_base_price_iridium);
+                    $('#quick-look #dehydrator .product').text(crop.dehydrator_product);
+                    $('#quick-look #dehydrator .base-price').text(crop.dehydrator_base_price);
+                    $('#quick-look #dehydrator .silver-price').text(crop.dehydrator_base_price_silver);
+                    $('#quick-look #dehydrator .gold-price').text(crop.dehydrator_base_price_gold);
+                    $('#quick-look #dehydrator .iridium-price').text(crop.dehydrator_base_price_iridium);
                 } else {
-                    $('#crop-card #dehydrator span').text('');
-                    $('#crop-card #dehydrator .product').text("Cannot be processed by dehydrator.");
+                    $('#quick-look #dehydrator span').text('');
+                    $('#quick-look #dehydrator .product').text("Cannot be processed by dehydrator.");
                 }
             
             
@@ -136,7 +136,7 @@ $(function(){
     loadItems();
     
     // Change page contents and graph display when crop item clicked
-    $('#all-crops').on('click','.item', function () {
+    $('#all-items').on('click','.item', function () {
         setCrop(this);
     });
     

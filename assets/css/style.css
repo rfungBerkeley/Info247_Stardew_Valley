@@ -76,42 +76,157 @@ body {
     flex-wrap: wrap;
 }
 
-header {
-    width: 100%;
-    padding-right: 25%;
-    position: fixed;
+
+aside, main {
+    margin: 0;
+    padding: 20px;
 }
 
+/*
+header {
+    width: 100%;
+    padding-left: 20vw;
+    background: white;
+}
+*/
+
 aside {
-    width: 25%;
+    width: 20vw;
     position: fixed;
-    right: 0;
 }
 
 main {
-    width: 75%;
+    width: 60vw;
+    margin: 0 auto;
 }
 
-
-
-.prices {
+#quick-look {
     width: 100%;
     display: flex;
 }
-
-.prices > *::before {
-    display: inline-block;
-    margin-right: 4px; 
+#all-items {
+    right: 0;
 }
 
-.prices > *:nth-child(2)::before {
-    content: url('../icons/stars/silver.png');
+/************************************************************/
+/*  Item Grid                                            */
+/************************************************************/
+
+/*
+#seasons {
+    display: flex;
 }
-.prices > *:nth-child(3)::before {
-    content: url('../icons/stars/gold.png');
+*/
+
+.season {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    margin: 6px
 }
-.prices > *:nth-child(4)::before {
-    content: url('../icons/stars/iridium.png');
+
+.season h3 {
+    width: 100%;
 }
+
+.season .item {
+    width: 36px;
+    height: 36px;
+    flex: 0 0 36px;
+    background: white;
+    border: 1px lightgray solid;
+    padding: 6px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.season p {
+    white-space: nowrap;
+    text-align: center;
+    margin: 0 auto;
+    background: white;
+    padding: 1ch;
+    position: absolute;
+    z-index: 1;
+    top: 36px;
+    opacity: 0;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    filter: drop-shadow(2px 2px 8px gray);
+}
+.season p::before {
+    content: '';
+    width: 0;
+    height: 0;
+    display: block;
+    border-style: solid;
+    border-width: 15px;
+    border-color: transparent transparent white transparent;
+    top: -24px;
+    position: absolute;
+}
+
+.season .item:hover, .season .item.active {
+    background: lightgray;
+}
+.season .item:not(.active):hover p {
+    opacity: 1;
+}
+
+/************************************************************/
+/*  Item Facts                                            */
+/************************************************************/
+
+#quick-look {
+    text-transform: capitalize;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.stat-box, .stat-line {
+    font-variant: small-caps;
+    text-transform: lowercase;
+    line-height: .8;
+    border: 1px solid gray;
+    padding: 6px;
+    vertical-align: top;
+}
+.stat-box {
+    text-align: center;
+    width: 8ch;
+}
+.stat-box span {
+    display: block;
+    font-size: 1.5rem;
+    padding-top: 6px;
+}
+.stat-line {
+    text-align: left;
+
+}
+.stat-line span {
+    display: inline;
+    font-size: .8rem;
+}
+
+
+#basic {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 1rem;
+}
+#basic img {
+    width: 50px;
+}
+
+#details > div {
+    margin-bottom: 1rem;
+}
+
+
+
 
 

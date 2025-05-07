@@ -40,62 +40,100 @@
 
 <body>
     <div class="wrapper">
-        <header>
+        <aside id="all-items">
+            <div id="seasons">
+                <div class="season" id="spring">
+                    <h3>Spring</h3>
+
+                </div>
+                <div class="season" id="summer">
+                    <h3>Summer</h3>
+
+                </div>
+                <div class="season" id="fall">
+                    <h3>Fall</h3>
+
+                </div>
+                <div class="season" id="winter">
+                    <h3>Winter</h3>
+
+                </div>
+            </div>
+        </aside>
+        
+        <aside>
             <div id="quick-look">
-                <div id="crop-card">
-                    <div id="basic">
+                <div id="basic">
                     <img src="" alt="">
-                    <h3 class="name">Crop Name</h3>
-                    <h4 class="type">Type</h4>
-                            <table class="prices">
-                                <tr>
-                                    <td class="stat-cell">Base Price: <span class="base-price"></span></td>
-                                    <td class="stat-cell">Silver Price: <span class="silver-price"></span></td>
-                                    <td class="stat-cell">Gold Price: <span class="gold-price"></span></td>
-                                    <td class="stat-cell">Iridium Price: <span class="iridium-price"></span></td>
-                                </tr>    
-                            </table>
+                    <div>
+                        <h2 class="name">Crop Name</h2>
+                        <h4 class="type">Type</h4>
+                    </div>
+                </div>
+                <div id="details">
+                    <div>
+                        <h3>Basic Facts</h3>
+                        <table class="prices">
+                            <tr>
+                                <td class="stat-box">Base <span class="base-price"></span></td>
+                                <td class="stat-box">Silver <span class="silver-price"></span></td>
+                                <td class="stat-box">Gold <span class="gold-price"></span></td>
+                                <td class="stat-box">Iridium <span class="iridium-price"></span></td>
+                            </tr>
+                        </table>
                         <div id="harvest">
-                            <p class="stat-cell">Yield per Harvest<span class="yield"></span></p>
-                            <p class="stat-cell">Days to Mature<span class="growth"></span></p>
+                            <table>
+                                <tr>
+                                    <td class="stat-line">Yield per Harvest: <span class="yield"></span></td>
+                                </tr>
+                                <tr>
+                                    <td class="stat-line">Days to Mature: <span class="growth"></span></td>
+                                </tr>
+                            </table>
                         </div>
                     </div>
                     <div id="processing">
-                        <div id="keg">
-                            <h4>Keg</h4>
-                            <h4>Product: <span class="product"></span></h4>
-                            <table class="prices">
-                                <tr>
-                                    <td class="stat-cell">Base Price: <span class="base-price"></span></td>
-                                    <td class="stat-cell">Silver Price: <span class="silver-price"></span></td>
-                                    <td class="stat-cell">Gold Price: <span class="gold-price"></span></td>
-                                    <td class="stat-cell">Iridium Price: <span class="iridium-price"></span></td>
-                                </tr>    
-                            </table>
-                        </div>
-                        <div id="preserves">
-                            <h4>Preserves</h4>
-                            <h4>Product: <span class="product"></span></h4>
-                            <div class="prices">
-                                <p>Price: <span class="base-price"></span></p>
+                        <h3>Processed <span class="name">Crop</span></h3>
+                        <div>
+                            <div id="preserves">
+                                <h4>Preserves: <span class="product"></span></h4>
+                                <table class="prices">
+                                    <tr>
+                                        <td class="stat-line">Base: <span class="base-price"></span></td>
+                                    </tr>
+                                </table>
                             </div>
-                        </div>
-                        <div id="dehydrator">
-                            <h4>Dehydrator</h4>
-                            <h4>Product: <span class="product"></span></h4>
-                            <table class="prices">
-                                <tr>
-                                    <td class="stat-cell">Base Price: <span class="base-price"></span></td>
-                                    <td class="stat-cell">Silver Price: <span class="silver-price"></span></td>
-                                    <td class="stat-cell">Gold Price: <span class="gold-price"></span></td>
-                                    <td class="stat-cell">Iridium Price: <span class="iridium-price"></span></td>
-                                </tr>    
-                            </table>
+                            <div id="keg">
+                                <h4>Keg: <span class="product"></span></h4>
+                                <table class="prices">
+                                    <tr>
+                                        <td class="stat-line"  colspan="3">Base e: <span class="base-price"></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="stat-line">Silver: <span class="silver-price"></span></td>
+                                        <td class="stat-line">Gold: <span class="gold-price"></span></td>
+                                        <td class="stat-line">Iridium: <span class="iridium-price"></span></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div id="dehydrator">
+                                <h4>Dehydrator: <span class="product"></span></h4>
+                                <table class="prices">
+                                    <tr>
+                                        <td class="stat-line"  colspan="3">Base: <span class="base-price"></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="stat-line">Silver: <span class="silver-price"></span></td>
+                                        <td class="stat-line">Gold: <span class="gold-price"></span></td>
+                                        <td class="stat-line">Iridium: <span class="iridium-price"></span></td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </header>
+        </aside>
 
         <main>
             <div class="container">
@@ -126,26 +164,6 @@
             </div>
         </main>
 
-        <aside id="all-crops">
-            <div id="seasons">
-                <div class="season" id="spring">
-                    <h3>Spring</h3>
-
-                </div>
-                <div class="season" id="summer">
-                    <h3>Summer</h3>
-
-                </div>
-                <div class="season" id="fall">
-                    <h3>Fall</h3>
-
-                </div>
-                <div class="season" id="winter">
-                    <h3>Winter</h3>
-
-                </div>
-            </div>
-        </aside>
 
     </div>
     </body>
