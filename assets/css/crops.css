@@ -13,17 +13,10 @@
 }
 
 
-#seasons {
-    display: flex;
-    flex-wrap: wrap;
-    width: 25%;
-}
-
 .season {
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
-    width: calc(50% - 12px); 
     margin: 6px
 }
 
@@ -32,9 +25,9 @@
 }
 
 .season .item {
-    width: 48px;
-    height: 48px;
-    flex: 0 0 48px;
+    width: 36px;
+    height: 36px;
+    flex: 0 0 36px;
     background: white;
     border: 1px lightgray solid;
     padding: 6px;
@@ -81,12 +74,20 @@
 #crop-card {
     background: white;
     padding: 1ch;
-    width: 50%;
+    width: 100%;
+    display: flex;
 }
 
 .prices {
     display: flex;
 }
-.prices > * {
-    max-width: 25%;
+
+#harvest {
+    margin-top: 1rem;
+}
+
+#harve
+
+#processing div {
+    margin-bottom: 1rem;
 }
