@@ -1,7 +1,7 @@
 [
     {
       "item": "pufferfish",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "summer",
       "location": "ocean",
       "base_price": 200,
@@ -46,7 +46,7 @@
     },
     {
       "item": "anchovy",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "spring",
       "location": "ocean",
       "base_price": 30,
@@ -91,7 +91,7 @@
     },
     {
       "item": "anchovy",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "fall",
       "location": "ocean",
       "base_price": 30,
@@ -136,7 +136,7 @@
     },
     {
       "item": "tuna",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "summer",
       "location": "ocean",
       "base_price": 100,
@@ -181,7 +181,7 @@
     },
     {
       "item": "tuna",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "winter",
       "location": "ocean",
       "base_price": 100,
@@ -226,7 +226,7 @@
     },
     {
       "item": "sardine",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "spring",
       "location": "ocean",
       "base_price": 40,
@@ -271,7 +271,7 @@
     },
     {
       "item": "sardine",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "fall",
       "location": "ocean",
       "base_price": 40,
@@ -316,7 +316,7 @@
     },
     {
       "item": "sardine",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "winter",
       "location": "ocean",
       "base_price": 40,
@@ -361,7 +361,7 @@
     },
     {
       "item": "bream",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "spring",
       "location": "river",
       "base_price": 45,
@@ -406,7 +406,7 @@
     },
     {
       "item": "bream",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "summer",
       "location": "river",
       "base_price": 45,
@@ -451,7 +451,7 @@
     },
     {
       "item": "bream",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "fall",
       "location": "river",
       "base_price": 45,
@@ -496,7 +496,7 @@
     },
     {
       "item": "bream",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "winter",
       "location": "river",
       "base_price": 45,
@@ -541,7 +541,7 @@
     },
     {
       "item": "largemouth bass",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "spring",
       "location": "mountain_lake",
       "base_price": 100,
@@ -586,7 +586,7 @@
     },
     {
       "item": "largemouth bass",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "summer",
       "location": "mountain_lake",
       "base_price": 100,
@@ -631,7 +631,7 @@
     },
     {
       "item": "largemouth bass",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "fall",
       "location": "mountain_lake",
       "base_price": 100,
@@ -676,7 +676,7 @@
     },
     {
       "item": "largemouth bass",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "winter",
       "location": "mountain_lake",
       "base_price": 100,
@@ -721,7 +721,7 @@
     },
     {
       "item": "smallmouth bass",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "spring",
       "location": "river",
       "base_price": 50,
@@ -766,7 +766,7 @@
     },
     {
       "item": "smallmouth bass",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "spring",
       "location": "forest_pond",
       "base_price": 50,
@@ -811,7 +811,7 @@
     },
     {
       "item": "smallmouth bass",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "fall",
       "location": "forest_pond",
       "base_price": 50,
@@ -856,7 +856,7 @@
     },
     {
       "item": "smallmouth bass",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "fall",
       "location": "river",
       "base_price": 50,
@@ -901,7 +901,7 @@
     },
     {
       "item": "rainbow trout",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "summer",
       "location": "river",
       "base_price": 65,
@@ -946,7 +946,7 @@
     },
     {
       "item": "rainbow trout",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "summer",
       "location": "mountain_lake",
       "base_price": 65,
@@ -991,7 +991,7 @@
     },
     {
       "item": "salmon",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "fall",
       "location": "forest_waterfalls",
       "base_price": 75,
@@ -1036,7 +1036,7 @@
     },
     {
       "item": "salmon",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "fall",
       "location": "river",
       "base_price": 75,
@@ -1081,7 +1081,7 @@
     },
     {
       "item": "walleye",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "fall",
       "location": "river",
       "base_price": 105,
@@ -1126,7 +1126,7 @@
     },
     {
       "item": "walleye",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "spring",
       "location": "river",
       "base_price": 105,
@@ -1171,7 +1171,7 @@
     },
     {
       "item": "walleye",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "fall",
       "location": "mountain_lake",
       "base_price": 105,
@@ -1216,7 +1216,7 @@
     },
     {
       "item": "walleye",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "spring",
       "location": "mountain_lake",
       "base_price": 105,
@@ -1261,7 +1261,7 @@
     },
     {
       "item": "walleye",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "fall",
       "location": "forest_pond",
       "base_price": 105,
@@ -1306,7 +1306,7 @@
     },
     {
       "item": "walleye",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "spring",
       "location": "forest_pond",
       "base_price": 105,
@@ -1351,7 +1351,7 @@
     },
     {
       "item": "perch",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "winter",
       "location": "river",
       "base_price": 55,
@@ -1396,7 +1396,7 @@
     },
     {
       "item": "perch",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "winter",
       "location": "forest_pond",
       "base_price": 55,
@@ -1441,7 +1441,7 @@
     },
     {
       "item": "perch",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "winter",
       "location": "mountain_lake",
       "base_price": 55,
@@ -1486,7 +1486,7 @@
     },
     {
       "item": "carp",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "spring",
       "location": "mountain_lake",
       "base_price": 30,
@@ -1531,7 +1531,7 @@
     },
     {
       "item": "carp",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "spring",
       "location": "mountain_lake",
       "base_price": 30,
@@ -1576,7 +1576,7 @@
     },
     {
       "item": "carp",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "fall",
       "location": "mountain_lake",
       "base_price": 30,
@@ -1621,7 +1621,7 @@
     },
     {
       "item": "carp",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "winter",
       "location": "mountain_lake",
       "base_price": 30,
@@ -1666,7 +1666,7 @@
     },
     {
       "item": "carp",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "spring",
       "location": "the_sewers",
       "base_price": 30,
@@ -1711,7 +1711,7 @@
     },
     {
       "item": "carp",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "spring",
       "location": "the_sewers",
       "base_price": 30,
@@ -1756,7 +1756,7 @@
     },
     {
       "item": "carp",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "fall",
       "location": "the_sewers",
       "base_price": 30,
@@ -1801,7 +1801,7 @@
     },
     {
       "item": "carp",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "winter",
       "location": "the_sewers",
       "base_price": 30,
@@ -1846,7 +1846,7 @@
     },
     {
       "item": "catfish",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "fall",
       "location": "river",
       "base_price": 200,
@@ -1891,7 +1891,7 @@
     },
     {
       "item": "catfish",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "spring",
       "location": "river",
       "base_price": 200,
@@ -1936,7 +1936,7 @@
     },
     {
       "item": "catfish",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "fall",
       "location": "witch's_swamp",
       "base_price": 200,
@@ -1981,7 +1981,7 @@
     },
     {
       "item": "catfish",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "spring",
       "location": "witch's_swamp",
       "base_price": 200,
@@ -2026,7 +2026,7 @@
     },
     {
       "item": "pike",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "summer",
       "location": "river",
       "base_price": 100,
@@ -2071,7 +2071,7 @@
     },
     {
       "item": "pike",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "summer",
       "location": "forest_pond",
       "base_price": 100,
@@ -2116,7 +2116,7 @@
     },
     {
       "item": "pike",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "winter",
       "location": "river",
       "base_price": 100,
@@ -2161,7 +2161,7 @@
     },
     {
       "item": "pike",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "winter",
       "location": "forest_pond",
       "base_price": 100,
@@ -2206,7 +2206,7 @@
     },
     {
       "item": "sunfish",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "spring",
       "location": "river",
       "base_price": 30,
@@ -2251,7 +2251,7 @@
     },
     {
       "item": "sunfish",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "summer",
       "location": "river",
       "base_price": 30,
@@ -2296,7 +2296,7 @@
     },
     {
       "item": "red mullet",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "summer",
       "location": "ocean",
       "base_price": 75,
@@ -2341,7 +2341,7 @@
     },
     {
       "item": "red mullet",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "winter",
       "location": "ocean",
       "base_price": 75,
@@ -2386,7 +2386,7 @@
     },
     {
       "item": "herring",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "spring",
       "location": "ocean",
       "base_price": 30,
@@ -2431,7 +2431,7 @@
     },
     {
       "item": "herring",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "winter",
       "location": "ocean",
       "base_price": 30,
@@ -2476,7 +2476,7 @@
     },
     {
       "item": "eel",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "spring",
       "location": "ocean",
       "base_price": 85,
@@ -2521,7 +2521,7 @@
     },
     {
       "item": "eel",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "fall",
       "location": "ocean",
       "base_price": 85,
@@ -2566,7 +2566,7 @@
     },
     {
       "item": "octopus",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "summer",
       "location": "ocean",
       "base_price": 150,
@@ -2611,7 +2611,7 @@
     },
     {
       "item": "red snapper",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "fall",
       "location": "ocean",
       "base_price": 50,
@@ -2656,7 +2656,7 @@
     },
     {
       "item": "red snapper",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "summer",
       "location": "ocean",
       "base_price": 50,
@@ -2701,7 +2701,7 @@
     },
     {
       "item": "squid",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "winter",
       "location": "ocean",
       "base_price": 80,
@@ -2746,7 +2746,7 @@
     },
     {
       "item": "sea cucumber",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "winter",
       "location": "ocean",
       "base_price": 75,
@@ -2791,7 +2791,7 @@
     },
     {
       "item": "sea cucumber",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "fall",
       "location": "ocean",
       "base_price": 75,
@@ -2836,7 +2836,7 @@
     },
     {
       "item": "super cucumber",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "fall",
       "location": "ocean",
       "base_price": 250,
@@ -2881,7 +2881,7 @@
     },
     {
       "item": "super cucumber",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "summer",
       "location": "ocean",
       "base_price": 250,
@@ -2926,7 +2926,7 @@
     },
     {
       "item": "ghostfish",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "fall",
       "location": "mines",
       "base_price": 45,
@@ -2971,7 +2971,7 @@
     },
     {
       "item": "ghostfish",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "winter",
       "location": "mines",
       "base_price": 45,
@@ -3016,7 +3016,7 @@
     },
     {
       "item": "ghostfish",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "spring",
       "location": "mines",
       "base_price": 45,
@@ -3061,7 +3061,7 @@
     },
     {
       "item": "ghostfish",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "summer",
       "location": "mines",
       "base_price": 45,
@@ -3106,7 +3106,7 @@
     },
     {
       "item": "stonefish",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "fall",
       "location": "mines",
       "base_price": 300,
@@ -3151,7 +3151,7 @@
     },
     {
       "item": "stonefish",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "winter",
       "location": "mines",
       "base_price": 300,
@@ -3196,7 +3196,7 @@
     },
     {
       "item": "stonefish",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "spring",
       "location": "mines",
       "base_price": 300,
@@ -3241,7 +3241,7 @@
     },
     {
       "item": "stonefish",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "summer",
       "location": "mines",
       "base_price": 300,
@@ -3286,7 +3286,7 @@
     },
     {
       "item": "ice pip",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "fall",
       "location": "mines",
       "base_price": 500,
@@ -3331,7 +3331,7 @@
     },
     {
       "item": "ice pip",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "winter",
       "location": "mines",
       "base_price": 500,
@@ -3376,7 +3376,7 @@
     },
     {
       "item": "ice pip",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "spring",
       "location": "mines",
       "base_price": 500,
@@ -3421,7 +3421,7 @@
     },
     {
       "item": "ice pip",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "summer",
       "location": "mines",
       "base_price": 500,
@@ -3466,7 +3466,7 @@
     },
     {
       "item": "lava eel",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "fall",
       "location": "mines",
       "base_price": 700,
@@ -3511,7 +3511,7 @@
     },
     {
       "item": "lava eel",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "winter",
       "location": "mines",
       "base_price": 700,
@@ -3556,7 +3556,7 @@
     },
     {
       "item": "lava eel",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "spring",
       "location": "mines",
       "base_price": 700,
@@ -3601,7 +3601,7 @@
     },
     {
       "item": "lava eel",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "summer",
       "location": "mines",
       "base_price": 700,
@@ -3646,7 +3646,7 @@
     },
     {
       "item": "sandfish",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "fall",
       "location": "desert",
       "base_price": 75,
@@ -3691,7 +3691,7 @@
     },
     {
       "item": "sandfish",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "winter",
       "location": "desert",
       "base_price": 75,
@@ -3736,7 +3736,7 @@
     },
     {
       "item": "sandfish",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "spring",
       "location": "desert",
       "base_price": 75,
@@ -3781,7 +3781,7 @@
     },
     {
       "item": "sandfish",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "summer",
       "location": "desert",
       "base_price": 75,
@@ -3826,7 +3826,7 @@
     },
     {
       "item": "scorpion carp",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "fall",
       "location": "desert",
       "base_price": 150,
@@ -3871,7 +3871,7 @@
     },
     {
       "item": "scorpion carp",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "winter",
       "location": "desert",
       "base_price": 150,
@@ -3916,7 +3916,7 @@
     },
     {
       "item": "scorpion carp",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "spring",
       "location": "desert",
       "base_price": 150,
@@ -3961,7 +3961,7 @@
     },
     {
       "item": "scorpion carp",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "summer",
       "location": "desert",
       "base_price": 150,
@@ -4006,7 +4006,7 @@
     },
     {
       "item": "flounder",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "spring",
       "location": "ocean",
       "base_price": 100,
@@ -4051,7 +4051,7 @@
     },
     {
       "item": "flounder",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "summer",
       "location": "ocean",
       "base_price": 100,
@@ -4096,7 +4096,7 @@
     },
     {
       "item": "midnight carp",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "fall",
       "location": "mountain_lake",
       "base_price": 150,
@@ -4141,7 +4141,7 @@
     },
     {
       "item": "midnight carp",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "winter",
       "location": "forest_pond",
       "base_price": 150,
@@ -4186,7 +4186,7 @@
     },
     {
       "item": "midnight carp",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "fall",
       "location": "mountain_lake",
       "base_price": 150,
@@ -4231,7 +4231,7 @@
     },
     {
       "item": "midnight carp",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "winter",
       "location": "forest_pond",
       "base_price": 150,
@@ -4276,7 +4276,7 @@
     },
     {
       "item": "sturgeon",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "summer",
       "location": "mountain_lake",
       "base_price": 200,
@@ -4321,7 +4321,7 @@
     },
     {
       "item": "sturgeon",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "winter",
       "location": "mountain_lake",
       "base_price": 200,
@@ -4366,7 +4366,7 @@
     },
     {
       "item": "tiger trout",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "fall",
       "location": "river",
       "base_price": 150,
@@ -4411,7 +4411,7 @@
     },
     {
       "item": "tiger trout",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "winter",
       "location": "river",
       "base_price": 150,
@@ -4456,7 +4456,7 @@
     },
     {
       "item": "bullhead",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "fall",
       "location": "mountain_lake",
       "base_price": 75,
@@ -4501,7 +4501,7 @@
     },
     {
       "item": "bullhead",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "winter",
       "location": "mountain_lake",
       "base_price": 75,
@@ -4546,7 +4546,7 @@
     },
     {
       "item": "bullhead",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "spring",
       "location": "mountain_lake",
       "base_price": 75,
@@ -4591,7 +4591,7 @@
     },
     {
       "item": "bullhead",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "summer",
       "location": "mountain_lake",
       "base_price": 75,
@@ -4636,7 +4636,7 @@
     },
     {
       "item": "tilapia",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "summer",
       "location": "ocean",
       "base_price": 75,
@@ -4681,7 +4681,7 @@
     },
     {
       "item": "tilapia",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "fall",
       "location": "ocean",
       "base_price": 75,
@@ -4726,7 +4726,7 @@
     },
     {
       "item": "chub",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "fall",
       "location": "forest_river",
       "base_price": 50,
@@ -4771,7 +4771,7 @@
     },
     {
       "item": "chub",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "fall",
       "location": "mountain_lake",
       "base_price": 50,
@@ -4816,7 +4816,7 @@
     },
     {
       "item": "chub",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "winter",
       "location": "forest_river",
       "base_price": 50,
@@ -4861,7 +4861,7 @@
     },
     {
       "item": "chub",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "winter",
       "location": "mountain_lake",
       "base_price": 50,
@@ -4906,7 +4906,7 @@
     },
     {
       "item": "chub",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "spring",
       "location": "forest_river",
       "base_price": 50,
@@ -4951,7 +4951,7 @@
     },
     {
       "item": "chub",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "spring",
       "location": "mountain_lake",
       "base_price": 50,
@@ -4996,7 +4996,7 @@
     },
     {
       "item": "chub",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "summer",
       "location": "forest_river",
       "base_price": 50,
@@ -5041,7 +5041,7 @@
     },
     {
       "item": "chub",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "summer",
       "location": "mountain_lake",
       "base_price": 50,
@@ -5086,7 +5086,7 @@
     },
     {
       "item": "dorado",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "summer",
       "location": "forest_river",
       "base_price": 100,
@@ -5131,7 +5131,7 @@
     },
     {
       "item": "albacore",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "fall",
       "location": "ocean",
       "base_price": 75,
@@ -5176,7 +5176,7 @@
     },
     {
       "item": "albacore",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "winter",
       "location": "ocean",
       "base_price": 75,
@@ -5221,7 +5221,7 @@
     },
     {
       "item": "shad",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "spring",
       "location": "river",
       "base_price": 60,
@@ -5266,7 +5266,7 @@
     },
     {
       "item": "shad",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "summer",
       "location": "river",
       "base_price": 60,
@@ -5311,7 +5311,7 @@
     },
     {
       "item": "shad",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "fall",
       "location": "river",
       "base_price": 60,
@@ -5356,7 +5356,7 @@
     },
     {
       "item": "lingcod",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "winter",
       "location": "river",
       "base_price": 120,
@@ -5401,7 +5401,7 @@
     },
     {
       "item": "lingcod",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "winter",
       "location": "mountain_lake",
       "base_price": 120,
@@ -5446,7 +5446,7 @@
     },
     {
       "item": "halibut",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "spring",
       "location": "ocean",
       "base_price": 80,
@@ -5491,7 +5491,7 @@
     },
     {
       "item": "halibut",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "summer",
       "location": "ocean",
       "base_price": 80,
@@ -5536,7 +5536,7 @@
     },
     {
       "item": "halibut",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "winter",
       "location": "ocean",
       "base_price": 80,
@@ -5581,7 +5581,7 @@
     },
     {
       "item": "woodskip",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "fall",
       "location": "forest_farm",
       "base_price": 75,
@@ -5626,7 +5626,7 @@
     },
     {
       "item": "woodskip",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "winter",
       "location": "forest_farm",
       "base_price": 75,
@@ -5671,7 +5671,7 @@
     },
     {
       "item": "woodskip",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "spring",
       "location": "forest_farm",
       "base_price": 75,
@@ -5716,7 +5716,7 @@
     },
     {
       "item": "woodskip",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "summer",
       "location": "forest_farm",
       "base_price": 75,
@@ -5761,7 +5761,7 @@
     },
     {
       "item": "void salmon",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "fall",
       "location": "witch's_swamp",
       "base_price": 150,
@@ -5806,7 +5806,7 @@
     },
     {
       "item": "void salmon",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "winter",
       "location": "witch's_swamp",
       "base_price": 150,
@@ -5851,7 +5851,7 @@
     },
     {
       "item": "void salmon",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "spring",
       "location": "witch's_swamp",
       "base_price": 150,
@@ -5896,7 +5896,7 @@
     },
     {
       "item": "void salmon",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "summer",
       "location": "witch's_swamp",
       "base_price": 150,
@@ -5941,7 +5941,7 @@
     },
     {
       "item": "slimejack",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "fall",
       "location": "mutant_bug_lair",
       "base_price": 100,
@@ -5986,7 +5986,7 @@
     },
     {
       "item": "slimejack",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "winter",
       "location": "mutant_bug_lair",
       "base_price": 100,
@@ -6031,7 +6031,7 @@
     },
     {
       "item": "slimejack",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "spring",
       "location": "mutant_bug_lair",
       "base_price": 100,
@@ -6076,7 +6076,7 @@
     },
     {
       "item": "slimejack",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "summer",
       "location": "mutant_bug_lair",
       "base_price": 100,
@@ -6121,7 +6121,7 @@
     },
     {
       "item": "stingray",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "fall",
       "location": "pirate_cove",
       "base_price": 180,
@@ -6166,7 +6166,7 @@
     },
     {
       "item": "stingray",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "winter",
       "location": "pirate_cove",
       "base_price": 180,
@@ -6211,7 +6211,7 @@
     },
     {
       "item": "stingray",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "spring",
       "location": "pirate_cove",
       "base_price": 180,
@@ -6256,7 +6256,7 @@
     },
     {
       "item": "stingray",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "summer",
       "location": "pirate_cove",
       "base_price": 180,
@@ -6301,7 +6301,7 @@
     },
     {
       "item": "lionfish",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "fall",
       "location": "ginger_island_ocean",
       "base_price": 100,
@@ -6346,7 +6346,7 @@
     },
     {
       "item": "lionfish",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "winter",
       "location": "ginger_island_ocean",
       "base_price": 100,
@@ -6391,7 +6391,7 @@
     },
     {
       "item": "lionfish",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "spring",
       "location": "ginger_island_ocean",
       "base_price": 100,
@@ -6436,7 +6436,7 @@
     },
     {
       "item": "lionfish",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "summer",
       "location": "ginger_island_ocean",
       "base_price": 100,
@@ -6481,7 +6481,7 @@
     },
     {
       "item": "blue discus",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "fall",
       "location": "ginger_island_freshwater",
       "base_price": 120,
@@ -6526,7 +6526,7 @@
     },
     {
       "item": "blue discus",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "winter",
       "location": "ginger_island_freshwater",
       "base_price": 120,
@@ -6571,7 +6571,7 @@
     },
     {
       "item": "blue discus",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "spring",
       "location": "ginger_island_freshwater",
       "base_price": 120,
@@ -6616,7 +6616,7 @@
     },
     {
       "item": "blue discus",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "summer",
       "location": "ginger_island_freshwater",
       "base_price": 120,
@@ -6661,7 +6661,7 @@
     },
     {
       "item": "goby",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "fall",
       "location": "forest_waterfalls",
       "base_price": 150,
@@ -6706,7 +6706,7 @@
     },
     {
       "item": "goby",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "winter",
       "location": "forest_waterfalls",
       "base_price": 150,
@@ -6751,7 +6751,7 @@
     },
     {
       "item": "goby",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "spring",
       "location": "forest_waterfalls",
       "base_price": 150,
@@ -6796,7 +6796,7 @@
     },
     {
       "item": "goby",
-      "type": "fishing pool",
+      "type": "fishing pole",
       "season": "summer",
       "location": "forest_waterfalls",
       "base_price": 150,

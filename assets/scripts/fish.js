@@ -56,13 +56,13 @@ $(function(){
                 $('#fish-card #Smoked .gold-price').text(fish.smoked_base_price_gold);
                 $('#fish-card #Smoked .iridium-price').text(fish.smoked_base_price_iridium);
 
-                // Roe (preserves)
-                if (fish.perserves_jar_product) {
-                    $('#fish-card #preserves .product').text(fish.roe);
-                    $('#fish-card #preserves .base-price').text(fish.roe_price || '');
+                // Load text for preserves jar products
+                if(fish.perserves_jar_product){
+                    $('#fish-card #preserves .roe-price').text(fish.roe);
+                    $('#fish-card #preserves .aged-roe').text(fish.aged_roe);
                 } else {
-                    $('#fish-card #preserves .product').text("Does not make roe.");
-                    $('#fish-card #preserves .base-price').text('');
+                    $('#fish-card #preserves span').text('');
+                    $('#fish-card #preserves .roe-price').text("Cannot be processed by preserves jar.");
                 }
 
                 
