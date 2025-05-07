@@ -274,7 +274,7 @@ aside:last-child {
 /************************************************************/
 
 /*Hide Dropdown*/
-main > .container:nth-child(2) {
+main > .container:nth-child(2) > div:first-child {
     display: none;
     visibility: hidden;
 }
