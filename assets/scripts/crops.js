@@ -36,7 +36,7 @@ $(function(){
         const name = $(clicked).attr("item-name");
 
         // Toggle 'active' item
-        $('#all-crops .item').removeClass('active');
+        $('#all-items .item').removeClass('active');
         $(clicked).addClass('active');
 
         fetch('./assets/scripts/stardew_valley-crops.json')
@@ -136,7 +136,7 @@ $(function(){
     loadItems();
     
     // Change page contents and graph display when crop item clicked
-    $('#all-crops').on('click','.item', function () {
+    $('#all-items').on('click','.item', function () {
         setCrop(this);
     });
     
