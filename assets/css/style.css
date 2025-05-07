@@ -53,7 +53,7 @@ html {
     
     
     /* Size */
-
+    --item-cell: calc(((20vw - 24px) / 7) - 4px);
     
     /* Transition */
 
@@ -79,7 +79,7 @@ body {
 
 aside, main {
     margin: 0;
-    padding: 20px;
+    padding: 12px;
 }
 
 /*
@@ -122,7 +122,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
-    margin: 6px
+    margin-bottom: 1rem;
 }
 
 .season h3 {
@@ -130,9 +130,9 @@ main {
 }
 
 .season .item {
-    width: 36px;
-    height: 36px;
-    flex: 0 0 36px;
+    width: var(--item-cell);
+    height: var(--item-cell);
+    flex: 0 0 var(--item-cell);
     background: white;
     border: 1px lightgray solid;
     padding: 6px;
