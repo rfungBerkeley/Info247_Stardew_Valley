@@ -37,19 +37,20 @@ $(function(){
                 if (!fish) return;
 
                 // Basic info
-                $('#fish-card img').attr({
+                $('#quick-look img').attr({
                     "src": './assets/icons/fish/' + fish.item + '.png',
                     "alt": fish.item
                 });
-                $('#fish-card .name').text(fish.item);
-                $('#fish-card .type').text(fish.type);
-                $('#fish-card .location').text(fish.location || '');
+                $('#quick-look .name').text(fish.item);
+                $('#quick-look .type').text(fish.type);
+                $('#quick-look .location').text(fish.location || '');
 
-                $('#fish-card .base-price').text(fish.base_price);
-                $('#fish-card .silver-price').text(fish.base_price_silver);
-                $('#fish-card .gold-price').text(fish.base_price_gold);
-                $('#fish-card .iridium-price').text(fish.base_price_iridium);
+                $('#quick-look .base-price').text(fish.base_price);
+                $('#quick-look .silver-price').text(fish.base_price_silver);
+                $('#quick-look .gold-price').text(fish.base_price_gold);
+                $('#quick-look .iridium-price').text(fish.base_price_iridium);
 
+<<<<<<< Updated upstream
                 // Smoked 
                 $('#fish-card #Smoked .base-price').text(fish.smoked_base_price);
                 $('#fish-card #Smoked .silver-price').text(fish.smoked_base_price_silver);
@@ -63,6 +64,21 @@ $(function(){
                 } else {
                     $('#fish-card #preserves span').text('');
                     $('#fish-card #preserves .roe-price').text("Cannot be processed by preserves jar.");
+=======
+                // Load text for fish smoker products
+                $('#quick-look #smoker .base-price').text(fish.smoked_base_price);
+                $('#quick-look #smoker .silver-price').text(fish.smoked_base_price_silver);
+                $('#quick-look #smoker .gold-price').text(fish.smoked_base_price_gold);
+                $('#quick-look #smoker .iridium-price').text(fish.smoked_base_price_iridium);
+
+                // Load text for preserves jar products (roe)
+                if (fish.roe) {
+                    $('#quick-look #preserves .product').text("Roe");
+                    $('#quick-look #preserves .base-price').text(fish.roe || '');
+                } else {
+                    $('#quick-look #preserves .product').text("Does not make roe.");
+                    $('#quick-look #preserves .base-price').text('');
+>>>>>>> Stashed changes
                 }
 
                 
