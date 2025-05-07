@@ -94,6 +94,8 @@ header {
 aside {
     width: 20vw;
     position: fixed;
+    max-height: 100vh;
+    overflow-y: auto;
 }
 
 main {
