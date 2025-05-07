@@ -59,45 +59,6 @@ html {
 
 }
 
-<<<<<<< Updated upstream:style.css
-@keyframes panDown {
-    0% {background-position: center bottom;}
-    100% {background-position: center top;}
-}
-
-.vertical-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
- }
-
-
-.btn {
-    padding: 15px 15px;
-    background-color: #DDA059;
-    color: #6B3710;
-    border-radius: 8px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-    position: relative;
-}
-.btn:hover {
-    background-color: #3f2008;
-    transform: scale(1.05);
-}
-
-.icon-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-  }
-=======
->>>>>>> Stashed changes:assets/css/style.css
 /************************************************************/
 /*  Basic Layout                                            */
 /************************************************************/
