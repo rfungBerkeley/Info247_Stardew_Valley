@@ -68,7 +68,7 @@ $(function(){
                     $('#quick-look #preserves .base-price').text('');
                 }
          
-                const observableSelect = document.querySelector('#observablehq-viewof-selectFish-191b9ae9 select');
+                const observableSelect = document.querySelector('#observablehq-viewof-selectFish-7514c282 select');
                 if (observableSelect) {
                     for (let option of observableSelect.options) {
                         if (option.text === fish.item) {

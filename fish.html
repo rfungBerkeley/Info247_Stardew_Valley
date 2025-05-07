@@ -17,16 +17,17 @@
     <!-- ObservablePlot Scripts Start -->
     <script type="module">
         import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-        import define from "https://api.observablehq.com/d/2f30515de031b245@266.js?v=4";
+        import define from "https://api.observablehq.com/d/de3f388505a881d5.js?v=4";
         new Runtime().module(define, name => {
-          if (name === "viewof selectSeason") return new Inspector(document.querySelector("#observablehq-viewof-selectSeason-191b9ae9"));
-          if (name === "fishComparison") return new Inspector(document.querySelector("#observablehq-fishComparison-191b9ae9"));
-          if (name === "viewof selectFish") return new Inspector(document.querySelector("#observablehq-viewof-selectFish-191b9ae9"));
-          if (name === "qualityPrices") return new Inspector(document.querySelector("#observablehq-qualityPrices-191b9ae9"));
-          if (name === "ProcessedFish") return new Inspector(document.querySelector("#observablehq-ProcessedFish-191b9ae9"));
-          return ["qualityFish","maxY","processFish","maxY2"].includes(name);
+          if (name === "viewof selectSeason") return new Inspector(document.querySelector("#observablehq-viewof-selectSeason-7514c282"));
+          if (name === "fishComparison") return new Inspector(document.querySelector("#observablehq-fishComparison-7514c282"));
+          if (name === "viewof selectFish") return new Inspector(document.querySelector("#observablehq-viewof-selectFish-7514c282"));
+          if (name === "qualityPrices") return new Inspector(document.querySelector("#observablehq-qualityPrices-7514c282"));
+          if (name === "ProcessedFish") return new Inspector(document.querySelector("#observablehq-ProcessedFish-7514c282"));
+          if (name === "fishMap") return new Inspector(document.querySelector("#observablehq-fishMap-7514c282"));
+          return ["qualityFish","maxY","processFish","maxY2","selectedFishData","selectedFishLocations","selectedFishMarks"].includes(name);
         });
-    </script>
+        </script>
 
     <!-- ObservablePlot Scripts End -->    
     
@@ -133,26 +134,26 @@
                     <h4>Seasonal Fish Comparison</h4>
                     <p>Compares price differences between fish qualities and other fishes from the same season.</p>
                 </div>
-                <div id="observablehq-viewof-selectSeason-191b9ae9"></div>
-                <div id="observablehq-fishComparison-191b9ae9"></div>
+                <div id="observablehq-viewof-selectSeason-7514c282"></div>
+                <div id="observablehq-fishComparison-7514c282"></div>
             </div>
             <div class="container">
                 <!-- <div id="observablehq-viewof-selectFish-191b9ae9"></div> -->
-                <div id="observablehq-viewof-selectFish-191b9ae9"></div>
+                <div id="observablehq-viewof-selectFish-7514c282"></div>
 
                 <h4> Fish Quality Comparison</h4>
                 <p>Compares the profits earned through different fish qualities.</p>
                 <!-- <div id="observablehq-qualityPrices-191b9ae9"></div> -->
-                <div id="observablehq-qualityPrices-191b9ae9"></div>
+                <div id="observablehq-qualityPrices-7514c282"></div>
 
                 <h4>Processed Fish Comparison</h4>
                 <p>Compares the profits earned through different processing methods of a fish.</p>
                 <!-- <div id="observablehq-ProcessedFish-191b9ae9"></div> -->
-                <div id="observablehq-ProcessedFish-191b9ae9"></div>
+                <div id="observablehq-ProcessedFish-7514c282"></div>
 
                 <h4>Fish Location</h4>
                 <p>Locations of Fish</p>
-                <div id=""></div>
+                <div id="observablehq-fishMap-7514c282"></div>
             </div>
         </main>
 
