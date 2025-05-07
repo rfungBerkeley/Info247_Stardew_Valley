@@ -15,6 +15,18 @@
     <script type="text/javascript" src="assets/scripts/fish.js"></script>
     
     <!-- ObservablePlot Scripts Start -->
+    <script type="module">
+        import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+        import define from "https://api.observablehq.com/d/2f30515de031b245@266.js?v=4";
+        new Runtime().module(define, name => {
+          if (name === "viewof selectSeason") return new Inspector(document.querySelector("#observablehq-viewof-selectSeason-191b9ae9"));
+          if (name === "fishComparison") return new Inspector(document.querySelector("#observablehq-fishComparison-191b9ae9"));
+          if (name === "viewof selectFish") return new Inspector(document.querySelector("#observablehq-viewof-selectFish-191b9ae9"));
+          if (name === "qualityPrices") return new Inspector(document.querySelector("#observablehq-qualityPrices-191b9ae9"));
+          if (name === "ProcessedFish") return new Inspector(document.querySelector("#observablehq-ProcessedFish-191b9ae9"));
+          return ["qualityFish","maxY","processFish","maxY2"].includes(name);
+        });
+    </script>
 
     <!-- ObservablePlot Scripts End -->    
     
@@ -22,81 +34,7 @@
 
 <body>
     <div class="wrapper">
-        <header>
-            <div id="quick-look">
-                <div id="fish-card">
-                    <div id="basic">
-                    <img src="" alt="">
-                    <h3 class="name">Fish</h3>
-                    <h4 class="type">Type</h4>
-                            <table class="prices">
-                                <tr>
-                                    <td class="stat-cell">Base Price: <span class="base-price"></span></td>
-                                    <td class="stat-cell">Silver Price: <span class="silver-price"></span></td>
-                                    <td class="stat-cell">Gold Price: <span class="gold-price"></span></td>
-                                    <td class="stat-cell">Iridium Price: <span class="iridium-price"></span></td>
-                                </tr>    
-                            </table>
-                        <div id="harvest">
-                            <p class="stat-cell">Yield per Harvest<span class="yield"></span></p>
-                            <p class="stat-cell">Days to Mature<span class="growth"></span></p>
-                        </div>
-                    </div>
-                    <div id="processing">
-                        <div id="keg">
-                            <h4>Smoked</h4>
-                            <h4>Product: <span class="product"></span></h4>
-                            <table class="prices">
-                                <tr>
-                                    <td class="stat-cell">Base Price: <span class="base-price"></span></td>
-                                    <td class="stat-cell">Silver Price: <span class="silver-price"></span></td>
-                                    <td class="stat-cell">Gold Price: <span class="gold-price"></span></td>
-                                    <td class="stat-cell">Iridium Price: <span class="iridium-price"></span></td>
-                                </tr>    
-                            </table>
-                        </div>
-                        <div id="preserves">
-                            <h4>Roe</h4>
-                            <h4>Product: <span class="product"></span></h4>
-                            <div class="prices">
-                                <p>Price: <span class="base-price"></span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-
-        <main>
-            <div class="container">
-                <div class="col-4">
-                    <h4>Seasonal Fish Comparison</h4>
-                    <p>Compares price differences between fish qualities and other fishes from the same season.</p>
-                </div>
-                <div id=""></div>
-                <<div id=""></div>
-            </div>
-            <div class="container">
-                <!-- <div id="observablehq-viewof-fish-3a23b098"></div> -->
-                <div id=""></div>
-
-                <h4> Fish Quality Comparison</h4>
-                <p>Compares the profits earned through different fish qualities.</p>
-                <!-- <div id="observablehq-qualityPrices-3a23b098"></div> -->
-                <div id=""></div>
-
-                <h4>Processed Fish Comparison</h4>
-                <p>Compares the profits earned through different processing methods of a fish.</p>
-                <!-- <div id="observablehq-ProcessedGoods-3a23b098"></div> -->
-                <div id=""></div>
-
-                <h4>Fish Location</h4>
-                <p>Locations of Fish</p>
-                <div id=""></div>
-            </div>
-        </main>
-
-        <aside id="all-Fish">
+        <aside id="all-items">
             <div id="seasons">
                 <div class="season" id="spring">
                     <h3>Spring</h3>
@@ -116,6 +54,109 @@
                 </div>
             </div>
         </aside>
+        
+        <aside>
+            <div id="quick-look">
+                <div id="basic">
+                    <img src="" alt="">
+                    <div>
+                        <h2 class="name">Fish Name</h2>
+                        <h4 class="type">Type</h4>
+                    </div>
+                </div>
+                <div id="details">
+                    <div>
+                        <h3>Basic Facts</h3>
+                        <table class="prices">
+                            <tr>
+                                <td class="stat-box">Base <span class="base-price"></span></td>
+                                <td class="stat-box">Silver <span class="silver-price"></span></td>
+                                <td class="stat-box">Gold <span class="gold-price"></span></td>
+                                <td class="stat-box">Iridium <span class="iridium-price"></span></td>
+                            </tr>
+                        </table>
+                        <div id="harvest">
+                            <table>
+                                <tr>
+                                    <td class="stat-line">Location: <span class="yield"></span></td>
+                                </tr>
+                                <tr>
+                                    <td class="stat-line">Days to Mature: <span class="growth"></span></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div id="processing">
+                        <h3>Processed <span class="name">Crop</span></h3>
+                        <div>
+                            <div id="preserves">
+                                <h4>Preserved Jar: <span class="product"></span></h4>
+                                <table class="prices">
+                                    <tr>
+                                        <td class="stat-line">Base: <span class="base-price"></span></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div id="keg">
+                                <h4>Keg: <span class="product"></span></h4>
+                                <table class="prices">
+                                    <tr>
+                                        <td class="stat-line"  colspan="3">Base e: <span class="base-price"></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="stat-line">Silver: <span class="silver-price"></span></td>
+                                        <td class="stat-line">Gold: <span class="gold-price"></span></td>
+                                        <td class="stat-line">Iridium: <span class="iridium-price"></span></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div id="dehydrator">
+                                <h4>Dehydrator: <span class="product"></span></h4>
+                                <table class="prices">
+                                    <tr>
+                                        <td class="stat-line"  colspan="3">Base: <span class="base-price"></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="stat-line">Silver: <span class="silver-price"></span></td>
+                                        <td class="stat-line">Gold: <span class="gold-price"></span></td>
+                                        <td class="stat-line">Iridium: <span class="iridium-price"></span></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <main>
+            <div class="container">
+                <div class="col-4">
+                    <h4>Seasonal Fish Comparison</h4>
+                    <p>Compares price differences between fish qualities and other fishes from the same season.</p>
+                </div>
+                <div id="observablehq-viewof-selectSeason-191b9ae9"></div>
+                <div id="observablehq-fishComparison-191b9ae9"></div>
+            </div>
+            <div class="container">
+                <!-- <div id="observablehq-viewof-selectFish-191b9ae9"></div> -->
+                <div id="observablehq-viewof-selectFish-191b9ae9"></div>
+
+                <h4> Fish Quality Comparison</h4>
+                <p>Compares the profits earned through different fish qualities.</p>
+                <!-- <div id="observablehq-qualityPrices-191b9ae9"></div> -->
+                <div id="observablehq-qualityPrices-191b9ae9"></div>
+
+                <h4>Processed Fish Comparison</h4>
+                <p>Compares the profits earned through different processing methods of a fish.</p>
+                <!-- <div id="observablehq-ProcessedFish-191b9ae9"></div> -->
+                <div id="observablehq-ProcessedFish-191b9ae9"></div>
+
+                <h4>Fish Location</h4>
+                <p>Locations of Fish</p>
+                <div id=""></div>
+            </div>
+        </main>
 
     </div>
     </body>

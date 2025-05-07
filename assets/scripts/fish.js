@@ -65,8 +65,8 @@ $(function(){
                     $('#fish-card #preserves .base-price').text('');
                 }
 
-                /* Optional Observable integration (disabled for now)
-                const observableSelect = document.querySelector('#observablehq-viewof-selectCrop-3f8b5a92 select');
+                
+                const observableSelect = document.querySelector('#observablehq-viewof-selectFish-191b9ae9 select');
                 if (observableSelect) {
                     for (let option of observableSelect.options) {
                         if (option.text === fish.item) {
@@ -76,7 +76,7 @@ $(function(){
                         }
                     }
                 }
-                */
+                
             });
     }
 
