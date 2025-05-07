@@ -17,6 +17,7 @@ $(function(){
 
                 $('#seasons #' + item.season).append(newItem);
 
+                // Set default
                 if (item.item === "pufferfish") {
                     $(newItem).trigger("click");
                 }
@@ -50,21 +51,7 @@ $(function(){
                 $('#quick-look .gold-price').text(fish.base_price_gold);
                 $('#quick-look .iridium-price').text(fish.base_price_iridium);
 
-<<<<<<< Updated upstream
-                // Smoked 
-                $('#fish-card #Smoked .base-price').text(fish.smoked_base_price);
-                $('#fish-card #Smoked .silver-price').text(fish.smoked_base_price_silver);
-                $('#fish-card #Smoked .gold-price').text(fish.smoked_base_price_gold);
-                $('#fish-card #Smoked .iridium-price').text(fish.smoked_base_price_iridium);
 
-                // Load text for preserves jar products
-                if(fish.perserves_jar_product){
-                    $('#fish-card #preserves .roe-price').text(fish.roe);
-                    $('#fish-card #preserves .aged-roe').text(fish.aged_roe);
-                } else {
-                    $('#fish-card #preserves span').text('');
-                    $('#fish-card #preserves .roe-price').text("Cannot be processed by preserves jar.");
-=======
                 // Load text for fish smoker products
                 $('#quick-look #smoker .base-price').text(fish.smoked_base_price);
                 $('#quick-look #smoker .silver-price').text(fish.smoked_base_price_silver);
@@ -74,14 +61,13 @@ $(function(){
                 // Load text for preserves jar products (roe)
                 if (fish.roe) {
                     $('#quick-look #preserves .product').text("Roe");
-                    $('#quick-look #preserves .base-price').text(fish.roe || '');
+                    $('#quick-look #preserves .roe-price').text(fish.roe || '');
+                    $('#quick-look #preserves .aged-roe').text(fish.aged_roe || '');
                 } else {
                     $('#quick-look #preserves .product').text("Does not make roe.");
                     $('#quick-look #preserves .base-price').text('');
->>>>>>> Stashed changes
                 }
-
-                
+         
                 const observableSelect = document.querySelector('#observablehq-viewof-selectFish-191b9ae9 select');
                 if (observableSelect) {
                     for (let option of observableSelect.options) {
