@@ -267,38 +267,20 @@ aside:last-child {
 /*  Other                                            */
 /************************************************************/
 
-/* .btn {
-    width: 300px;
-    height: 100px;
-    padding: var(--padding-sm);
-    background-image: url('../layout/Unclickedbttn.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #CE5252;
-    border-radius: 8px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-    text-decoration:none;
-    bottom: 12px;
-
-} */
 
 .btn {
-    width: 150px;
-    height: 50px; 
-    background-image: url('../layout/Unclickedbttn.png');
+    width: 100%;
+    padding: 12px;
+    background: url('../layout/btn-bg.png') no-repeat center;
     background-size: contain;
-    background-repeat: no-repeat;
     color:#CE5252; 
     display: inline-block;
     text-align: center;
-    line-height: 35px;
     text-decoration: none;
+    filter: unset;
 }
 .btn:hover {
-    background-image: url('../layout/Clickedbttn.png');
-    color: #EE7474;
+    filter: brightness(120%);
 }
 
 
