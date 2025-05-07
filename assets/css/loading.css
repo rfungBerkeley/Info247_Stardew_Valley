@@ -8,7 +8,7 @@
     background-position: center top;
     height: 100vh;
     margin: 0;
-    animation: panDown 10s linear ; 
+    /*animation: panDown 10s linear ; */
 }
 
 @keyframes panDown {
@@ -25,8 +25,6 @@
 .btn {
     padding: 15px 15px;
     margin: 20px 20px;
-    background-color: #DDA059;
-    color: #6B3710;
     border-radius: 8px;
     font-size: 1.2rem;
     font-weight: bold;
@@ -36,8 +34,7 @@
 
 }
 .btn:hover {
-    background-color: #3f2008;
-    transform: scale(1.05);
+    transform: scale(1.25);
 }
 
 
