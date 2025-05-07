@@ -46,10 +46,10 @@ $(function(){
                 $('#quick-look .type').text(fish.type);
                 $('#quick-look .location').text(fish.location || '');
 
-                $('#quick-look .base-price').text(fish.base_price);
-                $('#quick-look .silver-price').text(fish.base_price_silver);
-                $('#quick-look .gold-price').text(fish.base_price_gold);
-                $('#quick-look .iridium-price').text(fish.base_price_iridium);
+                $('#quick-look #standard .base-price').text(fish.base_price);
+                $('#quick-look #standard .silver-price').text(fish.base_price_silver);
+                $('#quick-look #standard .gold-price').text(fish.base_price_gold);
+                $('#quick-look #standard .iridium-price').text(fish.base_price_iridium);
 
 
                 // Load text for fish smoker products
