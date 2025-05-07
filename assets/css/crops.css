@@ -2,6 +2,11 @@
 /*  Crops                                                   */
 /************************************************************/
 
+#observablehq-viewof-selectCrop-3f8b5a92 {
+    display: none;
+    visibility: hidden;
+}
+
 #quick-look {
     width: 100%;
     display: flex;
@@ -11,7 +16,7 @@
 #seasons {
     display: flex;
     flex-wrap: wrap;
-    width: 50%;
+    width: 25%;
 }
 
 .season {
