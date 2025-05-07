@@ -16,10 +16,17 @@ document.addEventListener('DOMContentLoaded', () => {
       'assets/icons/crops/cauliflower.png',
       'assets/icons/crops/sunflower.png',
       'assets/icons/crops/yam.png',
+      'assets/icons/crops/blackberry.png',
+      'assets/icons/crops/broccoli.png',
+      'assets/icons/crops/cactus fruit.png',
+      'assets/icons/crops/cherry.png',
+      'assets/icons/crops/garlic.png',
+      'assets/icons/crops/leek.png',
+      'assets/icons/crops/starfruit.png'
     ];
   
-    const chartWidth = 700;
-    const chartHeight = 700;
+    const chartWidth = 2000;
+    const chartHeight = 2000;
     const iconDimension = 36;
     const centerX = chartWidth / 2;
     const centerY = chartHeight / 2;
@@ -51,10 +58,10 @@ document.addEventListener('DOMContentLoaded', () => {
   
       // Trigger explosion animation
       icons.transition()
-        .duration(1000)
-        .ease(d3.easeBounceInOut)
-        .attr('x', () => centerX + (Math.random() - 0.5) * chartWidth - iconDimension / 2)
-        .attr('y', () => centerY + (Math.random() - 0.5) * chartHeight - iconDimension / 2)
+        .duration(2000)
+        .ease(d3.easeCircleOut)
+        .attr('x', () => centerX + (Math.random() - 0.6) * chartWidth - iconDimension / 2)
+        .attr('y', () => centerY + (Math.random() - 0.6) * chartHeight - iconDimension / 2)
         .style('opacity', 0)
         .attr('transform', () => `rotate(${Math.random() * 720}) scale(${0.5 + Math.random()})`);
   

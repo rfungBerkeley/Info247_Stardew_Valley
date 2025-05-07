@@ -16,10 +16,19 @@ document.addEventListener('DOMContentLoaded', () => {
       'assets/icons/fish/catfish.png',
       'assets/icons/fish/carp.png',
       'assets/icons/fish/tuna.png',
+      'assets/icons/fish/super cucumber.png',
+      'assets/icons/fish/sunfish.png',
+      'assets/icons/fish/stonefish.png',
+      'assets/icons/fish/spook fish.png',
+      'assets/icons/fish/snail.png',
+      'assets/icons/fish/slimejack.png',
+      'assets/icons/fish/radioactive carp.png',
+      'assets/icons/fish/pufferfish.png',
+      'assets/icons/fish/herring.png'
     ];
   
-    const chartWidth = 700;
-    const chartHeight = 700;
+    const chartWidth = 1500;
+    const chartHeight = 1500;
     const iconDimension = 36;
     const centerX = chartWidth / 2;
     const centerY = chartHeight / 2;
@@ -51,10 +60,10 @@ document.addEventListener('DOMContentLoaded', () => {
   
       // Trigger explosion animation
       icons.transition()
-        .duration(1000)
-        .ease(d3.easeBounceInOut)
-        .attr('x', () => centerX + (Math.random() - 0.5) * chartWidth - iconDimension / 2)
-        .attr('y', () => centerY + (Math.random() - 0.5) * chartHeight - iconDimension / 2)
+        .duration(2000)
+        .ease(d3.easeCircleOut)
+        .attr('x', () => centerX + (Math.random() - 0.6) * chartWidth - iconDimension / 2)
+        .attr('y', () => centerY + (Math.random() - 0.6) * chartHeight - iconDimension / 2)
         .style('opacity', 0)
         .attr('transform', () => `rotate(${Math.random() * 720}) scale(${0.5 + Math.random()})`);
   
