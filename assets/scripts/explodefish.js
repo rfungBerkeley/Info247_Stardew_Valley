@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
       return { angle, img };
     });
   
-    const svg = d3.select('#container')
+    const svg = d3.select('#fish-container')
       .append('svg')
       .attr('width', chartWidth)
       .attr('height', chartHeight);
