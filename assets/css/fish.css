@@ -1,0 +1,28 @@
+/************************************************************/
+/*  Crops                                                   */
+/************************************************************/
+
+#observablehq-viewof-selectCrop-3f8b5a92 {
+    display: none;
+    visibility: hidden;
+}
+
+#processing div {
+    margin-bottom: 1rem;
+}
+.btn {
+    padding: 15px 15px;
+    background-color: #DDA059;
+    color: #6B3710;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration:none;
+
+}
+.btn:hover {
+    background-color: #3f2008;
+    transform: scale(1.05);
+}

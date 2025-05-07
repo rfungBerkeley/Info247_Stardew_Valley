@@ -53,7 +53,9 @@ html {
     
     
     /* Size */
-    --item-cell: calc(((20vw - 24px) / 7) - 4px);
+    --item-cell: calc(((30vw - 24px) / 12) + 1px);
+    
+    --padding-sm: 6px;
     
     /* Transition */
 
@@ -81,6 +83,7 @@ body {
 aside, main {
     margin: 0;
     padding: 12px;
+    height: 100vh;
 }
 
 /*
@@ -92,22 +95,21 @@ header {
 */
 
 aside {
-    width: 20vw;
     position: fixed;
-    max-height: 100vh;
-    overflow-y: auto;
 }
 
 main {
-    width: 60vw;
-    margin: 0 auto;
+    width: 50vw;
+    margin-left: 20vw;
 }
 
 #quick-look {
+    width: 20vw;
     width: 100%;
     display: flex;
 }
 #all-items {
+    width: 30vw;
     right: 0;
 }
 
@@ -115,17 +117,17 @@ main {
 /*  Item Grid                                            */
 /************************************************************/
 
-/*
 #seasons {
-    display: flex;
+    max-height: 100vh;
 }
-*/
 
 .season {
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
     margin-bottom: 1rem;
+    position: relative;
+    overflow-x: visible;
 }
 
 .season h3 {
@@ -138,11 +140,13 @@ main {
     flex: 0 0 var(--item-cell);
     background: white;
     border: 1px lightgray solid;
-    padding: 6px;
-    position: relative;
+    padding: var(--padding-sm);
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    margin-left: -1px;
+    margin-top: -1px;
 }
 .season p {
     white-space: nowrap;
@@ -151,7 +155,7 @@ main {
     background: white;
     padding: 1ch;
     position: absolute;
-    z-index: 1;
+    z-index: 100;
     top: 36px;
     opacity: 0;
     pointer-events: none;
@@ -159,6 +163,8 @@ main {
     justify-content: center;
     filter: drop-shadow(2px 2px 8px gray);
 }
+
+/*tooltip arrow*/
 .season p::before {
     content: '';
     width: 0;
@@ -193,7 +199,7 @@ main {
     text-transform: lowercase;
     line-height: .8;
     border: 1px solid gray;
-    padding: 6px;
+    padding: var(--padding-sm);
     vertical-align: top;
 }
 .stat-box {
@@ -203,7 +209,7 @@ main {
 .stat-box span {
     display: block;
     font-size: 1.5rem;
-    padding-top: 6px;
+    padding-top: var(--padding-sm);
 }
 .stat-line {
     text-align: left;
@@ -223,12 +229,39 @@ main {
 }
 #basic img {
     width: 50px;
+    margin-right: var(--padding-sm);
 }
 
 #details > div {
     margin-bottom: 1rem;
 }
 
+
+#processing div {
+    margin-bottom: 1rem;
+}
+
+/************************************************************/
+/*  Other                                            */
+/************************************************************/
+
+.btn {
+    padding: var(--padding-sm);
+    background-color: #DDA059;
+    color: #6B3710;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration:none;
+    position: absolute;
+    bottom: 12px;
+
+}
+.btn:hover {
+    background-color: #3f2008;
+    transform: scale(1.05);
+}
 
 
 
