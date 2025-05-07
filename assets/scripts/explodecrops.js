@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
       // Trigger explosion animation
       icons.transition()
-        .duration(2000)
+        .duration(2500)
         .ease(d3.easeCircleOut)
         .attr('x', () => centerX + (Math.random() - 0.6) * chartWidth - iconDimension / 2)
         .attr('y', () => centerY + (Math.random() - 0.6) * chartHeight - iconDimension / 2)
