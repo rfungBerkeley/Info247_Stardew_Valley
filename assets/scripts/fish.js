@@ -4,6 +4,8 @@ $(function(){
         fetch('./assets/scripts/stardew_valley-fish.json')
             .then(response => response.json())
             .then(data => data.forEach(item => {
+                //alphabetical order of fish
+                data.sort((a, b) => a.item.localeCompare(b.item));
 
                 let itemName = (item.item).replace('_',' ');
                 let itemLabel = $('<p></p>').text(itemName);
@@ -18,7 +20,7 @@ $(function(){
                 $('#seasons #' + item.season).append(newItem);
 
                 // Set default
-                if (item.item === "pufferfish") {
+                if (item.item === "sturgeon") {
                     $(newItem).trigger("click");
                 }
             }));
