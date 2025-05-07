@@ -53,6 +53,11 @@ html {
     
     
     /* Size */
+    --quick-look-width: 280px;
+    --items-panel-width: 30vw;
+    --main-width: calc(100% - var(--items-panel-width) - var(--quick-look-width));
+    
+    
     --item-cell: calc(((30vw - 24px) / 12) + 1px);
     
     --padding-sm: 6px;
@@ -96,18 +101,16 @@ header {
 */
 
 main {
-    max-width: 50vw;
-    flex: 1 1 50vw;
+    flex: 1 1 var(--main-width);
     padding: 12px;
+    min-width: 0%;
 }
 
 aside:first-child {
-    width: 20vw;
-    flex-shrink: 0;
+    flex: 0 0 var(--quick-look-width);
 }
 aside:last-child {
-    width: 30vw;
-    flex: 1 1 30ve
+    flex: 0 0 var(--items-panel-width);
 }
 
 #quick-look, #all-items {
@@ -116,11 +119,12 @@ aside:last-child {
 }
 
 #quick-look {
-    width: 20vw;
+    width: var(--quick-look-width);
     display: flex;
 }
 #all-items {
-    max-width: 30vw;
+    display: flex;
+    max-width: var(--items-panel-width);
     right: 0;
 }
 
@@ -150,6 +154,8 @@ aside:last-child {
 .season .item {
     width: var(--item-cell);
     height: var(--item-cell);
+    min-width: 18px;
+    min-height: 18px;
     flex: 0 0 var(--item-cell);
     background: white;
     border: 1px lightgray solid;
