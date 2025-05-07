@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
       .attr('x', centerX - iconDimension / 2)
       .attr('y', centerY - iconDimension / 2);
   
-    document.getElementById('explodeBtn').addEventListener('click', (e) => {
+    document.getElementById('cropBtn').addEventListener('click', (e) => {
       e.preventDefault();  
       const btn = e.currentTarget; 
       const targetHref = btn.getAttribute('href'); 
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
       // animation time
       setTimeout(() => {
-        window.location.href = targetHref;}, 2000);  
+        window.location.href = targetHref;}, 1500);  
     });
   });
   
