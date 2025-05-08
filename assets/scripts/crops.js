@@ -3,6 +3,7 @@ $(function(){
     
     // Load JSON database and create DOM element for each
     function loadItems(){
+        
         // Load JSON
         fetch('./assets/scripts/stardew_valley-crops.json')
         .then(response => response.json())
@@ -127,17 +128,33 @@ $(function(){
                 }
             
                 const currentSeason = $(clicked).attr("season");
-            
+                let order = 0;
+
                 const seasonSelect = document.querySelector('#observablehq-viewof-selectSource-f8768f36 select');
                 if (seasonSelect) {
                     for (let option of seasonSelect.options) {
                         if (option.text === currentSeason) {
+                            
                             seasonSelect.value = option.value;
                             seasonSelect.dispatchEvent(new Event('input', { bubbles: true }));
+                            
+                            
+                            // Highlight bar
+                            const list = [];
+
+
+                            const labels = $("#observablehq-cropComparison-f8768f36 g[aria-label='x-axis tick label'] text").each(function () {
+                                list.push($(this).text());
+                            });
+                            
+                            order = list.indexOf(crop.item);
+                            
                             break;
                         }
                     }
-                }  
+                } 
+            
+                $('.plot-d6a7b5').addClass("hello");
 
         })
     };
