@@ -114,6 +114,18 @@ $(function(){
                 }
             
                 // Update plots
+//                const observableSelect = document.querySelector('#observablehq-viewof-selectCrop-f8768f36 select');
+//                if (observableSelect) {
+//                    for (let option of observableSelect.options) {
+//                        if (option.text === crop.season) {
+//                            observableSelect.value = option.value;
+//                            observableSelect.dispatchEvent(new Event('input', { bubbles: true }));
+//                            break;
+//                        }
+//                 }
+            
+            
+            
                 const observableSelect = document.querySelector('#observablehq-viewof-selectCrop-f8768f36 select');
                 if (observableSelect) {
                     for (let option of observableSelect.options) {
