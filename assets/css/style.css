@@ -136,11 +136,11 @@ aside:last-child {
 /*  Item Grid                                            */
 /************************************************************/
 
-#seasons {
+#seasons, #buildings {
     max-height: 100vh;
 }
 
-.season {
+.season, .building {
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
@@ -149,11 +149,11 @@ aside:last-child {
     overflow-x: visible;
 }
 
-.season h3 {
+#all-items h3 {
     width: 100%;
 }
 
-.season .item {
+#all-items .item {
     width: var(--item-cell);
     height: var(--item-cell);
     min-width: 18px;
@@ -169,7 +169,7 @@ aside:last-child {
     margin-left: -1px;
     margin-top: -1px;
 }
-.season p {
+#all-items p {
     white-space: nowrap;
     text-align: center;
     margin: 0 auto;
@@ -184,12 +184,12 @@ aside:last-child {
     background: white;
     filter: drop-shadow(2px 2px 2px var(--gray));
 }
-.season .item, .season img, .season p {
+#all-items .item, #all-items img, #all-items p {
     transition: all .2s ease;
 }
 
 /*tooltip arrow*/
-.season p::before {
+#all-items p::before {
     content: '';
     width: 0;
     height: 0;
@@ -201,13 +201,13 @@ aside:last-child {
     position: absolute;
 }
 
-.season .item:hover, .season .item.active {
+#all-items .item:hover, #all-items .item.active {
     background: var(--silver);
 }
-.season .item:hover img, .season .item.active img {
+#all-items .item:hover img, #all-items .item.active img {
     opacity: .5
 }
-.season .item:hover p {
+#all-items .item:hover p {
     opacity: 1;
 }
 
