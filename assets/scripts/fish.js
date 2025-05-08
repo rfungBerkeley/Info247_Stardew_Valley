@@ -55,21 +55,27 @@ $(function(){
 
 
                 // Load text for fish smoker products
+                $('#quick-look #smoker .product').text('Smoked ' + fish.item);
                 $('#quick-look #smoker .base-price').text(fish.smoked_base_price);
                 $('#quick-look #smoker .silver-price').text(fish.smoked_base_price_silver);
                 $('#quick-look #smoker .gold-price').text(fish.smoked_base_price_gold);
                 $('#quick-look #smoker .iridium-price').text(fish.smoked_base_price_iridium);
 
                 // Load text for preserves jar products (roe)
-                if (fish.roe) {
-                    $('#quick-look #preserves .product').text("Roe");
-                    $('#quick-look #preserves .roe-price').text(fish.roe);
-                    $('#quick-look #preserves .aged-roe').text(fish.aged_roe);
-                } else {
-                    $('#quick-look #preserves .product').text("Does not make roe");
-                    $('#quick-look #preserves .roe-price').text('');
-                    $('#quick-look #preserves .aged-roe').text('');
+                let roetext = '';
+                if(fish.roe){
+                    roetext = "Roe";
+                    $('#quick-look #preserves').removeClass('not-applicable');
                 }
+                else {
+                    roetext = "Does not make roe";
+                    $('#quick-look #preserves').addClass('not-applicable');
+                }
+            
+                $('#quick-look #preserves .product').text(roetext);
+                $('#quick-look #preserves .roe-price').text(fish.roe || 0);
+                $('#quick-look #preserves .aged-roe').text(fish.aged_roe || 0);
+                    
          
                 const observableSelect = document.querySelector('#observablehq-viewof-selectFish-42a8de80 select');
                 if (observableSelect) {

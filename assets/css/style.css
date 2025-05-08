@@ -50,6 +50,9 @@ html {
 :root {
     
     /* Color */
+    --silver: #D6D6D6;
+    --gold: #F2E0BB;
+    --iridium: #D0C0EC;
     
     
     /* Size */
@@ -205,7 +208,7 @@ aside:last-child {
     text-transform: capitalize;
 }
 
-.stat-box, .stat-line {
+#standard p, .prices td {
     font-variant: small-caps;
     text-transform: lowercase;
     line-height: .8;
@@ -213,21 +216,22 @@ aside:last-child {
     padding: var(--padding-sm);
     vertical-align: top;
 }
-.stat-box {
+#standard p {
     text-align: center;
     width: calc(25% - 2px);
 }
-.stat-box span {
+#standard span {
     display: block;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     padding-top: var(--padding-sm);
 }
-.stat-line {
+.prices td, #harvest p, #max p {
+    width: 100%;
     text-align: left;
     margin-bottom: 2px;
 
 }
-.stat-line span {
+.prices td span, #harvest p span, #max p span {
     display: inline;
     font-size: .8rem;
 }
@@ -265,6 +269,10 @@ aside:last-child {
     width: 33.3%;
 }
 
+.prices span:after{
+    content: 'g';
+    text-transform: lowercase;
+}
 
 #processing div {
     margin-bottom: 1rem;
@@ -281,6 +289,11 @@ aside:last-child {
 .not-applicable tr, .not-applicable span {
     color: gray;
     font-weight: normal;
+}
+
+
+#prices .stat:nth-child(1) {
+    background: var(--silver);
 }
 
 /************************************************************/

@@ -65,10 +65,10 @@ $(function(){
                 $('#quick-look .growth').text((crop.growth_time) 
                                             ? (crop.growth_time) : ("Cannot grow") );
 
-                $('#quick-look #details .base-price').text(crop.base_price);
-                $('#quick-look #details .silver-price').text(crop.base_price_silver);
-                $('#quick-look #details .gold-price').text(crop.base_price_gold);
-                $('#quick-look #details .iridium-price').text(crop.base_price_iridium);
+                $('#quick-look #details .base-price').text(crop.base_price || 0);
+                $('#quick-look #details .silver-price').text(crop.base_price_silver || 0);
+                $('#quick-look #details .gold-price').text(crop.base_price_gold || 0);
+                $('#quick-look #details .iridium-price').text(crop.base_price_iridium || 0);
             
                 // Calculation for maximal profit
                 let harvests = 0;
