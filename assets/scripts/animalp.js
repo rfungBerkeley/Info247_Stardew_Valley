@@ -7,7 +7,7 @@ $(function () {
 
                 let itemName = (item.item).replace('_',' ');
                 let itemLabel = $('<p></p>').text(itemName);
-                let itemImg = $('<img>').attr('src','./assets/icons/animal/' + item.item + '.png');
+                let itemImg = $('<img>').attr('src','./assets/icons/animals/' + item.item + '.png');
 
                 let newItem = $('<div></div>').prepend(itemLabel, itemImg)
                     .attr({
@@ -18,7 +18,7 @@ $(function () {
                 $('#seasons #' + item.season).append(newItem);
 
                 // Set default
-                if (item.item === "Pig") {
+                if (item.item === "pig") {
                     $(newItem).trigger("click");
                 }
             }));
