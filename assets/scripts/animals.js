@@ -18,7 +18,7 @@ $(function () {
                 $('#buildings #' + item.building).append(newItem);
 
                 // Set default
-                if (item.item === "pig") {
+                if (item.item === "white chicken") {
                     $(newItem).trigger("click");
                 }
             }));
@@ -54,6 +54,9 @@ $(function () {
                 // Processed goods — machines
                 $('#processed .product').text(animal.processed);
                 $('#processed .base-price').text(animal.processed_price);
+                $('#processed .silver-price').text(animal.processed_price_silver);
+                $('#processed .gold-price').text(animal.processed_price_gold);
+                $('#processed .iridium-price').text(animal.processed_price_iridium);
 
                 // Product type 2
                 $('#other .product').text(animal.product2 || 'N/A');
@@ -68,7 +71,7 @@ $(function () {
     loadItems();
 
     // Event delegation for animal item clicks
-    $('#seasons').on('click', '.item', function () {
+    $('#buildings').on('click', '.item', function () {
         setAnimal(this);
     });
 });
