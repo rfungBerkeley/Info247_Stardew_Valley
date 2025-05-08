@@ -7,11 +7,8 @@ $(function(){
         fetch('./assets/scripts/stardew_valley-crops.json')
         .then(response => response.json())
         .then(data => data.forEach(item => {
-            //alphabetical order of crops
-            data.sort((a, b) => a.item.localeCompare(b.item))
 
             // Create div for each item in JSON and add to html
-
             let itemName = (item.item).replace('_',' '); // format item name;
 
             let itemLabel = $('<p></p>').text(itemName);
