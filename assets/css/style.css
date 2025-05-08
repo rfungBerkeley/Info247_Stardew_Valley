@@ -53,7 +53,7 @@ html {
     
     
     /* Size */
-    --quick-look-width: 260px;
+    --quick-look-width: 280px;
     --items-panel-width: 30vw;
     --main-width: calc(100% - var(--items-panel-width) - var(--quick-look-width));
     
@@ -261,6 +261,10 @@ aside:last-child {
     margin-bottom: 2px;
 }
 
+.prices td {
+    width: 33.3%;
+}
+
 
 #processing div {
     margin-bottom: 1rem;
@@ -268,6 +272,15 @@ aside:last-child {
 
 #quick-look table {
     border-collapse: collapse;
+}
+
+#details .prices span {
+    font-weight: 600;
+}
+
+.not-applicable tr, .not-applicable span {
+    color: gray;
+    font-weight: normal;
 }
 
 /************************************************************/
@@ -278,6 +291,11 @@ aside:last-child {
 main > .container:nth-child(2) > div:first-child {
     display: none;
     visibility: hidden;
+}
+
+.caption {
+    font-size: .8rem;
+    text-transform: none;
 }
 
 
