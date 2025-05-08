@@ -77,28 +77,35 @@ $(function(){
                 $('#quick-look #preserves .aged-roe').text(fish.aged_roe || 0);
                     
          
-                const observableSelect = document.querySelector('#observablehq-viewof-selectFish-eeb59f23 select');
-                if (observableSelect) {
-                    for (let option of observableSelect.options) {
+                // Update plots
+                const fishSelect = document.querySelector('#observablehq-viewof-selectFish-152e28b1 select');
+                if (fishSelect) {
+                    for (let option of fishSelect.options) {
                         if (option.text === fish.item) {
-                            observableSelect.value = option.value;
-                            observableSelect.dispatchEvent(new Event('input', { bubbles: true }));
+                            fishSelect.value = option.value;
+                            fishSelect.dispatchEvent(new Event('input', { bubbles: true }));
                             break;
                         }
                     }
                 }
-                const observableSeasonSelect = document.querySelector('#observablehq-viewof-selectSeason-eeb59f23 select');
-                if (observableSeasonSelect) {
-                    for (let option of observableSeasonSelect.options) {
-                        if (option.text === fish.season) {
-                            observableSeasonSelect.value = option.value;
-                            observableSeasonSelect.dispatchEvent(new Event('input', { bubbles: true }));
+            
+                const currentSeason = $(clicked).attr("season");
+                let order = 0;
+
+                const seasonSelect = document.querySelector('#observablehq-viewof-selectSeason-152e28b1 select');
+                if (seasonSelect) {
+                    for (let option of seasonSelect.options) {
+                        if (option.text === currentSeason) {
+                            seasonSelect.value = option.value;
+                            seasonSelect.dispatchEvent(new Event('input', { bubbles: true }));
                             break;
                         }
-                 }
-            }
-                
-            });
+                    }
+                } 
+            
+                $('.plot-d6a7b5').addClass("hello");    
+
+        });
     }
 
     // Initial load

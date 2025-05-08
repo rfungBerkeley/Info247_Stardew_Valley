@@ -134,21 +134,8 @@ $(function(){
                 if (seasonSelect) {
                     for (let option of seasonSelect.options) {
                         if (option.text === currentSeason) {
-                            
                             seasonSelect.value = option.value;
                             seasonSelect.dispatchEvent(new Event('input', { bubbles: true }));
-                            
-                            
-                            // Highlight bar
-                            const list = [];
-
-
-                            const labels = $("#observablehq-cropComparison-0a965857 g[aria-label='x-axis tick label'] text").each(function () {
-                                list.push($(this).text());
-                            });
-                            
-                            order = list.indexOf(crop.item);
-                            
                             break;
                         }
                     }
