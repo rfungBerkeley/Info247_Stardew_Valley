@@ -60,7 +60,7 @@ html {
     
     --item-cell: calc(((30vw - 24px) / 12) + 1px);
     
-    --padding-sm: 6px;
+    --padding-sm: 4px;
     
     /* Transition */
 
