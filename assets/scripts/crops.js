@@ -114,7 +114,7 @@ $(function(){
                 }
             
                 // Update plots
-                const observableSelect = document.querySelector('#observablehq-viewof-selectCrop-4538c7e3 select');
+                const observableSelect = document.querySelector('#observablehq-viewof-selectCrop-f8768f36 select');
                 if (observableSelect) {
                     for (let option of observableSelect.options) {
                         if (option.text === crop.item) {

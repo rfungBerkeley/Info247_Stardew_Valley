@@ -17,14 +17,14 @@
     <!-- ObservablePlot Scripts Start -->
     <script type="module">
         import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-        import define from "https://api.observablehq.com/d/b8efc8c9fece4d31@586.js?v=4";
+        import define from "https://api.observablehq.com/d/b8efc8c9fece4d31@614.js?v=4";
         new Runtime().module(define, name => {
-          if (name === "viewof selectSource") return new Inspector(document.querySelector("#observablehq-viewof-selectSource-4538c7e3"));
-          if (name === "cropComparison") return new Inspector(document.querySelector("#observablehq-cropComparison-4538c7e3"));
-          if (name === "viewof selectCrop") return new Inspector(document.querySelector("#observablehq-viewof-selectCrop-4538c7e3"));
-          if (name === "fertilizerGraph") return new Inspector(document.querySelector("#observablehq-fertilizerGraph-4538c7e3"));
-          if (name === "qualityCropGraph") return new Inspector(document.querySelector("#observablehq-qualityCropGraph-4538c7e3"));
-          if (name === "ProcessedGoods") return new Inspector(document.querySelector("#observablehq-ProcessedGoods-4538c7e3"));
+          if (name === "viewof selectSource") return new Inspector(document.querySelector("#observablehq-viewof-selectSource-f8768f36"));
+          if (name === "cropComparison") return new Inspector(document.querySelector("#observablehq-cropComparison-f8768f36"));
+          if (name === "viewof selectCrop") return new Inspector(document.querySelector("#observablehq-viewof-selectCrop-f8768f36"));
+          if (name === "fertilizerGraph") return new Inspector(document.querySelector("#observablehq-fertilizerGraph-f8768f36"));
+          if (name === "qualityCropGraph") return new Inspector(document.querySelector("#observablehq-qualityCropGraph-f8768f36"));
+          if (name === "ProcessedGoods") return new Inspector(document.querySelector("#observablehq-ProcessedGoods-f8768f36"));
           return ["processData","fertadata","maxY1","maxY","qualityData","fertdata","qualityCropData","processCrops"].includes(name);
         });
         </script>
@@ -113,29 +113,29 @@
                     <h4>Seasonal Crop Comparison</h4>
                     <p>Not all crops sell for the same price. What crop do you think is better to grow if you want to make as much money as possible in one season?</p>
                 </div>
-                <div id="observablehq-viewof-selectSource-4538c7e3"></div>
-                <div id="observablehq-cropComparison-4538c7e3"></div>
+                <div id="observablehq-viewof-selectSource-f8768f36"></div>
+                <div id="observablehq-cropComparison-f8768f36"></div>
             </div>
         
             <div class="container">
                 <!-- <div id="observablehq-viewof-selectCrop-3a23b098"></div> -->
-                <div id="observablehq-viewof-selectCrop-4538c7e3"></div>
+                <div id="observablehq-viewof-selectCrop-f8768f36"></div>
 
                 <h4> Crop Quality Comparison</h4>
                 <p>The quality of a crop increases its sell price. While its hard to grow iridium crops, you can still hope for the gold. </p>
                 <!-- <div id="observablehq-qualityPrices-3a23b098"></div> -->
-                <div id="observablehq-qualityCropGraph-4538c7e3"></div>
+                <div id="observablehq-qualityCropGraph-f8768f36"></div>
 
                 <h4>Fertilizer Impact on Maximum Number of Harvest per Season</h4>
                 <p>Not all fertilizers is worth the price to make or buy if the harvesting results are the same.</p>
                 <p>A faster fertilizer, does not necessarily mean a crop can be harvest more times per season. </p>
-                <div id="observablehq-fertilizerGraph-4538c7e3"></div>
+                <div id="observablehq-fertilizerGraph-f8768f36"></div>
 
                 <h4>Processed Crops Comparison</h4>
                 <p>Artisan goods will always sell more than just growing, but not all crops result in the same product when processing.</p>
                 <p>Additonally, each good take different amounts of time for them to be fully processed.</p>
                 <!-- <div id="observablehq-ProcessedGoods-3a23b098"></div> -->
-                <div id="observablehq-ProcessedGoods-4538c7e3"></div>
+                <div id="observablehq-ProcessedGoods-f8768f36"></div>
             </div>
         </main>
 

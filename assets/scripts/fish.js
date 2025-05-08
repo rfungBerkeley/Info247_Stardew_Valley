@@ -77,7 +77,7 @@ $(function(){
                 $('#quick-look #preserves .aged-roe').text(fish.aged_roe || 0);
                     
          
-                const observableSelect = document.querySelector('#observablehq-viewof-selectFish-42a8de80 select');
+                const observableSelect = document.querySelector('#observablehq-viewof-selectFish-eeb59f23 select');
                 if (observableSelect) {
                     for (let option of observableSelect.options) {
                         if (option.text === fish.item) {
