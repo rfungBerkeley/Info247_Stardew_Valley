@@ -1,7 +1,7 @@
 $(function () {
     // Load all animal items and set up interactivity
     function loadItems() {
-        fetch('./assets/scripts/stardew_valley-animal.json')
+        fetch('./assets/scripts/stardew_valley-animals.json')
             .then(response => response.json())
             .then(data => data.forEach(item => {
 
@@ -15,7 +15,7 @@ $(function () {
                         "item-name": item.item
                     });
 
-                $('#seasons #' + item.season).append(newItem);
+                $('#buildings #' + item.building).append(newItem);
 
                 // Set default
                 if (item.item === "Pig") {
@@ -31,7 +31,7 @@ $(function () {
         $('.item').removeClass('active');
         $(clicked).addClass('active');
 
-        fetch('./assets/scripts/stardew_valley-animal.json')
+        fetch('./assets/scripts/stardew_valley-animals.json')
             .then(response => response.json())
             .then(data => {
                 const animal = data.find(item => item.item === name);
@@ -55,12 +55,12 @@ $(function () {
                 $('#preserves .product').text(animal.processed);
                 $('#preserves .base-price').text(animal.processed_price);
 
-                // keg -- product type 2
-                $('#keg .product').text(animal.product2 || 'N/A');
-                $('#keg .base-price').text(animal.product2_base || 'N/A');
-                $('#keg .silver-price').text(animal.product2_silver || 'N/A');
-                $('#keg .gold-price').text(animal.product2_gold || 'N/A');
-                $('#keg .iridium-price').text(animal.product2_iridium || 'N/A');
+                // Product type 2
+                $('#other .product').text(animal.product2 || 'N/A');
+                $('#other .base-price').text(animal.product2_base || 'N/A');
+                $('#other .silver-price').text(animal.product2_silver || 'N/A');
+                $('#other .gold-price').text(animal.product2_gold || 'N/A');
+                $('#other .iridium-price').text(animal.product2_iridium || 'N/A');
             });
     }
 

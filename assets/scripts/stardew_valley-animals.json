@@ -1,7 +1,7 @@
 [
     {
         "item": "White_Chicken",
-        "season": "Coop",
+        "building": "Coop",
         "product": "Egg",
         "base_price": 50,
         "base_silver": 62,
@@ -18,7 +18,7 @@
     },
     {
         "item": "Brown_Chicken",
-        "season": "Coop",
+        "building": "Coop",
         "product": "Egg",
         "base_price": 50,
         "base_silver": 62,
@@ -35,7 +35,7 @@
     },
     {
         "item": "Void_Chicken",
-        "season": "Coop",
+        "building": "Coop",
         "product": "Void Egg",
         "base_price": 65,
         "base_silver": 81,
@@ -52,7 +52,7 @@
     },
     {
         "item": "Blue_Chicken",
-        "season": "Coop",
+        "building": "Coop",
         "product": "Egg",
         "base_price": 50,
         "base_silver": 62,
@@ -70,7 +70,7 @@
 
     {
         "item": "Duck",
-        "season": "Coop",
+        "building": "Coop",
         "product": "Duck Egg",
         "base_price": 95,
         "base_silver": 118,
@@ -87,7 +87,7 @@
     },
     {
         "item": "Rabbit",
-        "season": "Coop",
+        "building": "Coop",
         "product": "Wool",
         "base_price": 340,
         "base_silver": 425,
@@ -104,7 +104,7 @@
     },
     {
         "item": "Dinosaur",
-        "season": "Coop",
+        "building": "Coop",
         "product": "Dinosaur Egg",
         "base_price": 350,
         "base_silver": 437,
@@ -121,7 +121,7 @@
     },
     {
         "item": "Golden_Chicken",
-        "season": "Coop",
+        "building": "Coop",
         "product": "Golden Egg",
         "base_price": 500,
         "base_silver": 625,
@@ -138,7 +138,7 @@
     },
     {
         "item": "Ostrich",
-        "season": "Barn",
+        "building": "Barn",
         "product": "Ostrich Egg",
         "base_price": 600,
         "base_silver": 750,
@@ -155,7 +155,7 @@
     },
     {
         "item": "Brown_Cow",
-        "season": "Barn",
+        "building": "Barn",
         "product": "Milk",
         "base_price": 125,
         "base_silver": 156,
@@ -172,7 +172,7 @@
     },
     {
         "item": "White_Cow",
-        "season": "Barn",
+        "building": "Barn",
         "product": "Milk",
         "base_price": 125,
         "base_silver": 156,
@@ -190,7 +190,7 @@
 
     {
         "item": "Goat",
-        "season": "Barn",
+        "building": "Barn",
         "product": "Goat Milk",
         "base_price": 230,
         "base_silver": 287,
@@ -207,7 +207,7 @@
     },
     {
         "item": "Pig",
-        "season": "Barn",
+        "building": "Barn",
         "product": "Truffle",
         "base_price": 625,
         "base_silver": 781,
