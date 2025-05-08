@@ -52,8 +52,8 @@ $(function () {
                 $('#standard .iridium-price').text(animal.base_iridium);
 
                 // Processed goods — machines
-                $('#preserves .product').text(animal.processed);
-                $('#preserves .base-price').text(animal.processed_price);
+                $('#processed .product').text(animal.processed);
+                $('#processed .base-price').text(animal.processed_price);
 
                 // Product type 2
                 $('#other .product').text(animal.product2 || 'N/A');
