@@ -63,6 +63,23 @@ $(function(){
                 $('#quick-look #details .silver-price').text(crop.base_price_silver);
                 $('#quick-look #details .gold-price').text(crop.base_price_gold);
                 $('#quick-look #details .iridium-price').text(crop.base_price_iridium);
+            
+                // Calculation for maximal profit
+                let harvests = 0;
+                    
+                if( crop.type == "tree" ){
+                    harvests = crop.number_harvests;
+                }
+                else {
+                    harvests = crop.hyper_speed_gro_number_harvest;
+                }
+                
+                let maximum = harvests * crop.base_price_iridium * crop.yield_per_harvest;
+                let normalmax = crop.number_harvests * crop.base_price * crop.yield_per_harvest;
+                
+                $('#quick-look .max-maximum').text(maximum);
+                $('#quick-look .normal-maximum').text(normalmax);
+            
 
                 // Load text for keg products
                 if(crop.keg_product){
@@ -95,29 +112,7 @@ $(function(){
                 } else {
                     $('#quick-look #dehydrator span').text('');
                     $('#quick-look #dehydrator .product').text("Cannot be processed by dehydrator.");
-                }
-            
-            
-                // Select item for charts
-                const cropChartOptions = $('#inputs-3a86ea-1').children();
-            
-                let dropdown = $('#inputs-3a86ea-1');
-               
-            
-                // Iterate through all dropdown items to match the inner HTML to the selected crop
-                for( let i=0; i < cropChartOptions.length; i++){
-                    
-                    if(cropChartOptions[i].innerHTML == crop.item){
-                
-                        // Refresh select container
-                        new Runtime().module(define, name => {
-                            switch (name){
-                                case "viewof selectSource": return new Inspector(container);
-                                case "selection": return {fulfilled(value) { setSelection(value); }};
-                            }
-                        });
-                    } 
-                }
+                }       
             
                 // Update plots
                 const observableSelect = document.querySelector('#observablehq-viewof-selectCrop-4538c7e3 select');

@@ -223,7 +223,7 @@ aside:last-child {
 }
 .stat-box {
     text-align: center;
-    width: 24%;
+    width: calc(25% - 2px);
 }
 .stat-box span {
     display: block;
@@ -232,6 +232,7 @@ aside:last-child {
 }
 .stat-line {
     text-align: left;
+    margin-bottom: 2px;
 
 }
 .stat-line span {
@@ -257,16 +258,21 @@ aside:last-child {
 
 #standard .prices {
     display: flex;
-    flex-wrap: wrap;
-    margin-left: -1px;
+    justify-content: space-between;
 }
-#standard .prices p {
-    margin: 0 1px;
+
+.prices {
+    width: 100%;
+    margin-bottom: 2px;
 }
 
 
 #processing div {
     margin-bottom: 1rem;
+}
+
+#quick-look table {
+    border-collapse: collapse;
 }
 
 /************************************************************/
