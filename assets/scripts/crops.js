@@ -17,7 +17,8 @@ $(function(){
             let newItem = $('<div></div').prepend(itemLabel, itemImg)
                 .attr({
                     "class" : 'item',
-                    "item-name": item.item
+                    "item-name": item.item,
+                    "season" : item.season,
                 })
 
             $('#seasons #' + item.season)
@@ -114,28 +115,31 @@ $(function(){
                 }
             
                 // Update plots
-//                const observableSelect = document.querySelector('#observablehq-viewof-selectCrop-f8768f36 select');
-//                if (observableSelect) {
-//                    for (let option of observableSelect.options) {
-//                        if (option.text === crop.season) {
-//                            observableSelect.value = option.value;
-//                            observableSelect.dispatchEvent(new Event('input', { bubbles: true }));
-//                            break;
-//                        }
-//                 }
-            
-            
-            
-                const observableSelect = document.querySelector('#observablehq-viewof-selectCrop-f8768f36 select');
-                if (observableSelect) {
-                    for (let option of observableSelect.options) {
+                const cropSelect = document.querySelector('#observablehq-viewof-selectCrop-f8768f36 select');
+                if (cropSelect) {
+                    for (let option of cropSelect.options) {
                         if (option.text === crop.item) {
-                            observableSelect.value = option.value;
-                            observableSelect.dispatchEvent(new Event('input', { bubbles: true }));
+                            cropSelect.value = option.value;
+                            cropSelect.dispatchEvent(new Event('input', { bubbles: true }));
                             break;
                         }
-                 }
-            }   
+                    }
+                }
+            
+                const currentSeason = $(clicked).attr("season");
+            
+                const seasonSelect = document.querySelector('#observablehq-viewof-selectSource-f8768f36 select');
+                if (seasonSelect) {
+                    for (let option of seasonSelect.options) {
+                        if (option.text === currentSeason) {
+                            seasonSelect.value = option.value;
+                            seasonSelect.dispatchEvent(new Event('input', { bubbles: true }));
+                            break;
+                        }
+                    }
+                }
+            
+   
 
         })
     };
