@@ -182,7 +182,7 @@ aside:last-child {
     display: flex;
     justify-content: center;
     background: white;
-    filter: drop-shadow(2px 2px 8px var(--gray));
+    filter: drop-shadow(2px 2px 2px var(--gray));
 }
 .season .item, .season img, .season p {
     transition: all .2s ease;
@@ -207,7 +207,7 @@ aside:last-child {
 .season .item:hover img, .season .item.active img {
     opacity: .5
 }
-.season .item:not(.active):hover p {
+.season .item:hover p {
     opacity: 1;
 }
 
