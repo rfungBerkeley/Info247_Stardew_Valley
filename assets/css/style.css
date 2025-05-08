@@ -327,9 +327,13 @@ main > .container:nth-child(2) > div:first-child {
     visibility: hidden;
 }
 
-.caption {
+#standard .caption {
+    font-variant: none;
     font-size: .8rem;
+    line-height: 1;
     text-transform: none;
+    border: none;
+    padding: 0;
 }
 
 
