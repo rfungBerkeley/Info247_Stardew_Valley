@@ -50,13 +50,15 @@ html {
 :root {
     
     /* Color */
-    --silver: #D6D6D6;
-    --gold: #F2E0BB;
-    --iridium: #D0C0EC;
+    --silver: #EBEBEB;
+    --gold: #F8EFDD;
+    --iridium: #E8E0F6;
+    
+    --gray: #929292;
     
     
     /* Size */
-    --quick-look-width: 280px;
+    --quick-look-width: 320px;
     --items-panel-width: 30vw;
     --main-width: calc(100% - var(--items-panel-width) - var(--quick-look-width));
     
@@ -155,7 +157,7 @@ aside:last-child {
     min-height: 18px;
     flex: 0 0 var(--item-cell);
     background: white;
-    border: 1px lightgray solid;
+    border: 1px var(--silver) solid;
     padding: var(--padding-sm);
     display: flex;
     align-items: center;
@@ -177,7 +179,7 @@ aside:last-child {
     pointer-events: none;
     display: flex;
     justify-content: center;
-    filter: drop-shadow(2px 2px 8px gray);
+    filter: drop-shadow(2px 2px 8px var(--gray));
 }
 
 /*tooltip arrow*/
@@ -194,7 +196,7 @@ aside:last-child {
 }
 
 .season .item:hover, .season .item.active {
-    background: lightgray;
+    background: var(--silver);
 }
 .season .item:not(.active):hover p {
     opacity: 1;
@@ -212,7 +214,7 @@ aside:last-child {
     font-variant: small-caps;
     text-transform: lowercase;
     line-height: .8;
-    border: 1px solid gray;
+    border: 1px solid var(--gray);
     padding: var(--padding-sm);
     vertical-align: top;
 }
@@ -243,7 +245,7 @@ aside:last-child {
 #basic {
     width: 100%;
     display: flex;
-    align-items: flex-start;
+    align-items: flex-end;
     margin-bottom: 1rem;
 }
 #basic img {
@@ -286,15 +288,25 @@ aside:last-child {
     font-weight: 600;
 }
 
-.not-applicable tr, .not-applicable span {
-    color: gray;
-    font-weight: normal;
-}
-
-
-#prices .stat:nth-child(1) {
+/* Add  Color */
+.silver {
     background: var(--silver);
 }
+.gold {
+    background: var(--gold);
+}
+.iridium {
+    background: var(--iridium);
+}
+
+.not-applicable td, .not-applicable span {
+    color: var(--gray);
+    font-weight: normal;
+}
+.not-applicable .silver, .not-applicable .gold, .not-applicable .iridium {
+    background: none;
+}
+
 
 /************************************************************/
 /*  Other                                            */
