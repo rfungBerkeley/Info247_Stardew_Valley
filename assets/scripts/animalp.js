@@ -44,6 +44,7 @@ $(function () {
                 });
                 $('#quick-look .name').text(animal.item);
                 $('#quick-look .type').text(animal.product);
+                $('#quick-look .machine').text(animal.machine);
 
                 $('#standard .base-price').text(animal.base_price);
                 $('#standard .silver-price').text(animal.base_silver);
