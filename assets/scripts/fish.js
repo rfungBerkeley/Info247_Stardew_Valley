@@ -87,6 +87,16 @@ $(function(){
                         }
                     }
                 }
+                const observableSeasonSelect = document.querySelector('#observablehq-viewof-selectSeason-eeb59f23 select');
+                if (observableSeasonSelect) {
+                    for (let option of observableSeasonSelect.options) {
+                        if (option.text === fish.season) {
+                            observableSeasonSelect.value = option.value;
+                            observableSeasonSelect.dispatchEvent(new Event('input', { bubbles: true }));
+                            break;
+                        }
+                 }
+            }
                 
             });
     }

@@ -137,6 +137,17 @@ $(function(){
                  }
             }   
 
+            const observableSeasonSelect = document.querySelector('#observablehq-viewof-selectSource-f8768f36 select');
+                if (observableSeasonSelect) {
+                    for (let option of observableSeasonSelect.options) {
+                        if (option.text === crop.season) {
+                            observableSeasonSelect.value = option.value;
+                            observableSeasonSelect.dispatchEvent(new Event('input', { bubbles: true }));
+                            break;
+                        }
+                 }
+            }   
+
         })
     };
     
