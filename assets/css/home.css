@@ -1,0 +1,59 @@
+/************************************************************/
+/*  Loadding Page                                           */
+/************************************************************/
+.load-back {
+    background-image: url('../layout/loadscreen.png');
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-position: center top;
+    height: 100vh;
+    margin: 0;
+}
+
+
+.titlecard-container {
+    display: flex;
+    justify-content: center;  
+    align-items: center;    
+    overflow: hidden ;
+}
+.titlecard-container img {
+    padding: 15px;
+}
+
+
+.btn {
+    padding: 15px 15px;
+    margin: 20px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+.btn:hover {
+    transform: scale(1.25);
+}
+
+
+.icons {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icons-container {
+    display: flex;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-container svg {
+    position: absolute;
+    pointer-events: none;
+    z-index: -1;
+}
