@@ -8,13 +8,8 @@
     background-position: center top;
     height: 100vh;
     margin: 0;
-    animation: panDown 5s linear ;
 }
 
-@keyframes panDown {
-    0% {background-position: center bottom;}
-    100% {background-position: center top;}
-}
 
 .titlecard-container {
     display: flex;
@@ -24,13 +19,8 @@
 }
 .titlecard-container img {
     padding: 15px;
-    transform: translateY(-100%);
-    animation: imageSlideIn 5s ease-out forwards;
 }
 
-@keyframes imageSlideIn {
-    to { transform: translateY(0);}
-}
 
 .btn {
     padding: 15px 15px;

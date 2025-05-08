@@ -349,6 +349,7 @@ main > .container:nth-child(2) > div:first-child {
     color:#CE5252; 
     display: inline-block;
     text-align: center;
+    font-size: 1.2rem;
     text-decoration: none;
     filter: unset;
 }
