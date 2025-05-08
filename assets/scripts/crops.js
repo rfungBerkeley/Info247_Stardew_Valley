@@ -74,8 +74,8 @@ $(function(){
                     harvests = crop.hyper_speed_gro_number_harvest;
                 }
                 
-                let maximum = harvests * crop.base_price_iridium * crop.yield_per_harvest;
-                let normalmax = crop.number_harvests * crop.base_price * crop.yield_per_harvest;
+                let maximum = Math.floor(harvests * crop.base_price_iridium * crop.yield_per_harvest);
+                let normalmax = Math.floor(crop.number_harvests * crop.base_price * crop.yield_per_harvest);
                 
                 $('#quick-look .max-maximum').text(maximum);
                 $('#quick-look .normal-maximum').text(normalmax);
