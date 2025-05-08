@@ -55,6 +55,9 @@ html {
     --iridium: #E8E0F6;
     
     --gray: #929292;
+    --offwhite: #F9F5F1;
+    
+    --textbrown: #4E3A2C;
     
     
     /* Size */
@@ -78,6 +81,7 @@ html {
 body {
     /*  background-color: #BCCCB0;*/
     background: white;
+    color: var(--textbrown);
     font-size: 100%;
     font-family: Roboto;
     min-height: 100vh;
@@ -89,12 +93,10 @@ body {
     position: relative;
 }
 
-
 aside, main {
     margin: 0;
     height: 100vh;
     position: relative;
-
 }
 
 main {
@@ -115,6 +117,7 @@ aside:last-child {
     padding: 12px;
     position: fixed;
     height: 100%;
+    background: var(--offwhite);
 }
 
 #quick-look {
@@ -156,8 +159,8 @@ aside:last-child {
     min-width: 18px;
     min-height: 18px;
     flex: 0 0 var(--item-cell);
-    background: white;
     border: 1px var(--silver) solid;
+    background: white;
     padding: var(--padding-sm);
     display: flex;
     align-items: center;
@@ -170,7 +173,6 @@ aside:last-child {
     white-space: nowrap;
     text-align: center;
     margin: 0 auto;
-    background: white;
     padding: 1ch;
     position: absolute;
     z-index: 100;
@@ -179,7 +181,11 @@ aside:last-child {
     pointer-events: none;
     display: flex;
     justify-content: center;
+    background: white;
     filter: drop-shadow(2px 2px 8px var(--gray));
+}
+.season .item, .season img, .season p {
+    transition: all .2s ease;
 }
 
 /*tooltip arrow*/
@@ -197,6 +203,9 @@ aside:last-child {
 
 .season .item:hover, .season .item.active {
     background: var(--silver);
+}
+.season .item:hover img, .season .item.active img {
+    opacity: .5
 }
 .season .item:not(.active):hover p {
     opacity: 1;
@@ -271,7 +280,7 @@ aside:last-child {
     width: 33.3%;
 }
 
-.prices span:after{
+.prices span:after, #max span:after{
     content: 'g';
     text-transform: lowercase;
 }
