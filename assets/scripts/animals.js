@@ -39,6 +39,7 @@ $(function () {
             
                 // Reset classes
                 $('#quick-look #other').removeClass('not-applicable');
+                $('.prices td').removeClass('not-applicable');
 
                 // Basic info
                 $('#quick-look img').attr({
@@ -71,6 +72,13 @@ $(function () {
                 if(!animal.product2){
                     $('#quick-look #other').addClass('not-applicable');
                 }
+            
+                // Gray out others
+                $('.prices span').each( function(){
+                    if( $(this).text() == '0'){
+                        $(this).parent().addClass('not-applicable');
+                    }
+                });
             });
     }
 
