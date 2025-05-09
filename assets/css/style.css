@@ -39,7 +39,7 @@ html {
 
 @font-face {
     font-family: "Stardew Valley";
-    src: url(../fonts/stardew_valley.otf);
+    src: url(../fonts/stardew_valley.ttf);
     font-weight: normal;
     font-style: normal;
 }
