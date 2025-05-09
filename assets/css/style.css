@@ -107,7 +107,7 @@ h3, h4 {
 
 
 body {
-    background: white;
+    background: var(--offwhite);
     color: var(--textbrown);
     font-size: 100%;
     font-family: monospace;
@@ -150,7 +150,6 @@ aside:last-child {
     padding: 12px;
     position: fixed;
     height: 100%;
-    background: var(--offwhite);
 }
 
 #quick-look {
