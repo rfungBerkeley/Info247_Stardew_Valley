@@ -148,6 +148,7 @@ aside:first-child {
     flex: 0 0 var(--quick-look-width);
 }
 aside:last-child {
+    width: var(--items-panel-width);
     flex: 0 0 var(--items-panel-width);
 }
 

@@ -35,7 +35,7 @@ $(function () {
         fetch('./assets/scripts/stardew_valley-animals.json')
             .then(response => response.json())
             .then(data => {
-                const animal = data.find(item => item.item === name);
+                let animal = data.find(item => item.item === name);
                 if (!animal) return;
             
                 // Reset classes
