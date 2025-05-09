@@ -39,7 +39,7 @@ html {
 
 @font-face {
     font-family: "Stardew Valley";
-    src: url("../fonts/stardew_valley.otf");
+    src: url(../fonts/stardew_valley.otf);
     font-weight: normal;
     font-style: normal;
 }
@@ -380,6 +380,23 @@ main > .container:nth-child(2) > div:first-child,  main > .container:first-child
 }
 
 
+.container {
+    margin-bottom: 4rem;
+}
+
+
+.observablehq {
+    width: 100%;
+    margin: 0 auto;
+    padding: 24px;
+    background: white;
+    margin-bottom: 4rem;
+}
+.observablehq h2 {
+    font-weight: normal;
+    text-transform: capitalize;
+    font-size: 1rem;
+}
 
 
 
