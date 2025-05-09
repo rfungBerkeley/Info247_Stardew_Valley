@@ -82,10 +82,20 @@ $(function () {
                 });
             });
             //Upload
+                const animalSelect = document.querySelector('#observablehq-viewof-selectAnimal-d4a5caf0 select');
+                if (animalSelect) {
+                    for (let option of animalSelect.options) {
+                        if (option.text === animal.item) {
+                            animalSelect.value = option.value;
+                            animalSelect.dispatchEvent(new Event('input', { bubbles: true }));
+                            break;
+                        }
+                    }
+                }
                 const currentBuilding = $(clicked).attr("enclosure");
                 let order = 0;
 
-                const buildingSelect = document.querySelector('#observablehq-viewof-selectBuilding-6f38373a select');
+                const buildingSelect = document.querySelector('#observablehq-viewof-selectBuilding-d4a5caf0 select');
                 if (buildingSelect) {
                     for (let option of buildingSelect.options) {
                         if (option.text === currentBuilding) {

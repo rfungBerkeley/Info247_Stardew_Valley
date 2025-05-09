@@ -16,16 +16,16 @@
     <!-- ObservablePlot Scripts Start -->
 
     <script type="module">
-    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-    import define from "https://api.observablehq.com/d/2f30515de031b245@529.js?v=4";
-    new Runtime().module(define, name => {
-    if (name === "viewof selectBuilding") return new Inspector(document.querySelector("#observablehq-viewof-selectBuilding-6f38373a"));
-    if (name === "animalProductComparison") return new Inspector(document.querySelector("#observablehq-animalProductComparison-6f38373a"));
-    if (name === "viewof selectAnimalProduct") return new Inspector(document.querySelector("#observablehq-viewof-selectAnimalProduct-6f38373a"));
-    if (name === "qualityAnimalPrices") return new Inspector(document.querySelector("#observablehq-qualityAnimalPrices-6f38373a"));
-    return ["maxY3"].includes(name);
-    });
-    </script>
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+import define from "https://api.observablehq.com/d/6adc935a5fc4ddb5@682.js?v=4";
+new Runtime().module(define, name => {
+  if (name === "viewof selectAnimal") return new Inspector(document.querySelector("#observablehq-viewof-selectAnimal-d4a5caf0"));
+  if (name === "animalProduct") return new Inspector(document.querySelector("#observablehq-animalProduct-d4a5caf0"));
+  if (name === "viewof selectBuilding") return new Inspector(document.querySelector("#observablehq-viewof-selectBuilding-d4a5caf0"));
+  if (name === "animalProductComparison") return new Inspector(document.querySelector("#observablehq-animalProductComparison-d4a5caf0"));
+  return ["animalProducts","processedProducts"].includes(name);
+});
+</script>
     
     <!-- ObservablePlot Scripts End -->    
     
@@ -100,20 +100,20 @@
                 </div>
                 <!--<div id="observablehq-viewof-selectSource-f8768f36"></div>
                 <div id="observablehq-cropComparison-f8768f36"></div>-->
-                <div id="observablehq-viewof-selectBuilding-6f38373a"></div>
-                <div id="observablehq-animalProductComparison-6f38373a"></div>
+                <div id="observablehq-viewof-selectBuilding-d4a5caf0"></div>
+                <div id="observablehq-animalProductComparison-d4a5caf0"></div>
     
             </div>
         
             <div class="container">
-                <!-- <div id="observablehq-viewof-selectCrop-3a23b098"></div> -->
+                <div id="observablehq-viewof-selectAnimal-d4a5caf0"></div>
 
                 <h2> Product Quality Comparison</h2>
                 <p>The quality of a product increases its sell price. Additionally, processing it can significantly increase sell price.</p>
                 <!-- <div id="observablehq-qualityPrices-3a23b098"></div> -->
 
-                <div id="observablehq-viewof-selectAnimalProduct-6f38373a"></div>
-                <div id="observablehq-qualityAnimalPrices-6f38373a"></div>
+                
+                <div id="observablehq-animalProduct-d4a5caf0"></div>
 
             </div>
         </main>
