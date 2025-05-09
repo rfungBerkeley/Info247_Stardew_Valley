@@ -110,12 +110,12 @@ body {
 
 header {
     width: 100%;
-    height: calc(5vh + 12px);
-    padding: 12px;
+    padding: 6px 12px;
     background: var(--gray);
     color: var(--offwhite);
     position: fixed;
     text-align: right;
+    z-index: 1001;
 }
 
 .wrapper {
@@ -127,7 +127,7 @@ aside, main {
     margin: 0;
     height: 100vh;
     position: relative;
-    margin-top: calc(5vh + 12px);
+    margin-top: calc(2.25rem + 12px);
 }
 
 main {
