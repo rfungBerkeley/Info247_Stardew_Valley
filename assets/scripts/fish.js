@@ -41,8 +41,7 @@ $(function(){
                 if (!fish) return;
             
                 // Reset classes
-                $('.prices td').removeClass('not-applicable');
-                $('.prices p').removeClass('not-applicable');
+                $('.not-applicable').removeClass('not-applicable');
 
                 // Basic info
                 $('#quick-look img').attr({

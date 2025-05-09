@@ -45,14 +45,8 @@ $(function(){
             .then(data => {
                 let crop = data.find(item => item.item == name);
             
-                // Reset classes
-                $('#quick-look .seed-price').removeClass('not-applicable');
-                $('#quick-look #harvest').removeClass('not-applicable');
-                $('#quick-look #max').removeClass('not-applicable');
-                $('#quick-look #keg').removeClass('not-applicable');
-                $('#quick-look #preserves').removeClass('not-applicable');
-                $('#quick-look #dehydrator').removeClass('not-applicable');
-                $('.prices span').removeClass('not-applicable');
+                // Reset classes;
+                $('.not-applicable').removeClass('not-applicable');
 
                 // Load text for basic facts
                 $('#quick-look img').attr({

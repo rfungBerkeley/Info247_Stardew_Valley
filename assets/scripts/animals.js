@@ -38,8 +38,7 @@ $(function () {
                 if (!animal) return;
 
                 // Reset classes
-                $('#quick-look #other').removeClass('not-applicable');
-                $('.prices td').removeClass('not-applicable');
+                $('.not-applicable').removeClass('not-applicable');
 
                 // Basic info
                 $('#quick-look img').attr({
