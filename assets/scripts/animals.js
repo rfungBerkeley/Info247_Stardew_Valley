@@ -81,8 +81,8 @@ $(function () {
                     }
                 });
 
-                // ✅ Observable dropdowns update
-                const animalSelect = document.querySelector('#observablehq-viewof-selectAnimal-c59b6e72 select');
+                // update graphs
+                const animalSelect = document.querySelector('#observablehq-viewof-selectAnimal-fced1bfb select');
                 if (animalSelect) {
                     for (let option of animalSelect.options) {
                         if (option.text === animal.item) {
@@ -94,7 +94,7 @@ $(function () {
                 }
 
                 const currentBuilding = $(clicked).attr("enclosure");
-                const buildingSelect = document.querySelector('#observablehq-viewof-selectBuilding-c59b6e72 select');
+                const buildingSelect = document.querySelector('#observablehq-viewof-selectBuilding-fced1bfb select');
                 if (buildingSelect) {
                     for (let option of buildingSelect.options) {
                         if (option.text === currentBuilding) {
