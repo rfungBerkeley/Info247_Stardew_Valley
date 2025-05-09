@@ -324,13 +324,10 @@ aside:last-child {
 .iridium {
     background: var(--iridium);
 }
-
-.not-applicable td, .not-applicable span, span.not-applicable {
+.not-applicable {
     color: var(--gray);
-    font-weight: normal !important;
-}
-.not-applicable .silver, .not-applicable .gold, .not-applicable .iridium {
     background: none;
+    font-weight: normal !important;
 }
 .not-applicable span:after, span.not-applicable:after {
     content: none !important;

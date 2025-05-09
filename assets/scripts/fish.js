@@ -39,6 +39,9 @@ $(function(){
             .then(data => {
                 let fish = data.find(item => item.item === name);
                 if (!fish) return;
+            
+                // Reset classes
+                $('.prices td').removeClass('not-applicable');
 
                 // Basic info
                 $('#quick-look img').attr({
@@ -76,6 +79,13 @@ $(function(){
                 $('#quick-look #preserves .product').text(roetext);
                 $('#quick-look #preserves .roe-price').text(fish.roe || 0);
                 $('#quick-look #preserves .aged-roe').text(fish.aged_roe || 0);
+            
+                // Gray out others
+                $('.prices span').each( function(){
+                    if( $(this).text() == '0'){
+                        $(this).parent().addClass('not-applicable');
+                    }
+                });
                     
          
                 // Update plots

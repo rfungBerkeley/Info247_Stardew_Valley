@@ -50,9 +50,9 @@ $(function(){
                 $('#quick-look #harvest').removeClass('not-applicable');
                 $('#quick-look #max').removeClass('not-applicable');
                 $('#quick-look #keg').removeClass('not-applicable');
-                $('#quick-look #keg tr:last-child').removeClass('not-applicable');
                 $('#quick-look #preserves').removeClass('not-applicable');
                 $('#quick-look #dehydrator').removeClass('not-applicable');
+                $('.prices td').removeClass('not-applicable');
 
                 // Load text for basic facts
                 $('#quick-look img').attr({
@@ -109,9 +109,6 @@ $(function(){
                 if(!crop.keg_product){
                     $('#quick-look #keg').addClass('not-applicable');
                 }
-                if(crop.keg_product == 'juice' || crop.keg_product == 'coffee' ){
-                    $('#quick-look #keg tr:last-child').addClass('not-applicable');
-                }
 
                 // Load text for preserves jar products
                 $('#quick-look #preserves .product').text(crop.perserves_jar_product || 'Cannot be preserved');
@@ -129,6 +126,13 @@ $(function(){
                 if(!crop.dehydrator_product){
                     $('#quick-look #dehydrator').addClass('not-applicable');
                 }
+            
+                // Gray out others
+                $('.prices span').each( function(){
+                    if( $(this).text() == '0'){
+                        $(this).parent().addClass('not-applicable');
+                    }
+                });
             
                 // Update plots
                 const cropSelect = document.querySelector('#observablehq-viewof-selectCrop-495f1e0d select');
