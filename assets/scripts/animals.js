@@ -82,7 +82,7 @@ $(function () {
                 });
 
                 // update graphs
-                const animalSelect = document.querySelector('#observablehq-viewof-selectAnimal-fced1bfb select');
+                const animalSelect = document.querySelector('#observablehq-viewof-selectAnimal-381a76f2 select');
                 if (animalSelect) {
                     for (let option of animalSelect.options) {
                         if (option.text === animal.item) {
@@ -94,7 +94,7 @@ $(function () {
                 }
 
                 const currentBuilding = $(clicked).attr("enclosure");
-                const buildingSelect = document.querySelector('#observablehq-viewof-selectBuilding-fced1bfb select');
+                const buildingSelect = document.querySelector('#observablehq-viewof-selectBuilding-381a76f2 select');
                 if (buildingSelect) {
                     for (let option of buildingSelect.options) {
                         if (option.text === currentBuilding) {

@@ -121,6 +121,26 @@
         "product2_iridium": 1130
     },
     {
+        "item": "sheep",
+        "building": "barn",
+        "product": "wool",
+        "base_price": 340,
+        "base_silver": 425,
+        "base_gold": 510,
+        "base_iridium": 680,
+        "machine": "Loom",
+        "processed": "Cloth",
+        "processed_price": 470,
+        "processed_price_silver":0,
+        "processed_price_gold": 0,
+        "processed_price_iridium":0,
+        "product2": "",
+        "product2_base": "",
+        "product2_silver": "",
+        "product2_gold": "",
+        "product2_iridium": ""
+    },
+    {
         "item": "dinosaur",
         "building": "coop",
         "product": "dinosaur egg",
