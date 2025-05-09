@@ -133,6 +133,11 @@ main {
     min-width: 0%;
 }
 
+main p {
+    line-height: 1.4;
+}
+
+
 aside:first-child {
     width:  var(--quick-look-width);
     flex: 0 0 var(--quick-look-width);
