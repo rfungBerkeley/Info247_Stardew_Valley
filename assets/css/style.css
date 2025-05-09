@@ -60,7 +60,7 @@ html {
     
     
     /* Size */
-    --quick-look-width: 320px;
+    --quick-look-width: 340px;
     --items-panel-width: 30vw;
     --main-width: calc(100% - var(--items-panel-width) - var(--quick-look-width));
     
