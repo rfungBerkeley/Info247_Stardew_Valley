@@ -16,13 +16,13 @@
     <!-- ObservablePlot Scripts Start -->
     <script type="module">
     import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-    import define from "https://api.observablehq.com/d/6adc935a5fc4ddb5@792.js?v=4";
+    import define from "https://api.observablehq.com/d/6adc935a5fc4ddb5@793.js?v=4";
     new Runtime().module(define, name => {
-        if (name === "viewof selectAnimal") return new Inspector(document.querySelector("#observablehq-viewof-selectAnimal-fced1bfb"));
-        if (name === "viewof selectBuilding") return new Inspector(document.querySelector("#observablehq-viewof-selectBuilding-fced1bfb"));
-        if (name === "ProcessedAniamlsGraph") return new Inspector(document.querySelector("#observablehq-ProcessedAniamlsGraph-fced1bfb"));
-        if (name === "animalProductGraph") return new Inspector(document.querySelector("#observablehq-animalProductGraph-fced1bfb"));
-        if (name === "animalProductComparison") return new Inspector(document.querySelector("#observablehq-animalProductComparison-fced1bfb"));
+        if (name === "viewof selectAnimal") return new Inspector(document.querySelector("#observablehq-viewof-selectAnimal-381a76f2"));
+        if (name === "viewof selectBuilding") return new Inspector(document.querySelector("#observablehq-viewof-selectBuilding-381a76f2"));
+        if (name === "ProcessedAniamlsGraph") return new Inspector(document.querySelector("#observablehq-ProcessedAniamlsGraph-381a76f2"));
+        if (name === "animalProductGraph") return new Inspector(document.querySelector("#observablehq-animalProductGraph-381a76f2"));
+        if (name === "animalProductComparison") return new Inspector(document.querySelector("#observablehq-animalProductComparison-381a76f2"));
     return ["animalProducts","animal","processedProducts"].includes(name);
     });
     </script>
@@ -102,24 +102,24 @@
                 </div>
                 <!--<div id="observablehq-viewof-selectSource-f8768f36"></div>
                 <div id="observablehq-cropComparison-f8768f36"></div>-->
-                <div id="observablehq-viewof-selectBuilding-fced1bfb"></div>
-                <div id="observablehq-animalProductComparison-fced1bfb"></div>
+                <div id="observablehq-viewof-selectBuilding-381a76f2"></div>
+                <div id="observablehq-animalProductComparison-381a76f2"></div>
             </div>
         
             <div class="container">
                 <!-- i thought its suppose to go here but it don't work-->
-                 <div id="observablehq-viewof-selectAnimal-fced1bfb"></div>
+                 <div id="observablehq-viewof-selectAnimal-381a76f2"></div>
 
 
                 <h2> Product Quality Comparison</h2>
                 <p>The quality of a product increases its sell price. Additionally,some animals can produce multiple products.</p>
                 <br>
-                <div id="observablehq-animalProductGraph-fced1bfb"></div>
+                <div id="observablehq-animalProductGraph-381a76f2"></div>
 
                 <h2>Processed Animal Product Comparison</h2>
                 <p>While not every product can be processed or have their quality increased, it is still more profitable to process them whenever possible.</p>
                 <br>
-                <div id="observablehq-ProcessedAniamlsGraph-fced1bfb"></div>
+                <div id="observablehq-ProcessedAniamlsGraph-381a76f2"></div>
 
 
 
