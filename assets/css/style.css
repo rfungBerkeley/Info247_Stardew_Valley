@@ -32,7 +32,7 @@ ul {
 }
 
 html {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 /*      FONTS          */
@@ -169,13 +169,14 @@ aside:last-child {
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     position: relative;
     overflow-x: visible;
 }
 
 #all-items h3 {
     width: 100%;
+    margin-bottom: 1rem;
 }
 
 #all-items .item {
@@ -245,6 +246,9 @@ aside:last-child {
 }
 
 #standard p, .prices td {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 2px;
     font-variant: small-caps;
     text-transform: lowercase;
     line-height: .8;
@@ -252,24 +256,20 @@ aside:last-child {
     padding: var(--padding-sm);
     vertical-align: top;
 }
-#standard p {
+#standard .prices p {
     text-align: center;
     width: calc(25% - 2px);
 }
-#standard span {
+#standard .prices span {
     display: block;
     font-size: 1.25rem;
     padding-top: var(--padding-sm);
 }
-.prices td, #harvest p, #max p {
-    width: 100%;
-    text-align: left;
-    margin-bottom: 2px;
 
-}
-.prices td span, #harvest p span, #max p span {
+.prices td span, #standard span {
     display: inline;
     font-size: .8rem;
+    font-weight: 600;
 }
 
 #details {
@@ -305,7 +305,7 @@ aside:last-child {
     width: 33.3%;
 }
 
-.prices span:after, #max span:after{
+.prices span:after, #max span:after, .seed-price:after {
     content: 'g';
     text-transform: lowercase;
 }
@@ -316,10 +316,6 @@ aside:last-child {
 
 #quick-look table {
     border-collapse: collapse;
-}
-
-#details .prices span {
-    font-weight: 600;
 }
 
 /* Add  Color */
@@ -333,12 +329,15 @@ aside:last-child {
     background: var(--iridium);
 }
 
-.not-applicable td, .not-applicable span {
+.not-applicable td, .not-applicable span, span.not-applicable {
     color: var(--gray);
-    font-weight: normal;
+    font-weight: normal !important;
 }
 .not-applicable .silver, .not-applicable .gold, .not-applicable .iridium {
     background: none;
+}
+.not-applicable span:after, span.not-applicable:after {
+    content: none !important;
 }
 
 
@@ -359,7 +358,8 @@ main > .container:nth-child(2) > div:first-child {
 #quick-look > div .caption {
     font-variant: none;
     font-size: .6rem;
-    line-height: 1;
+    line-height: 1.5;
+    letter-spacing: .2px;
     text-transform: none;
     border: none;
     padding: 0;

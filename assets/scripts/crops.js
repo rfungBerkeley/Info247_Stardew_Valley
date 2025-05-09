@@ -46,6 +46,9 @@ $(function(){
                 let crop = data.find(item => item.item == name);
             
                 // Reset classes
+                $('#quick-look .seed-price').removeClass('not-applicable');
+                $('#quick-look #harvest').removeClass('not-applicable');
+                $('#quick-look #max').removeClass('not-applicable');
                 $('#quick-look #keg').removeClass('not-applicable');
                 $('#quick-look #keg tr:last-child').removeClass('not-applicable');
                 $('#quick-look #preserves').removeClass('not-applicable');
@@ -59,10 +62,19 @@ $(function(){
                 $('#quick-look .name').text(crop.item);
                 $('#quick-look .type').text(crop.type);
 
+                $('#quick-look .seed-price').text((crop.seed_price) 
+                                            ? (crop.seed_price) : ("Cannot be purchased") );
+                if(!crop.seed_price){
+                    $('.seed-price').addClass('not-applicable');
+                }
                 $('#quick-look .yield').text((crop.yield_per_harvest) 
                                             ? (crop.yield_per_harvest) : ("Cannot be harvested") );
                 $('#quick-look .growth').text((crop.growth_time) 
                                             ? (crop.growth_time) : ("Cannot grow") );
+                if(!crop.yield_per_harvest){
+                    $('#harvest').addClass('not-applicable');
+                }
+                
 
                 $('#quick-look #details .base-price').text(crop.base_price || 0);
                 $('#quick-look #details .silver-price').text(crop.base_price_silver || 0);
@@ -83,6 +95,9 @@ $(function(){
                 let normalmax = Math.floor(crop.number_harvests * crop.base_price * crop.yield_per_harvest);
                 
                 $('#quick-look .max-maximum').text(maximum || 'Cannot be determined');
+                if(!maximum){
+                    $('#quick-look #max').addClass('not-applicable');
+                }
            
 
                 // Load text for keg products
