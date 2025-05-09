@@ -52,7 +52,7 @@ $(function(){
                 $('#quick-look #keg').removeClass('not-applicable');
                 $('#quick-look #preserves').removeClass('not-applicable');
                 $('#quick-look #dehydrator').removeClass('not-applicable');
-                $('.prices td').removeClass('not-applicable');
+                $('.prices span').removeClass('not-applicable');
 
                 // Load text for basic facts
                 $('#quick-look img').attr({
