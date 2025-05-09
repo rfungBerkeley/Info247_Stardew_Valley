@@ -184,7 +184,7 @@ aside:last-child {
 
 #all-items h3 {
     width: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: var(--padding-sm);
 }
 
 #all-items .item {
