@@ -14,19 +14,17 @@
     <script type="text/javascript" src="assets/scripts/animals.js"></script>
     
     <!-- ObservablePlot Scripts Start -->
-
     <script type="module">
-import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-import define from "https://api.observablehq.com/d/6adc935a5fc4ddb5@682.js?v=4";
-new Runtime().module(define, name => {
-  if (name === "viewof selectAnimal") return new Inspector(document.querySelector("#observablehq-viewof-selectAnimal-d4a5caf0"));
-  if (name === "animalProduct") return new Inspector(document.querySelector("#observablehq-animalProduct-d4a5caf0"));
-  if (name === "viewof selectBuilding") return new Inspector(document.querySelector("#observablehq-viewof-selectBuilding-d4a5caf0"));
-  if (name === "animalProductComparison") return new Inspector(document.querySelector("#observablehq-animalProductComparison-d4a5caf0"));
-  return ["animalProducts","processedProducts"].includes(name);
-});
-</script>
-    
+    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+    import define from "https://api.observablehq.com/d/6adc935a5fc4ddb5@706.js?v=4";
+    new Runtime().module(define, name => {
+        if (name === "viewof selectAnimal") return new Inspector(document.querySelector("#observablehq-viewof-selectAnimal-a2fea457"));
+        if (name === "animalProduct") return new Inspector(document.querySelector("#observablehq-animalProduct-a2fea457"));
+        if (name === "viewof selectBuilding") return new Inspector(document.querySelector("#observablehq-viewof-selectBuilding-a2fea457"));
+        if (name === "animalProductComparison") return new Inspector(document.querySelector("#observablehq-animalProductComparison-a2fea457"));
+    return ["animalProducts","processedProducts","processedGraph","buildingProducts","buildingProductChart"].includes(name);
+    });
+    </script>
     <!-- ObservablePlot Scripts End -->    
     
 </head>
@@ -100,20 +98,20 @@ new Runtime().module(define, name => {
                 </div>
                 <!--<div id="observablehq-viewof-selectSource-f8768f36"></div>
                 <div id="observablehq-cropComparison-f8768f36"></div>-->
-                <div id="observablehq-viewof-selectBuilding-d4a5caf0"></div>
-                <div id="observablehq-animalProductComparison-d4a5caf0"></div>
+                <div id="observablehq-viewof-selectBuilding-a2fea457"></div>
+                <div id="observablehq-animalProductComparison-a2fea457"></div>
     
             </div>
         
             <div class="container">
-                <div id="observablehq-viewof-selectAnimal-d4a5caf0"></div>
+                <div id="observablehq-viewof-selectAnimal-a2fea457"></div>
 
 
                 <h2> Product Quality Comparison</h2>
                 <p>The quality of a product increases its sell price. Additionally,some animals can produce multiple products.</p>
                 <!-- <div id="observablehq-qualityPrices-3a23b098"></div> -->
 
-                <div id="observablehq-animalProduct-d4a5caf0"></div>
+                <div id="observablehq-animalProduct-a2fea457"></div>
 
             </div>
         </main>

@@ -82,7 +82,7 @@ $(function () {
                 });
             });
             //Upload
-                const animalSelect = document.querySelector('#observablehq-viewof-selectAnimal-d4a5caf0 select');
+                const animalSelect = document.querySelector('#observablehq-viewof-selectAnimal-a2fea457 select');
                 if (animalSelect) {
                     for (let option of animalSelect.options) {
                         if (option.text === animal.item) {
@@ -95,7 +95,7 @@ $(function () {
                 const currentBuilding = $(clicked).attr("enclosure");
                 let order = 0;
 
-                const buildingSelect = document.querySelector('#observablehq-viewof-selectBuilding-d4a5caf0 select');
+                const buildingSelect = document.querySelector('#observablehq-viewof-selectBuilding-a2fea457 select');
                 if (buildingSelect) {
                     for (let option of buildingSelect.options) {
                         if (option.text === currentBuilding) {
