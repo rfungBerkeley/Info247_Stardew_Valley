@@ -391,6 +391,7 @@ main > .container:nth-child(2) > div:first-child,  main > .container:first-child
     padding: 24px;
     background: white;
     margin-bottom: 4rem;
+    margin-top: 1rem;
 }
 .observablehq h2 {
     font-weight: normal;
