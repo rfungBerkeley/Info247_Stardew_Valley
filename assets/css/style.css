@@ -88,12 +88,15 @@ html {
 
 h1, h2, h3, h4 {
     font-weight: normal;
+    line-height: 1;
 }
 h1 {
     font-family: 'Stardew Valley';
     font-size: 2.25rem;
     letter-spacing: 1px;
-    line-height: 1;
+}
+h2 {
+    margin-bottom: .5rem;
 }
 h2, h3 {
     font-weight: bold;
@@ -258,11 +261,16 @@ aside:last-child {
 
 #standard p, .prices td {
     width: 100%;
-    text-align: left;
-    margin-bottom: 2px;
     font-variant: small-caps;
     text-transform: lowercase;
     line-height: .8;
+
+}
+#standard p {
+   padding: var(--padding-sm);
+    border-bottom: 1px solid var(--gray);
+}
+.prices td, .prices p {
     border: 1px solid var(--gray);
     padding: var(--padding-sm);
     vertical-align: top;
