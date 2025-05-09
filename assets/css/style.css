@@ -32,7 +32,7 @@ ul {
 }
 
 html {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 /*      FONTS          */
@@ -372,7 +372,7 @@ main > .container:nth-child(2) > div:first-child,  main > .container:first-child
 
 #quick-look > div .caption {
     font-variant: none;
-    font-size: .6rem;
+    font-size: .8rem;
     line-height: 1.5;
     letter-spacing: .2px;
     text-transform: none;
