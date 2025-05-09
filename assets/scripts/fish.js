@@ -79,7 +79,7 @@ $(function(){
                     
          
                 // Update plots
-                const fishSelect = document.querySelector('#observablehq-viewof-selectFish-152e28b1 select');
+                const fishSelect = document.querySelector('#observablehq-viewof-selectFish-5b0ac705 select');
                 if (fishSelect) {
                     for (let option of fishSelect.options) {
                         if (option.text === fish.item) {
@@ -93,7 +93,7 @@ $(function(){
                 const currentSeason = $(clicked).attr("season");
                 let order = 0;
 
-                const seasonSelect = document.querySelector('#observablehq-viewof-selectSeason-152e28b1 select');
+                const seasonSelect = document.querySelector('#observablehq-viewof-selectSeason-5b0ac705 select');
                 if (seasonSelect) {
                     for (let option of seasonSelect.options) {
                         if (option.text === currentSeason) {

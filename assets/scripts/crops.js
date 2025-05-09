@@ -131,7 +131,7 @@ $(function(){
                 }
             
                 // Update plots
-                const cropSelect = document.querySelector('#observablehq-viewof-selectCrop-0a965857 select');
+                const cropSelect = document.querySelector('#observablehq-viewof-selectCrop-3db30282 select');
                 if (cropSelect) {
                     for (let option of cropSelect.options) {
                         if (option.text === crop.item) {
@@ -145,7 +145,7 @@ $(function(){
                 const currentSeason = $(clicked).attr("season");
                 let order = 0;
 
-                const seasonSelect = document.querySelector('#observablehq-viewof-selectSource-0a965857 select');
+                const seasonSelect = document.querySelector('#observablehq-viewof-selectSource-3db30282 select');
                 if (seasonSelect) {
                     for (let option of seasonSelect.options) {
                         if (option.text === currentSeason) {
