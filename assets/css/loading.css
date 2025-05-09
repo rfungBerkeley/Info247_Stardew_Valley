@@ -36,11 +36,8 @@
     padding: 15px 15px;
     margin: 20px 20px;
     cursor: pointer;
-    transition: 0.3s;
 
-}
-.btn:hover {
-    transform: scale(1.25);
+
 }
 
 

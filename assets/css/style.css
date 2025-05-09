@@ -38,11 +38,19 @@ html {
 /*      FONTS          */
 
 @font-face {
+    font-family: "Stardew Valley";
+    src: url("../onts/stardew-valley.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: "Spectral";
     src: url("fonts/spectral.ttf");
     font-weight: normal;
     font-style: normal;
 }
+
 
 
 /*      VARIABLES      */
@@ -77,6 +85,13 @@ html {
 /************************************************************/
 /*  Basic Layout                                            */
 /************************************************************/
+
+h1, h2 {
+    font-family: 'Stardew Valley';
+    font-size: 2rem;
+    letter-spacing: 1px;
+    line-height: .5;
+}
 
 body {
     /*  background-color: #BCCCB0;*/
@@ -343,20 +358,25 @@ main > .container:nth-child(2) > div:first-child {
 
 
 .btn {
-    width: 100%;
-    padding: 12px;
+    width: 174px;
+    padding: calc(20px - .75rem) 0; 
+    margin: 0 auto;
     background: url('../layout/btn-bg.png') no-repeat center;
     background-size: contain;
     color:#CE5252; 
-    display: inline-block;
+    display: block;
+    font-family: "Stardew Valley";
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-decoration: none;
     filter: unset;
+    transition: 0.3s;
 }
+
 .btn:hover {
-    filter: brightness(120%);
+    transform: scale(1.2);
 }
+
 
 
 
