@@ -168,6 +168,7 @@ aside:last-child {
     max-width: var(--items-panel-width);
     right: 0;
     border-left: 1px solid var(--gray);
+    overflow-y: auto;
 }
 
 
