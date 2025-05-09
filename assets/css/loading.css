@@ -7,7 +7,7 @@ body {
     overflow: hidden;
     background-image: url('../layout/loadscreen.png');
     background-repeat: no-repeat;
-    background-size: 120%;
+    background-size: cover;
     background-position: center top;
     height: 100vh;
     margin: 0;
