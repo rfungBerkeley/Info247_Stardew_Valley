@@ -91,7 +91,7 @@ h1, h2, h3, h4 {
 }
 h1 {
     font-family: 'Stardew Valley';
-    font-size: 2rem;
+    font-size: 2.25rem;
     letter-spacing: 1px;
     line-height: 1;
 }
@@ -245,6 +245,17 @@ aside:last-child {
     text-transform: capitalize;
 }
 
+#basic {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 1rem;
+}
+#basic img {
+    width: 50px;
+    margin-right: var(--padding-sm);
+}
+
 #standard p, .prices td {
     width: 100%;
     text-align: left;
@@ -262,7 +273,7 @@ aside:last-child {
 }
 #standard .prices span {
     display: block;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     padding-top: var(--padding-sm);
 }
 
@@ -272,28 +283,13 @@ aside:last-child {
     font-weight: 600;
 }
 
-#details {
-    width: 100%;
-}
-
-#basic {
-    width: 100%;
-    display: flex;
-    align-items: flex-end;
-    margin-bottom: 1rem;
-}
-#basic img {
-    width: 50px;
-    margin-right: var(--padding-sm);
-}
-
-#details > div {
-    margin-bottom: 1rem;
-}
-
 #standard .prices {
     display: flex;
     justify-content: space-between;
+}
+
+#details > div, #processing div {
+    margin-bottom: 1rem;
 }
 
 .prices {
@@ -310,12 +306,9 @@ aside:last-child {
     text-transform: lowercase;
 }
 
-#processing div {
-    margin-bottom: 1rem;
-}
-
 #quick-look table {
     border-collapse: collapse;
+    margin: var(--padding-sm) 0 1rem 0;
 }
 
 /* Add  Color */
