@@ -65,17 +65,17 @@ $(function () {
 
                 // Product type 2
                 $('#other .product').text(animal.product2 || 'Only produces ' + animal.product);
-                $('#other .base-price').text(animal.product2_base || 0);
-                $('#other .silver-price').text(animal.product2_silver || 0);
-                $('#other .gold-price').text(animal.product2_gold || 0);
-                $('#other .iridium-price').text(animal.product2_iridium || 0);
+                $('#other .base-price').text(animal.product2_base || 'N/A');
+                $('#other .silver-price').text(animal.product2_silver || 'N/A');
+                $('#other .gold-price').text(animal.product2_gold || 'N/A');
+                $('#other .iridium-price').text(animal.product2_iridium || 'N/A');
                 if(!animal.product2){
                     $('#quick-look #other').addClass('not-applicable');
                 }
             
                 // Gray out others
                 $('.prices span').each( function(){
-                    if( $(this).text() == '0'){
+                    if( $(this).text() == 'N/A'){
                         $(this).parent().addClass('not-applicable');
                     }
                 });

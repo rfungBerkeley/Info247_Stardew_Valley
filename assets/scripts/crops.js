@@ -76,10 +76,10 @@ $(function(){
                 }
                 
 
-                $('#quick-look #details .base-price').text(crop.base_price || 0);
-                $('#quick-look #details .silver-price').text(crop.base_price_silver || 0);
-                $('#quick-look #details .gold-price').text(crop.base_price_gold || 0);
-                $('#quick-look #details .iridium-price').text(crop.base_price_iridium || 0);
+                $('#quick-look #details .base-price').text(crop.base_price || 'N/A');
+                $('#quick-look #details .silver-price').text(crop.base_price_silver || 'N/A');
+                $('#quick-look #details .gold-price').text(crop.base_price_gold || 'N/A');
+                $('#quick-look #details .iridium-price').text(crop.base_price_iridium || 'N/A');
             
                 // Calculation for maximal profit
                 let harvests = 0;
@@ -102,34 +102,34 @@ $(function(){
 
                 // Load text for keg products
                 $('#quick-look #keg .product').text(crop.keg_product || 'Cannot be juiced');
-                $('#quick-look #keg .base-price').text(crop.keg_base_price || 0);
-                $('#quick-look #keg .silver-price').text(crop.keg_base_price_silver || 0);
-                $('#quick-look #keg .gold-price').text(crop.keg_base_price_gold || 0);
-                $('#quick-look #keg .iridium-price').text(crop.keg_base_price_iridium || 0);
+                $('#quick-look #keg .base-price').text(crop.keg_base_price || 'N/A');
+                $('#quick-look #keg .silver-price').text(crop.keg_base_price_silver || 'N/A');
+                $('#quick-look #keg .gold-price').text(crop.keg_base_price_gold || 'N/A');
+                $('#quick-look #keg .iridium-price').text(crop.keg_base_price_iridium || 'N/A');
                 if(!crop.keg_product){
                     $('#quick-look #keg').addClass('not-applicable');
                 }
 
                 // Load text for preserves jar products
                 $('#quick-look #preserves .product').text(crop.perserves_jar_product || 'Cannot be preserved');
-                $('#quick-look #preserves .base-price').text(crop.perserves_base_jar_price || 0);
+                $('#quick-look #preserves .base-price').text(crop.perserves_base_jar_price || 'N/A');
                 if(!crop.perserves_jar_product){
                     $('#quick-look #preserves').addClass('not-applicable');
                 }
                     
                 // Load text for dehydrator
                 $('#quick-look #dehydrator .product').text(crop.dehydrator_product || 'Cannot be dehydrated');
-                $('#quick-look #dehydrator .base-price').text(crop.dehydrator_base_price || 0);
-                $('#quick-look #dehydrator .silver-price').text(crop.dehydrator_base_price_silver || 0);
-                $('#quick-look #dehydrator .gold-price').text(crop.dehydrator_base_price_gold || 0);
-                $('#quick-look #dehydrator .iridium-price').text(crop.dehydrator_base_price_iridium || 0);
+                $('#quick-look #dehydrator .base-price').text(crop.dehydrator_base_price || 'N/A');
+                $('#quick-look #dehydrator .silver-price').text(crop.dehydrator_base_price_silver || 'N/A');
+                $('#quick-look #dehydrator .gold-price').text(crop.dehydrator_base_price_gold || 'N/A');
+                $('#quick-look #dehydrator .iridium-price').text(crop.dehydrator_base_price_iridium || 'N/A');
                 if(!crop.dehydrator_product){
                     $('#quick-look #dehydrator').addClass('not-applicable');
                 }
             
                 // Gray out others
                 $('.prices span').each( function(){
-                    if( $(this).text() == '0'){
+                    if( $(this).text() == 'N/A'){
                         $(this).parent().addClass('not-applicable');
                     }
                 });

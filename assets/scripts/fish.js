@@ -42,6 +42,7 @@ $(function(){
             
                 // Reset classes
                 $('.prices td').removeClass('not-applicable');
+                $('.prices p').removeClass('not-applicable');
 
                 // Basic info
                 $('#quick-look img').attr({
@@ -53,17 +54,17 @@ $(function(){
                 $('#quick-look .location').text(fish.location || '');
 
                 $('#quick-look #standard .base-price').text(fish.base_price);
-                $('#quick-look #standard .silver-price').text(fish.base_price_silver);
-                $('#quick-look #standard .gold-price').text(fish.base_price_gold);
-                $('#quick-look #standard .iridium-price').text(fish.base_price_iridium);
+                $('#quick-look #standard .silver-price').text(fish.base_price_silver || 'N/A');
+                $('#quick-look #standard .gold-price').text(fish.base_price_gold || 'N/A');
+                $('#quick-look #standard .iridium-price').text(fish.base_price_iridium || 'N/A');
 
 
                 // Load text for fish smoker products
                 $('#quick-look #smoker .product').text('Smoked ' + fish.item);
-                $('#quick-look #smoker .base-price').text(fish.smoked_base_price);
-                $('#quick-look #smoker .silver-price').text(fish.smoked_base_price_silver);
-                $('#quick-look #smoker .gold-price').text(fish.smoked_base_price_gold);
-                $('#quick-look #smoker .iridium-price').text(fish.smoked_base_price_iridium);
+                $('#quick-look #smoker .base-price').text(fish.smoked_base_price || 'N/A');
+                $('#quick-look #smoker .silver-price').text(fish.smoked_base_price_silver|| 'N/A');
+                $('#quick-look #smoker .gold-price').text(fish.smoked_base_price_gold || 'N/A');
+                $('#quick-look #smoker .iridium-price').text(fish.smoked_base_price_iridium || 'N/A');
 
                 // Load text for preserves jar products (roe)
                 let roetext = '';
@@ -77,12 +78,12 @@ $(function(){
                 }
             
                 $('#quick-look #preserves .product').text(roetext);
-                $('#quick-look #preserves .roe-price').text(fish.roe || 0);
-                $('#quick-look #preserves .aged-roe').text(fish.aged_roe || 0);
+                $('#quick-look #preserves .roe-price').text(fish.roe || 'N/A');
+                $('#quick-look #preserves .aged-roe').text(fish.aged_roe || 'N/A');
             
                 // Gray out others
                 $('.prices span').each( function(){
-                    if( $(this).text() == '0'){
+                    if( $(this).text() == 'N/A'){
                         $(this).parent().addClass('not-applicable');
                     }
                 });
