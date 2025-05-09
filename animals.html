@@ -16,13 +16,14 @@
     <!-- ObservablePlot Scripts Start -->
     <script type="module">
     import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-    import define from "https://api.observablehq.com/d/6adc935a5fc4ddb5@706.js?v=4";
+    import define from "https://api.observablehq.com/d/6adc935a5fc4ddb5@767.js?v=4";
     new Runtime().module(define, name => {
-        if (name === "viewof selectAnimal") return new Inspector(document.querySelector("#observablehq-viewof-selectAnimal-a2fea457"));
-        if (name === "animalProduct") return new Inspector(document.querySelector("#observablehq-animalProduct-a2fea457"));
-        if (name === "viewof selectBuilding") return new Inspector(document.querySelector("#observablehq-viewof-selectBuilding-a2fea457"));
-        if (name === "animalProductComparison") return new Inspector(document.querySelector("#observablehq-animalProductComparison-a2fea457"));
-    return ["animalProducts","processedProducts","processedGraph","buildingProducts","buildingProductChart"].includes(name);
+        if (name === "viewof selectAnimal") return new Inspector(document.querySelector("#observablehq-viewof-selectAnimal-c59b6e72"));
+        if (name === "viewof selectBuilding") return new Inspector(document.querySelector("#observablehq-viewof-selectBuilding-c59b6e72"));
+        if (name === "ProcessedAniamlsGraph") return new Inspector(document.querySelector("#observablehq-ProcessedAniamlsGraph-c59b6e72"));
+        if (name === "animalProductGraph") return new Inspector(document.querySelector("#observablehq-animalProductGraph-c59b6e72"));
+        if (name === "animalProductComparison") return new Inspector(document.querySelector("#observablehq-animalProductComparison-c59b6e72"));
+    return ["animalProducts","animal","processedProducts"].includes(name);
     });
     </script>
     <!-- ObservablePlot Scripts End -->    
@@ -93,25 +94,33 @@
         <main>
             <div class="container">
                 <div class="col-4">
-                    <h2>Enclosure Comparison</h2>
+                    <h2>Animal Enclosure Comparison</h2>
                     <p>There is limited space in each enclosure, and not every animal produces high selling products.</p>
+                    <br>
                 </div>
                 <!--<div id="observablehq-viewof-selectSource-f8768f36"></div>
                 <div id="observablehq-cropComparison-f8768f36"></div>-->
-                <div id="observablehq-viewof-selectBuilding-a2fea457"></div>
-                <div id="observablehq-animalProductComparison-a2fea457"></div>
+                <div id="observablehq-viewof-selectBuilding-c59b6e72"></div>
+                <div id="observablehq-animalProductComparison-c59b6e72"></div>
     
             </div>
         
             <div class="container">
-                <div id="observablehq-viewof-selectAnimal-a2fea457"></div>
+                <!-- i thought its suppose to go here but it don't work-->
+                 <div id="observablehq-viewof-selectAnimal-c59b6e72"></div>
 
 
                 <h2> Product Quality Comparison</h2>
                 <p>The quality of a product increases its sell price. Additionally,some animals can produce multiple products.</p>
-                <!-- <div id="observablehq-qualityPrices-3a23b098"></div> -->
+                <br>
+                <div id="observablehq-animalProductGraph-c59b6e72"></div>
 
-                <div id="observablehq-animalProduct-a2fea457"></div>
+                <h2>Processed Animal Product Comparison</h2>
+                <p>While not every product can be processed nor can you change their quality, it is still better to process your item</p>
+                <br>
+                <div id="observablehq-ProcessedAniamlsGraph-c59b6e72"></div>
+
+
 
             </div>
         </main>
