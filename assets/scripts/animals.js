@@ -12,7 +12,8 @@ $(function () {
                 let newItem = $('<div></div>').prepend(itemLabel, itemImg)
                     .attr({
                         "class": 'item',
-                        "item-name": item.item
+                        "item-name": item.item,
+                        "enclosure" : item.building
                     });
 
                 $('#buildings #' + item.building).append(newItem);
@@ -81,7 +82,7 @@ $(function () {
                 });
             });
             //Upload
-            const currentBuilding = $(clicked).attr("building");
+                const currentBuilding = $(clicked).attr("enclosure");
                 let order = 0;
 
                 const buildingSelect = document.querySelector('#observablehq-viewof-selectBuilding-6f38373a select');
