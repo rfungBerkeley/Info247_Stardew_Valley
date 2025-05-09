@@ -39,19 +39,10 @@ html {
 
 @font-face {
     font-family: "Stardew Valley";
-    src: url("../fonts/stardew-valley.otf");
+    src: url("../fonts/stardew_valley.otf");
     font-weight: normal;
     font-style: normal;
 }
-
-@font-face {
-    font-family: "Spectral";
-    src: url("fonts/spectral.ttf");
-    font-weight: normal;
-    font-style: normal;
-}
-
-
 
 /*      VARIABLES      */
 
