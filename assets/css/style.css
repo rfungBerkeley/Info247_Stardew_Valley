@@ -16,7 +16,6 @@ svg {
     display: block;
     max-width: 100%;
     vertical-align: middle;
-    margin: 0 auto;
 }
 
 input,
@@ -356,6 +355,10 @@ aside:last-child {
 /************************************************************/
 /*  Other                                            */
 /************************************************************/
+
+main svg {
+    margin: 0 auto;
+}
 
 .observablehq {
     margin: 1rem 0 2rem 0;
