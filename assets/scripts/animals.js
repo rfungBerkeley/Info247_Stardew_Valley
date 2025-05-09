@@ -36,6 +36,9 @@ $(function () {
             .then(data => {
                 const animal = data.find(item => item.item === name);
                 if (!animal) return;
+            
+                // Reset classes
+                $('#quick-look #other').removeClass('not-applicable');
 
                 // Basic info
                 $('#quick-look img').attr({
@@ -43,9 +46,10 @@ $(function () {
                     "alt": animal.item
                 });
                 $('#quick-look .name').text(animal.item);
-                $('#quick-look .type').text(animal.product);
+                $('#quick-look .building').text(animal.building);
                 $('#quick-look .machine').text(animal.machine);
 
+                $('#quick-look .type').text(animal.product);
                 $('#standard .base-price').text(animal.base_price);
                 $('#standard .silver-price').text(animal.base_silver);
                 $('#standard .gold-price').text(animal.base_gold);
@@ -59,11 +63,14 @@ $(function () {
                 $('#processed .iridium-price').text(animal.processed_price_iridium);
 
                 // Product type 2
-                $('#other .product').text(animal.product2 || 'N/A');
-                $('#other .base-price').text(animal.product2_base || 'N/A');
-                $('#other .silver-price').text(animal.product2_silver || 'N/A');
-                $('#other .gold-price').text(animal.product2_gold || 'N/A');
-                $('#other .iridium-price').text(animal.product2_iridium || 'N/A');
+                $('#other .product').text(animal.product2 || 'Only produces ' + animal.product);
+                $('#other .base-price').text(animal.product2_base || 0);
+                $('#other .silver-price').text(animal.product2_silver || 0);
+                $('#other .gold-price').text(animal.product2_gold || 0);
+                $('#other .iridium-price').text(animal.product2_iridium || 0);
+                if(!animal.product2){
+                    $('#quick-look #other').addClass('not-applicable');
+                }
             });
     }
 
