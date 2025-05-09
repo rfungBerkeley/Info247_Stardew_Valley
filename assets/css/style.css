@@ -86,19 +86,29 @@ html {
 /*  Basic Layout                                            */
 /************************************************************/
 
-h1, h2 {
+h1, h2, h3, h4 {
+    font-weight: normal;
+}
+h1 {
     font-family: 'Stardew Valley';
     font-size: 2rem;
     letter-spacing: 1px;
-    line-height: .5;
+    line-height: 1;
+}
+h2, h3 {
+    font-weight: bold;
+}
+h3, h4 {
+    font-size: 1rem;
 }
 
+
 body {
-    /*  background-color: #BCCCB0;*/
     background: white;
     color: var(--textbrown);
     font-size: 100%;
-    font-family: Roboto;
+    font-family: monospace;
+    font-size: 1rem;
     min-height: 100vh;
     width: 100%;
     overflow-x: hidden;
@@ -348,7 +358,7 @@ main > .container:nth-child(2) > div:first-child {
 
 #quick-look > div .caption {
     font-variant: none;
-    font-size: .8rem;
+    font-size: .6rem;
     line-height: 1;
     text-transform: none;
     border: none;
