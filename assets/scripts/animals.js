@@ -4,16 +4,15 @@ $(function () {
         fetch('./assets/scripts/stardew_valley-animals.json')
             .then(response => response.json())
             .then(data => data.forEach(item => {
-
-                let itemName = (item.item).replace('_',' ');
+                let itemName = (item.item).replace('_', ' ');
                 let itemLabel = $('<p></p>').text(itemName);
-                let itemImg = $('<img>').attr('src','./assets/icons/animals/' + item.item + '.png');
+                let itemImg = $('<img>').attr('src', './assets/icons/animals/' + item.item + '.png');
 
                 let newItem = $('<div></div>').prepend(itemLabel, itemImg)
                     .attr({
                         "class": 'item',
                         "item-name": item.item,
-                        "enclosure" : item.building
+                        "enclosure": item.building
                     });
 
                 $('#buildings #' + item.building).append(newItem);
@@ -37,7 +36,7 @@ $(function () {
             .then(data => {
                 const animal = data.find(item => item.item === name);
                 if (!animal) return;
-            
+
                 // Reset classes
                 $('#quick-look #other').removeClass('not-applicable');
                 $('.prices td').removeClass('not-applicable');
@@ -50,8 +49,8 @@ $(function () {
                 $('#quick-look .name').text(animal.item);
                 $('#quick-look .building').text(animal.building);
                 $('#quick-look .machine').text(animal.machine);
-
                 $('#quick-look .type').text(animal.product);
+
                 $('#standard .base-price').text(animal.base_price);
                 $('#standard .silver-price').text(animal.base_silver);
                 $('#standard .gold-price').text(animal.base_gold);
@@ -70,18 +69,19 @@ $(function () {
                 $('#other .silver-price').text(animal.product2_silver || 'N/A');
                 $('#other .gold-price').text(animal.product2_gold || 'N/A');
                 $('#other .iridium-price').text(animal.product2_iridium || 'N/A');
-                if(!animal.product2){
+
+                if (!animal.product2) {
                     $('#quick-look #other').addClass('not-applicable');
                 }
-            
-                // Gray out others
-                $('.prices span').each( function(){
-                    if( $(this).text() == 'N/A'){
+
+                // Gray out unavailable prices
+                $('.prices span').each(function () {
+                    if ($(this).text() === 'N/A') {
                         $(this).parent().addClass('not-applicable');
                     }
                 });
-            });
-            //Upload
+
+                // ✅ Observable dropdowns update
                 const animalSelect = document.querySelector('#observablehq-viewof-selectAnimal-c59b6e72 select');
                 if (animalSelect) {
                     for (let option of animalSelect.options) {
@@ -92,9 +92,8 @@ $(function () {
                         }
                     }
                 }
-                const currentBuilding = $(clicked).attr("enclosure");
-                let order = 0;
 
+                const currentBuilding = $(clicked).attr("enclosure");
                 const buildingSelect = document.querySelector('#observablehq-viewof-selectBuilding-c59b6e72 select');
                 if (buildingSelect) {
                     for (let option of buildingSelect.options) {
@@ -104,9 +103,10 @@ $(function () {
                             break;
                         }
                     }
-                } 
-            
+                }
+
                 $('.plot-d6a7b5').addClass("hello");
+            });
     }
 
     // Initialize page
