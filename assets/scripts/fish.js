@@ -14,7 +14,8 @@ $(function(){
                 let newItem = $('<div></div>').prepend(itemLabel, itemImg)
                     .attr({
                         "class": 'item',
-                        "item-name": item.item
+                        "item-name": item.item,
+                        "season" : item.season
                     });
 
                 $('#seasons #' + item.season).append(newItem);
