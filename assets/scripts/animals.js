@@ -80,6 +80,22 @@ $(function () {
                     }
                 });
             });
+            //Upload
+            const currentBuilding = $(clicked).attr("building");
+                let order = 0;
+
+                const buildingSelect = document.querySelector('#observablehq-viewof-selectBuilding-6f38373a select');
+                if (buildingSelect) {
+                    for (let option of buildingSelect.options) {
+                        if (option.text === currentBuilding) {
+                            buildingSelect.value = option.value;
+                            buildingSelect.dispatchEvent(new Event('input', { bubbles: true }));
+                            break;
+                        }
+                    }
+                } 
+            
+                $('.plot-d6a7b5').addClass("hello");
     }
 
     // Initialize page
