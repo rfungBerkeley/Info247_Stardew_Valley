@@ -26,7 +26,7 @@ $(function(){
                 .append(newItem);
             
             // Display default crop
-            if( item.item == "parsnip"){
+            if( item.item == "amaranth"){
                 $(newItem).trigger("click");
             } 
         }))
@@ -160,6 +160,7 @@ $(function(){
     };
     
     // On initial page load
+    
     loadItems();
     
     // Change page contents and graph display when crop item clicked
