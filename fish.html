@@ -16,18 +16,18 @@
     
     <!-- ObservablePlot Scripts Start -->
      <script type="module">
-import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-import define from "https://api.observablehq.com/d/9cf75d088cf5213b.js?v=4";
-new Runtime().module(define, name => {
-  if (name === "viewof selectSeason") return new Inspector(document.querySelector("#observablehq-viewof-selectSeason-5b0ac705"));
-  if (name === "fishComparison") return new Inspector(document.querySelector("#observablehq-fishComparison-5b0ac705"));
-  if (name === "viewof selectFish") return new Inspector(document.querySelector("#observablehq-viewof-selectFish-5b0ac705"));
-  if (name === "qualityFishGraph") return new Inspector(document.querySelector("#observablehq-qualityFishGraph-5b0ac705"));
-  if (name === "ProcessedFish") return new Inspector(document.querySelector("#observablehq-ProcessedFish-5b0ac705"));
-  if (name === "fishLocations") return new Inspector(document.querySelector("#observablehq-fishLocations-5b0ac705"));
-  return ["qualityFishy","maxY","processFish","maxY2","selectedFishData","selectedFishLocations","selectedFishMarks"].includes(name);
-});
-</script>
+    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+    import define from "https://api.observablehq.com/d/9cf75d088cf5213b@629.js?v=4";
+    new Runtime().module(define, name => {
+        if (name === "viewof selectSeason") return new Inspector(document.querySelector("#observablehq-viewof-selectSeason-89f562c7"));
+        if (name === "fishComparison") return new Inspector(document.querySelector("#observablehq-fishComparison-89f562c7"));
+        if (name === "viewof selectFish") return new Inspector(document.querySelector("#observablehq-viewof-selectFish-89f562c7"));
+        if (name === "qualityFishGraph") return new Inspector(document.querySelector("#observablehq-qualityFishGraph-89f562c7"));
+        if (name === "ProcessedFish") return new Inspector(document.querySelector("#observablehq-ProcessedFish-89f562c7"));
+        if (name === "fishLocations") return new Inspector(document.querySelector("#observablehq-fishLocations-89f562c7"));
+    return ["qualityFishy","maxY","processFish","maxY2","selectedFishData","selectedFishLocations","selectedFishMarks"].includes(name);
+    });
+    </script>
         
     <!-- ObservablePlot Scripts End -->    
     
@@ -100,27 +100,29 @@ new Runtime().module(define, name => {
                     <h2>Seasonal Fish Comparison</h2>
                     <p>Compares price differences between the different fishes from the same season.</p><br>
                 </div>
-                    <div id="observablehq-viewof-selectSeason-5b0ac705"></div>
+                    <div id="observablehq-viewof-selectSeason-89f562c7"></div>
                 
-                    <div id="observablehq-fishComparison-5b0ac705"></div>
+                    <div id="observablehq-fishComparison-89f562c7"></div>
             </div>
             <div class="container">
-                <div id="observablehq-viewof-selectFish-5b0ac705"></div>
+                <div id="observablehq-viewof-selectFish-89f562c7"></div>
                 
+                <h2>Locations of Fish</h2>
+                <p>There are so many places to fish in Stardew Valley, but the fish you are looking for may only be in specific areas around the valley</p>
+                <br>
+                <div id="observablehq-fishLocations-89f562c7"></div>
+
                 <h2> Fish Quality Comparison</h2>
                 <p>How well you are able to fish can increase the fish quality leading to the fish have a higher selling price.</p>
                 <br>
-                <div id="observablehq-qualityFishGraph-5b0ac705"></div>
+                <div id="observablehq-qualityFishGraph-89f562c7"></div>
 
                 <h2>Processed Fish Comparison</h2>
                 <p>Processing your fish to an artisan good will always increase its sell price.</p>
                 <br>
-                <div id="observablehq-ProcessedFish-5b0ac705"></div>
+                <div id="observablehq-ProcessedFish-89f562c7"></div>
 
-                <h2>Locations of Fish</h2>
-                <p>There are so many places to fish in Stardew Valley, but the fish you are looking for may only be in specific areas around the valley</p>
-                <br>
-                <div id="observablehq-fishLocations-5b0ac705"></div>
+                
 
             </div>
         </main>
