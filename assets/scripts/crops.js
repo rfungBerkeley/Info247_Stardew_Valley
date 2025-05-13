@@ -26,7 +26,7 @@ $(function(){
                 .append(newItem);
             
             // Display default crop
-            if( item.item == "amaranth"){
+            if( item.item == "parsnip"){
                 $(newItem).trigger("click");
             } 
         }))
