@@ -5,8 +5,12 @@
     margin-top: 1rem;
 }
 
-#observablehq-fishLocations-5b0ac705 {
+#observablehq-fishLocations-89f562c7 {
     background: none;
     padding: 0;
 }
 
+#observablehq-fishLocations-89f562c7 h2 {
+    margin-bottom: -1rem;
+    font-weight: 600;
+}
