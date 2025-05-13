@@ -15,16 +15,17 @@
     <script type="text/javascript" src="assets/scripts/crops.js"></script>
     
     <!-- ObservablePlot Scripts Start -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
     <script type="module">
         import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-        import define from "https://api.observablehq.com/d/b6122940d6b00699.js?v=4";
+        import define from "https://api.observablehq.com/d/b6122940d6b00699@751.js?v=4";
         new Runtime().module(define, name => {
-          if (name === "viewof selectSource") return new Inspector(document.querySelector("#observablehq-viewof-selectSource-f7763619"));
-          if (name === "cropComparison") return new Inspector(document.querySelector("#observablehq-cropComparison-f7763619"));
-          if (name === "viewof selectCrop") return new Inspector(document.querySelector("#observablehq-viewof-selectCrop-f7763619"));
-          if (name === "qualityCropGraph") return new Inspector(document.querySelector("#observablehq-qualityCropGraph-f7763619"));
-          if (name === "fertilizerGraph") return new Inspector(document.querySelector("#observablehq-fertilizerGraph-f7763619"));
-          if (name === "ProcessedGoods") return new Inspector(document.querySelector("#observablehq-ProcessedGoods-f7763619"));
+          if (name === "viewof selectSource") return new Inspector(document.querySelector("#observablehq-viewof-selectSource-14585832"));
+          if (name === "cropComparison") return new Inspector(document.querySelector("#observablehq-cropComparison-14585832"));
+          if (name === "viewof selectCrop") return new Inspector(document.querySelector("#observablehq-viewof-selectCrop-14585832"));
+          if (name === "qualityCropGraph") return new Inspector(document.querySelector("#observablehq-qualityCropGraph-14585832"));
+          if (name === "fertilizerGraph") return new Inspector(document.querySelector("#observablehq-fertilizerGraph-14585832"));
+          if (name === "ProcessedGoods") return new Inspector(document.querySelector("#observablehq-ProcessedGoods-14585832"));
           return ["maxY0","maxY","maxY1","qualityCropData","fertdata","maxY3","processCrops"].includes(name);
         });
     </script>
@@ -116,24 +117,24 @@
                     <h2>Seasonal Crop Comparison</h2>
                     <p>Crops sell for different prices. What crop do you think is better to grow if you want to make as much money as possible in one season?</p>
                 </div>
-                <div id="observablehq-viewof-selectSource-f7763619"></div>
-                <div id="observablehq-cropComparison-f7763619"></div>
+                <div id="observablehq-viewof-selectSource-14585832"></div>
+                <div id="observablehq-cropComparison-14585832"></div>
             </div>
         
             <div class="container">
-                <div id="observablehq-viewof-selectCrop-f7763619"></div>
+                <div id="observablehq-viewof-selectCrop-14585832"></div>
 
                 <h2> Crop Quality Comparison</h2>
                 <p>The quality of a crop increases its sell price. While its hard to grow iridium crops, you can still hope for the gold. </p>
-                <div id="observablehq-qualityCropGraph-f7763619"></div>
+                <div id="observablehq-qualityCropGraph-14585832"></div>
 
                 <h2>Fertilizer Impact on Maximum Number of Harvest per Season</h2>
                 <p>A higher quality fertilizer doesn't necessarily increase the amount of times a crop can be harvested per season. Sometimes a cheaper fertilizer will be just as efficient. </p>
-                <div id="observablehq-fertilizerGraph-f7763619"></div>
+                <div id="observablehq-fertilizerGraph-14585832"></div>
 
                 <h2>Processed Crops Comparison</h2>
                 <p>You can produce artisan goods by processing your crops. This almost always results in more profit. Not all crops result in the same product when processed.</p>
-                <div id="observablehq-ProcessedGoods-f7763619"></div>
+                <div id="observablehq-ProcessedGoods-14585832"></div>
             </div>
         </main>
 
