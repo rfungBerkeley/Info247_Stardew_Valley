@@ -58,9 +58,9 @@ $(function () {
                 // Processed goods — machines
                 $('#processed .product').text(animal.processed);
                 $('#processed .base-price').text(animal.processed_price);
-                $('#processed .silver-price').text(animal.processed_price_silver);
-                $('#processed .gold-price').text(animal.processed_price_gold);
-                $('#processed .iridium-price').text(animal.processed_price_iridium);
+                $('#processed .silver-price').text(animal.processed_price_silver || 'N/A'));
+                $('#processed .gold-price').text(animal.processed_price_gold|| 'N/A'));
+                $('#processed .iridium-price').text(animal.processed_price_iridium|| 'N/A'));
 
                 // Product type 2
                 $('#other .product').text(animal.product2 || 'Only produces ' + animal.product);
