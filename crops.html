@@ -16,22 +16,19 @@
     
     <!-- ObservablePlot Scripts Start -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
-    <script type="module">
-        import {
-            Runtime,
-            Inspector
-        } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-        import define from "https://api.observablehq.com/d/b6122940d6b00699.js?v=4";
-        new Runtime().module(define, name => {
-            if (name === "viewof selectSource") return new Inspector(document.querySelector("#observablehq-viewof-selectSource-d7ba80ac"));
-            if (name === "cropComparison") return new Inspector(document.querySelector("#observablehq-cropComparison-d7ba80ac"));
-            if (name === "viewof selectCrop") return new Inspector(document.querySelector("#observablehq-viewof-selectCrop-d7ba80ac"));
-            if (name === "qualityCropGraph") return new Inspector(document.querySelector("#observablehq-qualityCropGraph-d7ba80ac"));
-            if (name === "fertilizerGraph") return new Inspector(document.querySelector("#observablehq-fertilizerGraph-d7ba80ac"));
-            if (name === "ProcessedGoods") return new Inspector(document.querySelector("#observablehq-ProcessedGoods-d7ba80ac"));
-            return ["maxY0", "maxY", "maxY1", "qualityCropData", "fertdata", "maxY3", "processCrops"].includes(name);
-        });
-    </script>
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+import define from "https://api.observablehq.com/d/b6122940d6b00699.js?v=4";
+new Runtime().module(define, name => {
+  if (name === "viewof selectSource") return new Inspector(document.querySelector("#observablehq-viewof-selectSource-d7ba80ac"));
+  if (name === "cropComparison") return new Inspector(document.querySelector("#observablehq-cropComparison-d7ba80ac"));
+  if (name === "viewof selectCrop") return new Inspector(document.querySelector("#observablehq-viewof-selectCrop-d7ba80ac"));
+  if (name === "qualityCropGraph") return new Inspector(document.querySelector("#observablehq-qualityCropGraph-d7ba80ac"));
+  if (name === "fertilizerGraph") return new Inspector(document.querySelector("#observablehq-fertilizerGraph-d7ba80ac"));
+  if (name === "ProcessedGoods") return new Inspector(document.querySelector("#observablehq-ProcessedGoods-d7ba80ac"));
+  return ["maxY0","maxY","maxY1","qualityCropData","fertdata","maxY3","processCrops"].includes(name);
+});
+</script>
     <!-- ObservablePlot Scripts End -->    
     
 </head>
